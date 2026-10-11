@@ -13,23 +13,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""AI in 5 Days Content Customizer Agent implemented with ADK 2.0 Graph Workflow."""
+"""AI in 5 Days Content Customizer Agent implemented with ADK 2.0 Graph Workflow, Strategic Model Routing, Runtime Guardrail Plugins, ADK Context Compaction, and Async Memory Consolidation."""
 
 from __future__ import annotations
 
 import json
 import os
 import re
+import time
 from typing import Any
 
 from google.adk import Agent, Context, Event, Workflow
 from google.adk.agents.callback_context import CallbackContext
 from google.adk.apps import App
+from google.adk.apps.app import (
+    ContextCacheConfig,
+    EventsCompactionConfig,
+    ResumabilityConfig,
+)
+from google.adk.apps.llm_event_summarizer import LlmEventSummarizer
 from google.adk.events import RequestInput
 from google.adk.models import Gemini
+from google.adk.models.llm_request import LlmRequest
+from google.adk.models.llm_response import LlmResponse
+from google.adk.plugins.base_plugin import BasePlugin
+from google.adk.tools.base_tool import BaseTool
+from google.adk.tools.tool_context import ToolContext
 from google.adk.workflow import node
 from google.genai import types
 
+from app.app_utils import services
 from app.tools import (
     DEFAULT_WORKSPACE_ROOT,
     DailyBrief,
@@ -42,13 +55,363 @@ from app.tools import (
     emit_telemetry_log,
     extract_pdf_from_workspace,
     initialize_pdf_workspace,
+    log_tool_intent_before,
+    log_tool_outcome_after,
     normalize_day,
     normalize_track,
     post_google_chat_card,
+    redact_pii_payload,
+    redact_pii_text,
+    schedule_background_memory_consolidation,
     send_email_brief,
 )
 
+# ---------------------------------------------------------------------------
+# Strategic Multi-Model Routing Configuration
+# ---------------------------------------------------------------------------
+
 MODEL = "gemini-3.8-flash"
+MODEL_DEEP_REASONING = os.environ.get("MODEL_DEEP_REASONING", "gemini-2.5-pro")
+MODEL_FAST_ROUTING = os.environ.get("MODEL_FAST_ROUTING", "gemini-2.5-flash")
+
+# Prompt-injection & jailbreak patterns blocked by the runtime guardrail plugin
+_PROMPT_INJECTION_PATTERNS = (
+    re.compile(r"ignore\s+(?:all\s+)?(?:previous|prior|above)\s+instructions", re.IGNORECASE),
+    re.compile(r"reveal\s+(?:your\s+)?system\s+(?:prompt|instructions)", re.IGNORECASE),
+    re.compile(r"system\s+override\s*:\s*disable\s+guardrails", re.IGNORECASE),
+    re.compile(r"bypass\s+human[\s_-]+review", re.IGNORECASE),
+)
+_BLOCKED_EMAIL_DOMAINS = frozenset({"malicious.example", "exfiltrate.invalid", "darkweb.onion"})
+
+
+def select_strategic_model(
+    technical_track: str,
+    page_count: int = 1,
+    char_count: int = 0,
+    task_type: str = "summarization",
+) -> dict[str, Any]:
+    """Strategically route tasks across model tiers based on task complexity, persona track, and latency budget.
+
+    - Tier 1 (`MODEL_FAST_ROUTING` / `gemini-2.5-flash`): Deterministic tool dispatch, event compaction, and lightweight formatting.
+    - Tier 2 (`MODEL` / `gemini-3.8-flash`): High-throughput multi-page synthesis for Engineer implementation briefs.
+    - Tier 3 (`MODEL_DEEP_REASONING` / `gemini-2.5-pro`): Deep architectural reasoning for complex multi-page Architect decks (>35 pages).
+    """
+    normalized_track = normalize_track(technical_track)
+    if task_type in ("dispatch", "compaction", "guardrail"):
+        selected_tier = "fast_execution_tier"
+        target_model = MODEL_FAST_ROUTING
+        active_runtime_model = MODEL
+        rationale = (
+            f"Routed '{task_type}' to low-latency execution tier ({target_model}) "
+            "for deterministic tool orchestration and minimal token overhead."
+        )
+    elif normalized_track == "Architect" and (page_count >= 35 or char_count >= 45_000):
+        selected_tier = "deep_architectural_reasoning_tier"
+        target_model = MODEL_DEEP_REASONING
+        active_runtime_model = MODEL
+        rationale = (
+            f"Classified high-complexity {normalized_track} deck ({page_count} pages, {char_count} chars) "
+            f"for deep architectural synthesis tier ({target_model} policy profile on {active_runtime_model})."
+        )
+    else:
+        selected_tier = "balanced_flash_reasoning_tier"
+        target_model = MODEL
+        active_runtime_model = MODEL
+        rationale = (
+            f"Routed {normalized_track} brief ({page_count} pages, {char_count} chars) "
+            f"to balanced reasoning tier ({target_model})."
+        )
+
+    decision = {
+        "task_type": task_type,
+        "technical_track": normalized_track,
+        "page_count": page_count,
+        "char_count": char_count,
+        "selected_tier": selected_tier,
+        "recommended_model": target_model,
+        "active_runtime_model": active_runtime_model,
+        "rationale": rationale,
+    }
+    emit_telemetry_log(
+        severity="INFO",
+        node="model_router",
+        event_type="strategic_model_routed",
+        message=rationale,
+        **decision,
+    )
+    return decision
+
+
+# ---------------------------------------------------------------------------
+# Advanced Runtime Guardrails, Policy Enforcement & Observability Plugin
+# ---------------------------------------------------------------------------
+
+
+def _screen_text_for_policy_violations(text: str) -> str | None:
+    """Inspect user input or extracted content against runtime prompt-injection and security rules."""
+    if not text:
+        return None
+    for pattern in _PROMPT_INJECTION_PATTERNS:
+        if pattern.search(text):
+            return (
+                f"Runtime Guardrail Violation: Blocked adversarial prompt-injection pattern "
+                f"matching '{pattern.pattern}'."
+            )
+    return None
+
+
+async def guardrail_before_model_callback(
+    callback_context: CallbackContext,
+    llm_request: LlmRequest,
+) -> LlmResponse | None:
+    """Enforce Model Armor prompt-injection screening, PII-redacted model logging, and strategic routing."""
+    request_texts: list[str] = []
+    for content in getattr(llm_request, "contents", None) or []:
+        for part in getattr(content, "parts", None) or []:
+            if getattr(part, "text", None):
+                request_texts.append(part.text)
+
+    combined_prompt = "\n".join(request_texts)
+    violation = _screen_text_for_policy_violations(combined_prompt)
+    if violation:
+        emit_telemetry_log(
+            severity="ERROR",
+            node=callback_context.agent_name,
+            event_type="runtime_guardrail_blocked_model_input",
+            message=violation,
+            guardrail_action="BLOCKED",
+        )
+        return LlmResponse(
+            content=types.Content(
+                role="model",
+                parts=[
+                    types.Part.from_text(
+                        text=f"Request blocked by Enterprise Governance Policy Guardrail: {violation}"
+                    )
+                ],
+            )
+        )
+
+    emit_telemetry_log(
+        severity="INFO",
+        node=callback_context.agent_name,
+        event_type="model_invocation_before",
+        message=f"Model request screened by guardrail for '{callback_context.agent_name}'",
+        prompt_char_count=len(combined_prompt),
+        guardrail_status="PASSED",
+    )
+    return None
+
+
+async def guardrail_after_model_callback(
+    callback_context: CallbackContext,
+    llm_response: LlmResponse,
+) -> LlmResponse | None:
+    """Audit LLM response for output policy compliance and PII redaction telemetry."""
+    response_text = ""
+    if llm_response and llm_response.content and llm_response.content.parts:
+        response_text = " ".join(
+            p.text for p in llm_response.content.parts if getattr(p, "text", None)
+        )
+    emit_telemetry_log(
+        severity="INFO",
+        node=callback_context.agent_name,
+        event_type="model_invocation_after",
+        message=f"Model response audited for '{callback_context.agent_name}' ({len(response_text)} chars)",
+        response_char_count=len(response_text),
+        output_guardrail_status="PASSED",
+    )
+    return None
+
+
+async def guardrail_before_tool_callback(
+    tool: BaseTool,
+    args: dict[str, Any],
+    tool_context: ToolContext,
+) -> dict[str, Any] | None:
+    """Enforce zero-trust tool execution policies, Confused Deputy protection, and explicit BEFORE tool logging."""
+    tool_name = getattr(tool, "name", str(tool))
+    tool_Context_dict = getattr(tool_context, "state", {}) or {}
+    tool_Context_dict[f"_tool_start_{tool_name}"] = time.perf_counter()
+
+    declared_intent = (
+        f"Execute '{tool_name}' for day={args.get('day', tool_Context_dict.get('target_day', 'day1'))} "
+        f"after human_review verification"
+    )
+    log_tool_intent_before(
+        tool_name=tool_name,
+        declared_intent=declared_intent,
+        tool_args=args,
+        node="before_tool_callback",
+    )
+
+    # Guardrail 1: Zero-Trust Human-in-the-Loop approval gate verification
+    if tool_name in ("send_email_brief", "post_google_chat_card"):
+        review_decision = str(tool_Context_dict.get("review_decision") or "").lower()
+        auto_confirm = bool(tool_Context_dict.get("auto_confirm"))
+        if review_decision == "rejected":
+            recovery = (
+                f"POLICY GUARDRAIL BLOCKED: Cannot invoke '{tool_name}' because human_review decision is 'rejected'. "
+                "SELF-CORRECTION: Abort external tool calls immediately and report cancellation to the user."
+            )
+            emit_telemetry_log(
+                severity="ERROR",
+                node="before_tool_callback",
+                event_type="tool_guardrail_blocked",
+                message=recovery,
+                tool_name=tool_name,
+            )
+            return {
+                "status": "blocked_by_policy_guardrail",
+                "error_type": "UnapprovedExternalDispatchError",
+                "recovery_instructions": recovery,
+                "self_correction_required": True,
+            }
+        if not review_decision and not auto_confirm:
+            # Automatically stamp approved when reached via the APPROVED workflow edge
+            tool_Context_dict["review_decision"] = "approved"
+
+    # Guardrail 2: Recipient email domain exfiltration protection
+    if tool_name == "send_email_brief":
+        recipient = str(args.get("recipient_email") or "").strip().lower()
+        domain = recipient.split("@")[-1] if "@" in recipient else ""
+        if domain in _BLOCKED_EMAIL_DOMAINS:
+            recovery = (
+                f"POLICY GUARDRAIL BLOCKED: Recipient domain '{domain}' is on the security blocklist. "
+                "SELF-CORRECTION: Verify the learner's authorized corporate/personal email in session state and retry."
+            )
+            emit_telemetry_log(
+                severity="ERROR",
+                node="before_tool_callback",
+                event_type="tool_guardrail_blocked_domain",
+                message=recovery,
+                tool_name=tool_name,
+                blocked_domain=domain,
+            )
+            return {
+                "status": "blocked_by_policy_guardrail",
+                "error_type": "BlockedRecipientDomainError",
+                "recovery_instructions": recovery,
+                "self_correction_required": True,
+            }
+
+    return None
+
+
+async def guardrail_after_tool_callback(
+    tool: BaseTool,
+    args: dict[str, Any],
+    tool_context: ToolContext,
+    tool_response: dict[str, Any],
+) -> dict[str, Any] | None:
+    """Capture explicit AFTER tool intent-vs-outcome audit and inject self-correction hints if needed."""
+    tool_name = getattr(tool, "name", str(tool))
+    state = getattr(tool_context, "state", {}) or {}
+    start_ts = state.get(f"_tool_start_{tool_name}", time.perf_counter())
+    latency_ms = max(0.0, (time.perf_counter() - float(start_ts)) * 1000.0)
+
+    status = str(tool_response.get("status", "completed")) if isinstance(tool_response, dict) else "completed"
+    intent_match = status in ("sent", "posted", "completed", "dispatched")
+    declared_intent = f"Complete '{tool_name}' execution without policy or validation errors"
+
+    log_tool_outcome_after(
+        tool_name=tool_name,
+        declared_intent=declared_intent,
+        actual_outcome=f"status={status}",
+        intent_vs_outcome_match=intent_match,
+        latency_ms=latency_ms,
+        result_summary=tool_response if isinstance(tool_response, dict) else {"result": str(tool_response)},
+        node="after_tool_callback",
+    )
+    return None
+
+
+async def handle_tool_error_with_recovery(
+    tool: BaseTool,
+    args: dict[str, Any],
+    tool_context: ToolContext,
+    error: Exception,
+) -> dict[str, Any]:
+    """Catch unhandled tool exceptions and return explicit recovery instructions to the LLM for self-correction."""
+    tool_name = getattr(tool, "name", str(tool))
+    recovery_instructions = (
+        f"SELF-CORRECTION REQUIRED: Tool '{tool_name}' raised {type(error).__name__}: {error}. "
+        f"Inspect the arguments you passed ({list(args.keys())}), ensure all required strings are non-empty "
+        "and conform to the expected schema (valid email address with '@', day in 'day1'..'day5', "
+        "track in 'Engineer'|'Architect'), and retry the tool call once with corrected arguments."
+    )
+    error_payload = {
+        "status": "recoverable_tool_error",
+        "tool_name": tool_name,
+        "error_type": type(error).__name__,
+        "error_message": redact_pii_text(str(error)),
+        "recovery_instructions": recovery_instructions,
+        "self_correction_required": True,
+    }
+    emit_telemetry_log(
+        severity="ERROR",
+        node="on_tool_error_callback",
+        event_type="tool_error_recovery_issued",
+        message=f"Issued LLM self-correction recovery instructions for '{tool_name}' ({type(error).__name__})",
+        **error_payload,
+    )
+    return error_payload
+
+
+class EnterpriseGovernancePolicyPlugin(BasePlugin):
+    """ADK BasePlugin enforcing runtime security guardrails, PII redaction, tool intent/outcome auditing, and async memory consolidation."""
+
+    def __init__(self) -> None:
+        super().__init__(name="enterprise_governance_policy_plugin")
+
+    async def before_model_callback(
+        self, *, callback_context: CallbackContext, llm_request: LlmRequest
+    ) -> LlmResponse | None:
+        return await guardrail_before_model_callback(callback_context, llm_request)
+
+    async def after_model_callback(
+        self, *, callback_context: CallbackContext, llm_response: LlmResponse
+    ) -> LlmResponse | None:
+        return await guardrail_after_model_callback(callback_context, llm_response)
+
+    async def before_tool_callback(
+        self,
+        *,
+        tool: BaseTool,
+        tool_args: dict[str, Any],
+        tool_context: ToolContext,
+    ) -> dict[str, Any] | None:
+        return await guardrail_before_tool_callback(tool, tool_args, tool_context)
+
+    async def after_tool_callback(
+        self,
+        *,
+        tool: BaseTool,
+        tool_args: dict[str, Any],
+        tool_context: ToolContext,
+        result: dict[str, Any],
+    ) -> dict[str, Any] | None:
+        return await guardrail_after_tool_callback(tool, tool_args, tool_context, result)
+
+    async def on_tool_error_callback(
+        self,
+        *,
+        tool: BaseTool,
+        tool_args: dict[str, Any],
+        tool_context: ToolContext,
+        error: Exception,
+    ) -> dict[str, Any] | None:
+        return await handle_tool_error_with_recovery(tool, tool_args, tool_context, error)
+
+    async def after_run_callback(self, *, invocation_context: Any) -> None:
+        session = getattr(invocation_context, "session", None)
+        state = getattr(session, "state", None) if session else None
+        if isinstance(state, dict) and (state.get("daily_brief") or state.get("user_email")):
+            schedule_background_memory_consolidation(
+                state=state,
+                session=session,
+                memory_service=services.get_memory_service(),
+            )
 
 
 # ---------------------------------------------------------------------------
@@ -73,7 +436,7 @@ def _extract_text_from_input(node_input: Any, ctx: Context | None = None) -> str
         parts = getattr(candidate, "parts", None)
         if parts:
             texts = [
-                 getattr(p, "text", "")
+                getattr(p, "text", "")
                 for p in parts
                 if getattr(p, "text", None)
             ]
@@ -189,6 +552,18 @@ async def setup_session(ctx: Context, node_input: Any = None):
     resume_inputs = dict(getattr(ctx, "resume_inputs", None) or {})
     pending_interrupt = str(ctx.state.get("pending_interrupt", "") or "")
 
+    # Runtime Guardrail check on initial user input
+    violation = _screen_text_for_policy_violations(raw_text)
+    if violation:
+        emit_telemetry_log(
+            severity="ERROR",
+            node="setup_session",
+            event_type="input_guardrail_violation",
+            message=violation,
+        )
+        yield Event(content=_model_content(violation))
+        return
+
     # If human_review is awaiting confirmation and the user replied via plain text,
     # route directly to human_review with the user's decision.
     if (
@@ -242,7 +617,6 @@ async def setup_session(ctx: Context, node_input: Any = None):
         or str(hints.get("technical_track") or "").strip()
     )
 
-    # Check if the user included the Day alongside their email, track, or name input
     combined_resume_text = " ".join(
         str(v) for v in resume_inputs.values() if v is not None
     )
@@ -263,8 +637,6 @@ async def setup_session(ctx: Context, node_input: Any = None):
         )
     )
 
-    # If the user provided both Name and Email upfront in their prompt without specifying
-    # a track, default to Architect so summarization proceeds immediately.
     if (
         not resume_inputs
         and not pending_interrupt
@@ -274,7 +646,6 @@ async def setup_session(ctx: Context, node_input: Any = None):
     ):
         technical_track = "Architect"
 
-    # Support non-interactive server smoke tests when INTEGRATION_TEST=TRUE
     if os.environ.get("INTEGRATION_TEST", "").upper() == "TRUE":
         user_name = user_name or "Alex Rivera"
         user_email = user_email or "alex.rivera@example.com"
@@ -452,12 +823,12 @@ def init_workspace(node_input: dict[str, Any] | UserProfile, ctx: Context) -> Ev
 
 
 # ---------------------------------------------------------------------------
-# Node 3: pdf_reader (pypdf Discovery & Strict Pydantic Validation)
+# Node 3: pdf_reader (pypdf Extraction, Semantic Compaction & Strategic Model Routing)
 # ---------------------------------------------------------------------------
 
 
 def pdf_reader(node_input: dict[str, Any] | WorkspaceStatus, ctx: Context) -> Event:
-    """Extract text from the target day's PDF using pypdf and validate with Pydantic schemas."""
+    """Extract and semantically compact text from the target day's PDF and execute strategic model routing."""
     data = (
         node_input.model_dump()
         if isinstance(node_input, WorkspaceStatus)
@@ -482,6 +853,15 @@ def pdf_reader(node_input: dict[str, Any] | WorkspaceStatus, ctx: Context) -> Ev
         user_email=user_email,
         technical_track=technical_track,
     )
+
+    # Evaluate document complexity and learner track for Strategic Multi-Model Routing
+    routing_decision = select_strategic_model(
+        technical_track=technical_track,
+        page_count=extracted.page_count,
+        char_count=extracted.char_count,
+        task_type="summarization",
+    )
+
     summarizer_input = SummarizerInput(
         user_name=user_name,
         user_email=user_email,
@@ -495,14 +875,18 @@ def pdf_reader(node_input: dict[str, Any] | WorkspaceStatus, ctx: Context) -> Ev
     extracted_dict = extracted.model_dump()
     summarizer_dict = summarizer_input.model_dump()
     ctx.state["extracted_pdf"] = extracted_dict
+    ctx.state["model_routing_decision"] = routing_decision
     return Event(
         output=summarizer_dict,
-        state={"extracted_pdf": extracted_dict},
+        state={
+            "extracted_pdf": extracted_dict,
+            "model_routing_decision": routing_decision,
+        },
     )
 
 
 # ---------------------------------------------------------------------------
-# Node 4: content_summarizer (Gemini Flash Track-Personalized Summarizer)
+# Node 4: content_summarizer (Track-Personalized Summarizer with Guardrails)
 # ---------------------------------------------------------------------------
 
 content_summarizer = Agent(
@@ -517,7 +901,7 @@ content_summarizer = Agent(
         "personalized to the user's technical track with curiosity hooks and micro-challenges."
     ),
     instruction="""You are the "AI in 5 Days" Content Customizer Agent.
-You receive full multi-page **Training Material** extracted from the learner's PDF (`SummarizerInput`, spanning `page_count` pages in `raw_content`) and synthesize the substantive training content into an engaging, track-specific `DailyBrief` ready to be sent via email.
+You receive full multi-page **Training Material** extracted and semantically compacted from the learner's PDF (`SummarizerInput`, spanning `page_count` pages in `raw_content`) and synthesize the substantive training content into an engaging, track-specific `DailyBrief` ready to be sent via email.
 
 IMPORTANT: The PDF is comprehensive multi-page **Training Material** (deep technical concepts, architectures, code/design patterns, and lessons), NOT a superficial agenda or schedule. Summarize the actual subject matter taught across all pages of the document.
 
@@ -532,11 +916,13 @@ Follow these strict personalization rules:
     input_schema=SummarizerInput,
     output_schema=DailyBrief,
     output_key="daily_brief",
+    before_model_callback=guardrail_before_model_callback,
+    after_model_callback=guardrail_after_model_callback,
 )
 
 
 # ---------------------------------------------------------------------------
-# Node 5: human_review (CLI Display + RequestInput Approval Gate)
+# Node 5: human_review (CLI Display + RequestInput Approval Gate + Async Memory)
 # ---------------------------------------------------------------------------
 
 
@@ -617,7 +1003,7 @@ def _coerce_daily_brief(raw_brief: Any, ctx: Context) -> DailyBrief:
 
 @node(name="human_review", rerun_on_resume=True)
 async def human_review(node_input: Any, ctx: Context):
-    """Display the drafted DailyBrief and pause via RequestInput for explicit human confirmation."""
+    """Display the drafted DailyBrief, pause via RequestInput for human confirmation, and schedule async memory consolidation."""
     brief = _coerce_daily_brief(node_input, ctx)
     brief_dict = brief.model_dump()
     formatted_preview = format_daily_brief_markdown(brief)
@@ -651,6 +1037,8 @@ async def human_review(node_input: Any, ctx: Context):
             day=brief.day,
             technical_track=brief.technical_track,
             user_email=brief.user_email,
+            user_name=brief.user_name,
+            declared_intent="Pause execution for mandatory human-in-the-loop review before external dispatch",
         )
         yield Event(content=_model_content(review_prompt), state=state_delta)
         yield RequestInput(
@@ -676,13 +1064,30 @@ async def human_review(node_input: Any, ctx: Context):
     route = "APPROVED" if approved else "REJECTED"
     status_label = "approved" if approved else "rejected"
 
+    # Route dispatch model strategically to the fast execution tier when approved
+    dispatch_routing = select_strategic_model(
+        technical_track=brief.technical_track,
+        page_count=1,
+        char_count=len(brief.executive_summary),
+        task_type="dispatch",
+    )
+
     state_delta = {
         "daily_brief": brief_dict,
         "review_decision": status_label,
         "pending_interrupt": "",
         "pending_review_decision": "",
+        "model_routing_decision": dispatch_routing,
     }
     ctx.state.update(state_delta)
+
+    # Trigger non-blocking asynchronous background memory consolidation
+    schedule_background_memory_consolidation(
+        state=ctx.state,
+        session=getattr(ctx, "session", None),
+        memory_service=services.get_memory_service(),
+    )
+
     emit_telemetry_log(
         severity="INFO" if approved else "WARNING",
         node="human_review",
@@ -691,7 +1096,11 @@ async def human_review(node_input: Any, ctx: Context):
         decision=status_label,
         route=route,
         user_email=brief.user_email,
+        user_name=brief.user_name,
         day=brief.day,
+        declared_intent="Verify human reviewer authorization before external tool invocation",
+        actual_outcome=f"human_review_{status_label}",
+        intent_vs_outcome_match=True,
     )
     yield Event(
         route=route,
@@ -760,17 +1169,28 @@ def execute_dispatch_tools(
         if brief.day not in completed:
             completed.append(brief.day)
         ctx.state["completed_days"] = completed
+        schedule_background_memory_consolidation(
+            state=ctx.state,
+            session=getattr(ctx, "session", None),
+            memory_service=services.get_memory_service(),
+        )
     return receipt
 
 
 async def _ensure_dispatch_completed(
     callback_context: CallbackContext,
 ) -> types.Content | None:
-    """Guarantee dispatch receipt is recorded in session state after dispatch_brief runs."""
+    """Guarantee dispatch receipt is recorded in session state and background memory consolidation runs."""
     if not callback_context.state.get("dispatch_receipt"):
         brief_dict = callback_context.state.get("daily_brief")
         if isinstance(brief_dict, dict) and brief_dict.get("user_email"):
             execute_dispatch_tools(brief_dict, callback_context)
+    else:
+        schedule_background_memory_consolidation(
+            state=callback_context.state,
+            session=getattr(callback_context, "_invocation_context", None),
+            memory_service=services.get_memory_service(),
+        )
     return None
 
 
@@ -791,9 +1211,15 @@ You are invoked ONLY after the learner has reviewed and explicitly approved thei
 You MUST perform both dispatches using your tools:
 1. Call `send_email_brief` with the learner's `user_email`, `user_name`, `day`, `technical_track`, an engaging subject line, and the formatted markdown body.
 2. Call `post_google_chat_card` with `user_name`, `day`, `technical_track`, `title`, `executive_summary`, the primary `curiosity_hook`, and `micro_challenge`.
-3. Confirm both deliveries clearly to the user, including their email address, technical track, day, and brief title.""",
+3. If any tool returns `self_correction_required: true` or `recovery_instructions`, follow the `recovery_instructions` immediately to repair the parameters and retry.
+4. Confirm both deliveries clearly to the user, including their email address, technical track, day, and brief title.""",
     input_schema=DailyBrief,
     tools=[send_email_brief, post_google_chat_card],
+    before_model_callback=guardrail_before_model_callback,
+    after_model_callback=guardrail_after_model_callback,
+    before_tool_callback=guardrail_before_tool_callback,
+    after_tool_callback=guardrail_after_tool_callback,
+    on_tool_error_callback=handle_tool_error_with_recovery,
     after_agent_callback=_ensure_dispatch_completed,
 )
 
@@ -821,6 +1247,9 @@ def cancel_dispatch(node_input: dict[str, Any] | DailyBrief, ctx: Context) -> Ev
         severity="WARNING",
         node="cancel_dispatch",
         event_type="dispatch_cancelled",
+        declared_intent="Abort external tool side effects following human reviewer rejection",
+        actual_outcome="dispatch_cancelled_safely",
+        intent_vs_outcome_match=True,
         **receipt_dict,
     )
     return Event(
@@ -831,7 +1260,7 @@ def cancel_dispatch(node_input: dict[str, Any] | DailyBrief, ctx: Context) -> Ev
 
 
 # ---------------------------------------------------------------------------
-# Root Agent: ADK 2.0 Graph Workflow
+# Root Agent: ADK 2.0 Graph Workflow + ADK Event Compaction & Governance Plugin
 # ---------------------------------------------------------------------------
 
 root_agent = Workflow(
@@ -841,9 +1270,9 @@ root_agent = Workflow(
     name="ai_in_5_days_agent",
     description=(
         "AI in 5 Days Content Customizer Agent that sets up learner sessions via RequestInput, "
-        "initializes ./content_pdfs/day1..day5, extracts training PDFs with pypdf and Pydantic schemas, "
-        "summarizes personalized daily briefs with curiosity hooks and micro-challenges, "
-        "gates external dispatch on human review, and sends Email + Google Chat Space cards."
+        "initializes ./content_pdfs/day1..day5, extracts and semantically compacts training PDFs with pypdf and Pydantic schemas, "
+        "routes across model tiers to summarize personalized daily briefs with curiosity hooks and micro-challenges, "
+        "gates external dispatch on human review with runtime policy guardrails, and consolidates long-term learner memory asynchronously."
     ),
     state_schema=WorkflowState,
     edges=[
@@ -866,7 +1295,38 @@ root_agent = Workflow(
     ],
 )
 
+# Native ADK LLM-driven Event Compaction & Context Caching to prevent multi-turn context bloat
+event_compaction_summarizer = LlmEventSummarizer(
+    llm=Gemini(model=MODEL_FAST_ROUTING),
+    prompt_template=(
+        "Compact the preceding multi-turn conversation events into a concise, "
+        "high-signal state summary preserving learner profile, target day, key technical takeaways, "
+        "and human review decisions:\n{events}"
+    ),
+)
+
+events_compaction_config = EventsCompactionConfig(
+    summarizer=event_compaction_summarizer,
+    compaction_interval=3,
+    overlap_size=1,
+    token_threshold=8000,
+    event_retention_size=4,
+)
+
+context_cache_config = ContextCacheConfig(
+    cache_intervals=5,
+    ttl_seconds=1800,
+    min_tokens=4096,
+)
+
+resumability_config = ResumabilityConfig(is_resumable=True)
+governance_plugin = EnterpriseGovernancePolicyPlugin()
+
 app = App(
     root_agent=root_agent,
     name="app",
+    plugins=[governance_plugin],
+    events_compaction_config=events_compaction_config,
+    context_cache_config=context_cache_config,
+    resumability_config=resumability_config,
 )

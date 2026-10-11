@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Process-wide ADK session/artifact services shared by every serving surface.
+"""Process-wide ADK session, artifact, and long-term memory services shared across all serving surfaces.
 
 Registered under ``shared://`` so the ADK web routes, the A2A path, and the
-reasoning_engine adapter share one instance: a session created on any surface
-is visible to the others.
+reasoning_engine adapter share one instance: a session or consolidated memory
+entry created on any surface is visible to the others.
 """
 
 from __future__ import annotations
@@ -27,9 +27,11 @@ import os
 from google.adk.artifacts import GcsArtifactService, InMemoryArtifactService
 from google.adk.cli.service_registry import get_service_registry
 from google.adk.cli.utils.service_factory import create_session_service_from_options
+from google.adk.memory.in_memory_memory_service import InMemoryMemoryService
 
 SESSION_SERVICE_URI = "shared://session"
 ARTIFACT_SERVICE_URI = "shared://artifact"
+MEMORY_SERVICE_URI = "shared://memory"
 
 _AGENT_DIR = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -67,6 +69,24 @@ def get_artifact_service():
     return InMemoryArtifactService()
 
 
+@functools.cache
+def get_memory_service():
+    """Process-wide long-term memory service: VertexAiMemoryBankService on Agent Runtime, else InMemoryMemoryService."""
+    if agent_engine_id := os.environ.get("GOOGLE_CLOUD_AGENT_ENGINE_ID"):
+        from google.adk.memory.vertex_ai_memory_bank_service import (
+            VertexAiMemoryBankService,
+        )
+
+        return VertexAiMemoryBankService(
+            project=os.environ.get("GOOGLE_CLOUD_PROJECT"),
+            location=os.environ.get("GOOGLE_CLOUD_AGENT_ENGINE_LOCATION")
+            or os.environ.get("GOOGLE_CLOUD_LOCATION"),
+            agent_engine_id=agent_engine_id,
+        )
+    return InMemoryMemoryService()
+
+
 _registry = get_service_registry()
 _registry.register_session_service("shared", lambda uri, **kw: get_session_service())
 _registry.register_artifact_service("shared", lambda uri, **kw: get_artifact_service())
+_registry.register_memory_service("shared", lambda uri, **kw: get_memory_service())
