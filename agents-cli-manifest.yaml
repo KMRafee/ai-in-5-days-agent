@@ -1,0 +1,15 @@
+name: ai-in-5-days-agent
+acli_version: 1.9.0
+agent_directory: app
+region: us-east1
+base_template: adk
+generated_at: '2026-10-11T03:33:37.150244+00:00'
+language: python
+framework: google-adk
+create_params:
+  root_agent_name: ai_in_5_days_agent
+  deployment_target: agent_runtime
+  cicd_runner: github_actions
+  is_a2a: true
+  agent_gateway: false
+  agent_guidance_filename: GEMINI.md

@@ -1,0 +1,37 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "session_setup_prompt",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hello, I want to start my AI in 5 Days training."
+          }
+        ]
+      }
+    },
+    {
+      "eval_case_id": "architect_day1_brief_review",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Generate my Day 1 brief for Alex Rivera (alex@company.com) on the Architect track."
+          }
+        ]
+      }
+    },
+    {
+      "eval_case_id": "engineer_day2_confirmed_dispatch",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Generate and auto-approve my Day 2 brief for Sam Chen (sam@company.com) on the Engineer track."
+          }
+        ]
+      }
+    }
+  ]
+}

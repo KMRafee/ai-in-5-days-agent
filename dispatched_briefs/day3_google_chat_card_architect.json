@@ -1,0 +1,44 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "ai-in-5-days-day3-architect",
+      "card": {
+        "header": {
+          "title": "Day 3: Standardizing Agent Interoperability \u2014 Architectural Governance, MCP, and Enterprise Security",
+          "subtitle": "AI in 5 Days (DAY3) \u2022 Architect Track \u2022 For Rafee Mohamed"
+        },
+        "sections": [
+          {
+            "header": "Executive Summary",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Today's training material shifts focus from isolated LLM reasoning to agent-world interoperability, unpacking how function calling, Agent Tools, and the Model Context Protocol (MCP) resolve the exponential 'N x M' integration dilemma. For enterprise architects, MCP provides an LSP-inspired client-server topology (Host, Client, Server) over stdio and Streamable HTTP transports, decoupling agent cognition from tool implementation. However, deploying 'pure' decentralized MCP at scale introduces critical enterprise readiness gaps, including context window bloat, missing identity propagation, coarse authorization, and severe attack vectors like Dynamic Capability Injection, Tool Shadowing, and Confused Deputy privilege escalation. Transitioning MCP from local developer setups into resilient production systems requires wrapping the protocol with centralized governance layers\u2014specifically leveraging Agent Gateways (such as Apigee with Model Armor), cryptographic Agent Identity catalogs, OpenTelemetry-compliant observability, and dynamic Tool-RAG retrieval."
+                }
+              }
+            ]
+          },
+          {
+            "header": "Curiosity Hook & Micro-Challenge",
+            "widgets": [
+              {
+                "decoratedText": {
+                  "topLabel": "Curiosity Hook",
+                  "text": "Why do pure open-standard MCP implementations often fail enterprise security audits despite valid OAuth token handshakes?",
+                  "wrapText": true
+                }
+              },
+              {
+                "decoratedText": {
+                  "topLabel": "Architect Micro-Challenge",
+                  "text": "Conduct an architectural threat-model review for an MCP deployment: Sketch an Agent Gateway architecture diagram separating an untrusted agent planner from a secure internal database MCP server. Identify three policy enforcement points across the request/response lifecycle (tool discovery filtering, credential scoping/propagation, and response sanitization) and document specific controls to prevent the Confused Deputy problem.",
+                  "wrapText": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

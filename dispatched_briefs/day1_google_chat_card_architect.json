@@ -1,0 +1,44 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "ai-in-5-days-day1-architect",
+      "card": {
+        "header": {
+          "title": "Architecting Autonomous Systems: Anatomy, Multi-Agent Topologies, and Enterprise Governance",
+          "subtitle": "AI in 5 Days (DAY1) \u2022 Architect Track \u2022 For Rafee Mohamed"
+        },
+        "sections": [
+          {
+            "header": "Executive Summary",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Transitioning from predictive machine learning models to autonomous agentic architectures requires reframing language models as probabilistic reasoning engines situated inside an iterative control loop: Get the Mission, Scan the Scene, Think, Act, and Observe. For enterprise architects, scaling beyond brittle single-agent scripts demands strict service decomposition into three foundational tiers: the reasoning Model (the brain), actionable Tools and interfaces (the hands), and a stateful Orchestration Layer (the nervous system) running atop production runtimes. As systems evolve from Level 1 connected problem-solvers to Level 3 collaborative multi-agent architectures, architects must design resilient interaction topologies (Coordinator, Sequential, and Iterative Refinement) governed by standardized protocols such as the Model Context Protocol (MCP) and Agent-to-Agent (A2A) with cryptographic Agent Cards. Operating fleets safely requires addressing agent sprawl through a centralized control plane comprising Agent Gateway for runtime policy enforcement and Model Armor sanitization, Agent Registry for discovery and versioning, SPIFFE-based Agent Identity principals for least-privilege delegation, and comprehensive OpenTelemetry trace instrumentation across stochastic execution trajectories."
+                }
+              }
+            ]
+          },
+          {
+            "header": "Curiosity Hook & Micro-Challenge",
+            "widgets": [
+              {
+                "decoratedText": {
+                  "topLabel": "Curiosity Hook",
+                  "text": "Why do traditional OAuth user tokens and service account IAM roles fail when an autonomous agent delegates execution across a multi-tier agent chain, and how do SPIFFE-backed Agent Identities solve the delegation chain problem?",
+                  "wrapText": true
+                }
+              },
+              {
+                "decoratedText": {
+                  "topLabel": "Architect Micro-Challenge",
+                  "text": "Draft an enterprise architecture boundary diagram and control policy for a financial reporting multi-agent workflow. Specify: 1) The distinct trust boundaries between User, Coordinator Agent, and Data Retrieval Tool; 2) The Agent Identity (SPIFFE ID) and least-privilege AuthZ constraints assigned to each agent principal; and 3) The inspection chokepoints where an Agent Gateway and Model Armor validate inputs and tool invocations before execution.",
+                  "wrapText": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

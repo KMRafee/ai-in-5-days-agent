@@ -1,0 +1,587 @@
+{
+  "eval_cases": [
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "Hello, I want to start my AI in 5 Days training."
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "Welcome to the AI in 5 Days Content Customizer! To personalize your daily brief, what is your full name?"
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "eval_case_id": "session_setup_prompt",
+      "agent_data": {
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "ai_in_5_days_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Welcome to the AI in 5 Days Content Customizer! To personalize your daily brief, what is your full name?"
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:16.405465Z",
+                "state_delta": {
+                  "pending_interrupt": "ask_user_name",
+                  "target_day": "day1"
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "ask_user_name",
+                        "args": {
+                          "interruptId": "ask_user_name",
+                          "payload": {
+                            "step": 1,
+                            "field": "user_name"
+                          },
+                          "message": "Welcome to the AI in 5 Days Content Customizer! To personalize your daily brief, what is your full name?",
+                          "response_schema": null
+                        },
+                        "name": "adk_request_input"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:16.425647Z"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "Generate my Day 1 brief for Alex Rivera (alex@company.com) on the Architect track."
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "### Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts\n**Learner:** Alex Rivera (`alex@company.com`) | **Track:** Architect | **Day:** DAY1\n\n#### Executive Summary\nToday's module establishes the core architectural separation between non-deterministic LLM reasoning and deterministic execution environments. For enterprise architects, tool interfaces must be governed as strict API boundary contracts rather than unconstrained function calls. By anchoring interface contracts in strict Pydantic schemas, enforcing least-privilege IAM access, and decoupling external side effects behind human-in-the-loop review gates, organizations can reliably scale agent capabilities without introducing operational or security vulnerabilities.\n\n#### Key Takeaways (Architect Track)\n- Establish strict deterministic boundary interfaces using Pydantic contracts to eliminate runtime schema ambiguity across distributed agent services.\n- Enforce least-privilege IAM policies and service-to-service contracts across all external tool-execution gateways.\n- Decouple mutating external side effects from the agent reasoning loop using review gates and approval control planes.\n- Validate and sanitize all ingress and egress payloads at the perimeter before propagating context to LLM inference engines.\n\n#### Curiosity Hooks\n- Why do production agent architectures fail when tool contracts rely on implicit type coercion instead of strict boundary-level schemas?\n- What happens to system state when an autonomous agent invokes a mutating tool without an asynchronous human-in-the-loop checkpoint?\n- How do modern API gateways manage token delegation and least-privilege credentials during dynamic tool orchestration?\n\n#### Daily Micro-Challenge\nMap an existing enterprise integration to an agent tool contract: sketch an architectural boundary diagram defining the Pydantic schema validation layer, IAM credential delegation, and the placement of a review gate for side-effect operations.\n\n---\n**Human Review Required:** Please confirm before external dispatch.\nReply **`approve`** to send this brief to `alex@company.com` and post the Google Chat card, or **`reject`** to cancel dispatch."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "eval_case_id": "architect_day1_brief_review",
+      "agent_data": {
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:16.422507Z",
+                "state_delta": {
+                  "user_name": "Alex Rivera",
+                  "user_email": "alex@company.com",
+                  "technical_track": "Architect",
+                  "target_day": "day1",
+                  "pending_interrupt": ""
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:16.559167Z",
+                "state_delta": {
+                  "workspace_status": {
+                    "workspace_root": "content_pdfs",
+                    "created_days": [
+                      "day1",
+                      "day2",
+                      "day3",
+                      "day4",
+                      "day5"
+                    ],
+                    "target_day": "day1",
+                    "target_day_dir": "content_pdfs/day1",
+                    "pdf_files": [
+                      "day1_training_guide.pdf"
+                    ],
+                    "seeded_sample_pdf": false,
+                    "guidance_message": "Workspace initialized at 'content_pdfs' with folders day1, day2, day3, day4, day5. Drop your custom training PDFs into 'content_pdfs/day1' (active file: day1_training_guide.pdf).",
+                    "user_name": "Alex Rivera",
+                    "user_email": "alex@company.com",
+                    "technical_track": "Architect"
+                  },
+                  "target_day": "day1"
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:16.627765Z",
+                "state_delta": {
+                  "extracted_pdf": {
+                    "day": "day1",
+                    "file_path": "content_pdfs/day1/day1_training_guide.pdf",
+                    "file_name": "day1_training_guide.pdf",
+                    "page_count": 1,
+                    "extracted_text": "AI in 5 Days Training Curriculum - Day 1: Tool & Interface Design\nModule 1: Deterministic Boundaries and Pydantic Contracts\nProduction AI agents separate deterministic code from LLM reasoning.\nEvery tool interface must declare explicit parameter types, clear docstrings,\nand strict Pydantic input/output schemas so downstream nodes never guess shapes.\nFor Engineers: Focus on idempotent tool functions, retryable HTTP clients,\nstructured error payloads, and zero-default-arg signatures for ADK FunctionTools.\nFor Architects: Focus on API gateway boundaries, least-privilege IAM,\nservice-to-service contracts, and decoupling external side effects behind review gates.\nKey Pattern: Validate inputs at the boundary with BaseModel before invoking models.",
+                    "char_count": 750,
+                    "metadata": {
+                      "Title": "AI in 5 Days - Day 1: Tool & Interface Design for Agentic Systems",
+                      "Author": "AI in 5 Days Curriculum",
+                      "Subject": "ADK 2.0 Training"
+                    },
+                    "user_name": "Alex Rivera",
+                    "user_email": "alex@company.com",
+                    "technical_track": "Architect"
+                  }
+                }
+              },
+              {
+                "author": "content_summarizer",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "{\"day\": \"day1\", \"technical_track\": \"Architect\", \"user_name\": \"Alex Rivera\", \"user_email\": \"alex@company.com\", \"title\": \"Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts\", \"executive_summary\": \"Today's module establishes the core architectural separation between non-deterministic LLM reasoning and deterministic execution environments. For enterprise architects, tool interfaces must be governed as strict API boundary contracts rather than unconstrained function calls. By anchoring interface contracts in strict Pydantic schemas, enforcing least-privilege IAM access, and decoupling external side effects behind human-in-the-loop review gates, organizations can reliably scale agent capabilities without introducing operational or security vulnerabilities.\", \"key_takeaways\": [\"Establish strict deterministic boundary interfaces using Pydantic contracts to eliminate runtime schema ambiguity across distributed agent services.\", \"Enforce least-privilege IAM policies and service-to-service contracts across all external tool-execution gateways.\", \"Decouple mutating external side effects from the agent reasoning loop using review gates and approval control planes.\", \"Validate and sanitize all ingress and egress payloads at the perimeter before propagating context to LLM inference engines.\"], \"curiosity_hooks\": [\"Why do production agent architectures fail when tool contracts rely on implicit type coercion instead of strict boundary-level schemas?\", \"What happens to system state when an autonomous agent invokes a mutating tool without an asynchronous human-in-the-loop checkpoint?\", \"How do modern API gateways manage token delegation and least-privilege credentials during dynamic tool orchestration?\"], \"micro_challenge\": \"Map an existing enterprise integration to an agent tool contract: sketch an architectural boundary diagram defining the Pydantic schema validation layer, IAM credential delegation, and the placement of a review gate for side-effect operations.\"}"
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:17.949880Z",
+                "state_delta": {
+                  "daily_brief": {
+                    "day": "day1",
+                    "technical_track": "Architect",
+                    "user_name": "Alex Rivera",
+                    "user_email": "alex@company.com",
+                    "title": "Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts",
+                    "executive_summary": "Today's module establishes the core architectural separation between non-deterministic LLM reasoning and deterministic execution environments. For enterprise architects, tool interfaces must be governed as strict API boundary contracts rather than unconstrained function calls. By anchoring interface contracts in strict Pydantic schemas, enforcing least-privilege IAM access, and decoupling external side effects behind human-in-the-loop review gates, organizations can reliably scale agent capabilities without introducing operational or security vulnerabilities.",
+                    "key_takeaways": [
+                      "Establish strict deterministic boundary interfaces using Pydantic contracts to eliminate runtime schema ambiguity across distributed agent services.",
+                      "Enforce least-privilege IAM policies and service-to-service contracts across all external tool-execution gateways.",
+                      "Decouple mutating external side effects from the agent reasoning loop using review gates and approval control planes.",
+                      "Validate and sanitize all ingress and egress payloads at the perimeter before propagating context to LLM inference engines."
+                    ],
+                    "curiosity_hooks": [
+                      "Why do production agent architectures fail when tool contracts rely on implicit type coercion instead of strict boundary-level schemas?",
+                      "What happens to system state when an autonomous agent invokes a mutating tool without an asynchronous human-in-the-loop checkpoint?",
+                      "How do modern API gateways manage token delegation and least-privilege credentials during dynamic tool orchestration?"
+                    ],
+                    "micro_challenge": "Map an existing enterprise integration to an agent tool contract: sketch an architectural boundary diagram defining the Pydantic schema validation layer, IAM credential delegation, and the placement of a review gate for side-effect operations."
+                  }
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "### Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts\n**Learner:** Alex Rivera (`alex@company.com`) | **Track:** Architect | **Day:** DAY1\n\n#### Executive Summary\nToday's module establishes the core architectural separation between non-deterministic LLM reasoning and deterministic execution environments. For enterprise architects, tool interfaces must be governed as strict API boundary contracts rather than unconstrained function calls. By anchoring interface contracts in strict Pydantic schemas, enforcing least-privilege IAM access, and decoupling external side effects behind human-in-the-loop review gates, organizations can reliably scale agent capabilities without introducing operational or security vulnerabilities.\n\n#### Key Takeaways (Architect Track)\n- Establish strict deterministic boundary interfaces using Pydantic contracts to eliminate runtime schema ambiguity across distributed agent services.\n- Enforce least-privilege IAM policies and service-to-service contracts across all external tool-execution gateways.\n- Decouple mutating external side effects from the agent reasoning loop using review gates and approval control planes.\n- Validate and sanitize all ingress and egress payloads at the perimeter before propagating context to LLM inference engines.\n\n#### Curiosity Hooks\n- Why do production agent architectures fail when tool contracts rely on implicit type coercion instead of strict boundary-level schemas?\n- What happens to system state when an autonomous agent invokes a mutating tool without an asynchronous human-in-the-loop checkpoint?\n- How do modern API gateways manage token delegation and least-privilege credentials during dynamic tool orchestration?\n\n#### Daily Micro-Challenge\nMap an existing enterprise integration to an agent tool contract: sketch an architectural boundary diagram defining the Pydantic schema validation layer, IAM credential delegation, and the placement of a review gate for side-effect operations.\n\n---\n**Human Review Required:** Please confirm before external dispatch.\nReply **`approve`** to send this brief to `alex@company.com` and post the Google Chat card, or **`reject`** to cancel dispatch."
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:28.349632Z",
+                "state_delta": {
+                  "daily_brief": {
+                    "day": "day1",
+                    "technical_track": "Architect",
+                    "user_name": "Alex Rivera",
+                    "user_email": "alex@company.com",
+                    "title": "Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts",
+                    "executive_summary": "Today's module establishes the core architectural separation between non-deterministic LLM reasoning and deterministic execution environments. For enterprise architects, tool interfaces must be governed as strict API boundary contracts rather than unconstrained function calls. By anchoring interface contracts in strict Pydantic schemas, enforcing least-privilege IAM access, and decoupling external side effects behind human-in-the-loop review gates, organizations can reliably scale agent capabilities without introducing operational or security vulnerabilities.",
+                    "key_takeaways": [
+                      "Establish strict deterministic boundary interfaces using Pydantic contracts to eliminate runtime schema ambiguity across distributed agent services.",
+                      "Enforce least-privilege IAM policies and service-to-service contracts across all external tool-execution gateways.",
+                      "Decouple mutating external side effects from the agent reasoning loop using review gates and approval control planes.",
+                      "Validate and sanitize all ingress and egress payloads at the perimeter before propagating context to LLM inference engines."
+                    ],
+                    "curiosity_hooks": [
+                      "Why do production agent architectures fail when tool contracts rely on implicit type coercion instead of strict boundary-level schemas?",
+                      "What happens to system state when an autonomous agent invokes a mutating tool without an asynchronous human-in-the-loop checkpoint?",
+                      "How do modern API gateways manage token delegation and least-privilege credentials during dynamic tool orchestration?"
+                    ],
+                    "micro_challenge": "Map an existing enterprise integration to an agent tool contract: sketch an architectural boundary diagram defining the Pydantic schema validation layer, IAM credential delegation, and the placement of a review gate for side-effect operations."
+                  },
+                  "pending_interrupt": "confirm_dispatch"
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "confirm_dispatch",
+                        "args": {
+                          "interruptId": "confirm_dispatch",
+                          "payload": {
+                            "day": "day1",
+                            "technical_track": "Architect",
+                            "user_name": "Alex Rivera",
+                            "user_email": "alex@company.com",
+                            "title": "Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts",
+                            "executive_summary": "Today's module establishes the core architectural separation between non-deterministic LLM reasoning and deterministic execution environments. For enterprise architects, tool interfaces must be governed as strict API boundary contracts rather than unconstrained function calls. By anchoring interface contracts in strict Pydantic schemas, enforcing least-privilege IAM access, and decoupling external side effects behind human-in-the-loop review gates, organizations can reliably scale agent capabilities without introducing operational or security vulnerabilities.",
+                            "key_takeaways": [
+                              "Establish strict deterministic boundary interfaces using Pydantic contracts to eliminate runtime schema ambiguity across distributed agent services.",
+                              "Enforce least-privilege IAM policies and service-to-service contracts across all external tool-execution gateways.",
+                              "Decouple mutating external side effects from the agent reasoning loop using review gates and approval control planes.",
+                              "Validate and sanitize all ingress and egress payloads at the perimeter before propagating context to LLM inference engines."
+                            ],
+                            "curiosity_hooks": [
+                              "Why do production agent architectures fail when tool contracts rely on implicit type coercion instead of strict boundary-level schemas?",
+                              "What happens to system state when an autonomous agent invokes a mutating tool without an asynchronous human-in-the-loop checkpoint?",
+                              "How do modern API gateways manage token delegation and least-privilege credentials during dynamic tool orchestration?"
+                            ],
+                            "micro_challenge": "Map an existing enterprise integration to an agent tool contract: sketch an architectural boundary diagram defining the Pydantic schema validation layer, IAM credential delegation, and the placement of a review gate for side-effect operations."
+                          },
+                          "message": "Approve dispatch of 'Day 1 Architecture Brief: Designing Robust Deterministic Boundaries and Tool Contracts' to alex@company.com and Google Chat Space webhook? (approve / reject)",
+                          "response_schema": null
+                        },
+                        "name": "adk_request_input"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:28.350168Z"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "Generate and auto-approve my Day 2 brief for Sam Chen (sam@company.com) on the Engineer track."
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "### Dispatch Confirmation\n\nYour daily brief has been successfully dispatched across both channels!\n\n- **Recipient:** Sam Chen\n- **Email Address:** `sam@company.com`\n- **Technical Track:** Engineer\n- **Day:** Day 2 (`day2`)\n- **Title:** *Day 2: Mastering Agent Context & State Hydration with ADK 2.0*\n\n---\n\n#### Delivery Summary:\n1. **Email Brief:** Sent to `sam@company.com` with the full markdown curriculum, key takeaways, and micro-challenge.\n2. **Google Chat Card:** Interactive Card v2 posted featuring the executive summary, primary curiosity hook, and hands-on micro-challenge."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "eval_case_id": "engineer_day2_confirmed_dispatch",
+      "agent_data": {
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:16.410664Z",
+                "state_delta": {
+                  "user_name": "Sam Chen",
+                  "user_email": "sam@company.com",
+                  "technical_track": "Engineer",
+                  "target_day": "day2",
+                  "pending_interrupt": "",
+                  "auto_confirm": true
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:16.493432Z",
+                "state_delta": {
+                  "workspace_status": {
+                    "workspace_root": "content_pdfs",
+                    "created_days": [
+                      "day1",
+                      "day2",
+                      "day3",
+                      "day4",
+                      "day5"
+                    ],
+                    "target_day": "day2",
+                    "target_day_dir": "content_pdfs/day2",
+                    "pdf_files": [
+                      "day2_training_guide.pdf"
+                    ],
+                    "seeded_sample_pdf": false,
+                    "guidance_message": "Workspace initialized at 'content_pdfs' with folders day1, day2, day3, day4, day5. Drop your custom training PDFs into 'content_pdfs/day2' (active file: day2_training_guide.pdf).",
+                    "user_name": "Sam Chen",
+                    "user_email": "sam@company.com",
+                    "technical_track": "Engineer"
+                  },
+                  "target_day": "day2"
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:16.594419Z",
+                "state_delta": {
+                  "extracted_pdf": {
+                    "day": "day2",
+                    "file_path": "content_pdfs/day2/day2_training_guide.pdf",
+                    "file_name": "day2_training_guide.pdf",
+                    "page_count": 1,
+                    "extracted_text": "AI in 5 Days Training Curriculum - Day 2: Context & Memory Architecture\nModule 2: Short-Term Session State vs. Long-Term Memory Bank\nEffective agents maintain continuity across turns without overflowing context windows.\nIn ADK 2.0, Workflow state_schema and Event(state=...) persist replayable state deltas.\nFor Engineers: Implement typed state schemas, token-based context compaction,\nand PreloadMemoryTool callbacks to hydrate user preferences automatically.\nFor Architects: Design multi-tenant session storage using Agent Platform Sessions\nor Cloud SQL, balancing retention policies, privacy boundaries, and cache TTLs.",
+                    "char_count": 622,
+                    "metadata": {
+                      "Title": "AI in 5 Days - Day 2: Context Engineering & Session Memory",
+                      "Author": "AI in 5 Days Curriculum",
+                      "Subject": "ADK 2.0 Training"
+                    },
+                    "user_name": "Sam Chen",
+                    "user_email": "sam@company.com",
+                    "technical_track": "Engineer"
+                  }
+                }
+              },
+              {
+                "author": "content_summarizer",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "{\"day\": \"day2\", \"technical_track\": \"Engineer\", \"user_name\": \"Sam Chen\", \"user_email\": \"sam@company.com\", \"title\": \"Day 2: Mastering Agent Context & State Hydration with ADK 2.0\", \"executive_summary\": \"Today shifts focus to engineering durable agent continuity using ADK 2.0 primitives. You will explore separating short-term session state from long-term memory banks, utilizing strictly typed Pydantic state_schema definitions, and emitting Event(state=...) deltas to maintain lightweight, replayable execution histories without overflowing LLM context limits.\", \"key_takeaways\": [\"Model session context with typed Pydantic state_schema definitions to ensure deterministic updates across turns.\", \"Emit Event(state=...) deltas to track granular, replayable session state transitions without serializing massive payloads.\", \"Implement token-based context compaction routines to avoid exceeding model context limits during extended dialogue loops.\", \"Leverage PreloadMemoryTool callbacks to automatically inject long-term user preferences before prompt assembly.\"], \"curiosity_hooks\": [\"What happens when two concurrent tool executions emit conflicting Event(state=...) deltas to the same session store?\", \"Why do production agents favor replayable event-sourced states over snapshot overwrites during debugging and tracing?\"], \"micro_challenge\": \"Define an ADK 2.0 state_schema using Pydantic for a user preferences object, then write a simple PreloadMemoryTool callback signature that fetches and updates state via Event(state=...).\"}"
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:17.865229Z",
+                "state_delta": {
+                  "daily_brief": {
+                    "day": "day2",
+                    "technical_track": "Engineer",
+                    "user_name": "Sam Chen",
+                    "user_email": "sam@company.com",
+                    "title": "Day 2: Mastering Agent Context & State Hydration with ADK 2.0",
+                    "executive_summary": "Today shifts focus to engineering durable agent continuity using ADK 2.0 primitives. You will explore separating short-term session state from long-term memory banks, utilizing strictly typed Pydantic state_schema definitions, and emitting Event(state=...) deltas to maintain lightweight, replayable execution histories without overflowing LLM context limits.",
+                    "key_takeaways": [
+                      "Model session context with typed Pydantic state_schema definitions to ensure deterministic updates across turns.",
+                      "Emit Event(state=...) deltas to track granular, replayable session state transitions without serializing massive payloads.",
+                      "Implement token-based context compaction routines to avoid exceeding model context limits during extended dialogue loops.",
+                      "Leverage PreloadMemoryTool callbacks to automatically inject long-term user preferences before prompt assembly."
+                    ],
+                    "curiosity_hooks": [
+                      "What happens when two concurrent tool executions emit conflicting Event(state=...) deltas to the same session store?",
+                      "Why do production agents favor replayable event-sourced states over snapshot overwrites during debugging and tracing?"
+                    ],
+                    "micro_challenge": "Define an ADK 2.0 state_schema using Pydantic for a user preferences object, then write a simple PreloadMemoryTool callback signature that fetches and updates state via Event(state=...)."
+                  }
+                }
+              },
+              {
+                "author": "ai_in_5_days_agent",
+                "event_time": "2026-10-11T03:50:22.119469Z",
+                "state_delta": {
+                  "daily_brief": {
+                    "day": "day2",
+                    "technical_track": "Engineer",
+                    "user_name": "Sam Chen",
+                    "user_email": "sam@company.com",
+                    "title": "Day 2: Mastering Agent Context & State Hydration with ADK 2.0",
+                    "executive_summary": "Today shifts focus to engineering durable agent continuity using ADK 2.0 primitives. You will explore separating short-term session state from long-term memory banks, utilizing strictly typed Pydantic state_schema definitions, and emitting Event(state=...) deltas to maintain lightweight, replayable execution histories without overflowing LLM context limits.",
+                    "key_takeaways": [
+                      "Model session context with typed Pydantic state_schema definitions to ensure deterministic updates across turns.",
+                      "Emit Event(state=...) deltas to track granular, replayable session state transitions without serializing massive payloads.",
+                      "Implement token-based context compaction routines to avoid exceeding model context limits during extended dialogue loops.",
+                      "Leverage PreloadMemoryTool callbacks to automatically inject long-term user preferences before prompt assembly."
+                    ],
+                    "curiosity_hooks": [
+                      "What happens when two concurrent tool executions emit conflicting Event(state=...) deltas to the same session store?",
+                      "Why do production agents favor replayable event-sourced states over snapshot overwrites during debugging and tracing?"
+                    ],
+                    "micro_challenge": "Define an ADK 2.0 state_schema using Pydantic for a user preferences object, then write a simple PreloadMemoryTool callback signature that fetches and updates state via Event(state=...)."
+                  },
+                  "review_decision": "approved",
+                  "pending_interrupt": "",
+                  "pending_review_decision": ""
+                }
+              },
+              {
+                "author": "dispatch_brief",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_1127461",
+                        "args": {
+                          "user_name": "Sam Chen",
+                          "body_markdown": "# Day 2: Mastering Agent Context & State Hydration with ADK 2.0\n\n**Track:** Engineer  \n**Recipient:** Sam Chen (sam@company.com)\n\n---\n\n### Executive Summary\nToday shifts focus to engineering durable agent continuity using ADK 2.0 primitives. You will explore separating short-term session state from long-term memory banks, utilizing strictly typed Pydantic `state_schema` definitions, and emitting `Event(state=...)` deltas to maintain lightweight, replayable execution histories without overflowing LLM context limits.\n\n---\n\n### Key Takeaways\n- **Typed Schemas:** Model session context with typed Pydantic `state_schema` definitions to ensure deterministic updates across turns.\n- **Granular Deltas:** Emit `Event(state=...)` deltas to track granular, replayable session state transitions without serializing massive payloads.\n- **Compaction Routines:** Implement token-based context compaction routines to avoid exceeding model context limits during extended dialogue loops.\n- **Preload Callbacks:** Leverage `PreloadMemoryTool` callbacks to automatically inject long-term user preferences before prompt assembly.\n\n---\n\n### Curiosity Hooks\n- *What happens when two concurrent tool executions emit conflicting `Event(state=...)` deltas to the same session store?*\n- *Why do production agents favor replayable event-sourced states over snapshot overwrites during debugging and tracing?*\n\n---\n\n### Micro-Challenge\nDefine an ADK 2.0 `state_schema` using Pydantic for a user preferences object, then write a simple `PreloadMemoryTool` callback signature that fetches and updates state via `Event(state=...)`.\n",
+                          "subject": "AI in 5 Days | Day 2 (Engineer): Mastering Agent Context & State Hydration with ADK 2.0",
+                          "track": "Engineer",
+                          "day": "day2",
+                          "recipient_email": "sam@company.com"
+                        },
+                        "name": "send_email_brief"
+                      }
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_1127462",
+                        "args": {
+                          "track": "Engineer",
+                          "user_name": "Sam Chen",
+                          "summary": "Today shifts focus to engineering durable agent continuity using ADK 2.0 primitives. You will explore separating short-term session state from long-term memory banks, utilizing strictly typed Pydantic state_schema definitions, and emitting Event(state=...) deltas to maintain lightweight, replayable execution histories without overflowing LLM context limits.",
+                          "micro_challenge": "Define an ADK 2.0 state_schema using Pydantic for a user preferences object, then write a simple PreloadMemoryTool callback signature that fetches and updates state via Event(state=...).",
+                          "curiosity_hook": "What happens when two concurrent tool executions emit conflicting Event(state=...) deltas to the same session store?",
+                          "title": "Day 2: Mastering Agent Context & State Hydration with ADK 2.0",
+                          "day": "day2"
+                        },
+                        "name": "post_google_chat_card"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:22.145718Z"
+              },
+              {
+                "author": "dispatch_brief",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_1127461",
+                        "name": "send_email_brief",
+                        "response": {
+                          "status": "sent",
+                          "delivery_mode": "dry_run_logged",
+                          "recipient_email": "sam@company.com",
+                          "user_name": "Sam Chen",
+                          "day": "day2",
+                          "track": "Engineer",
+                          "subject": "AI in 5 Days | Day 2 (Engineer): Mastering Agent Context & State Hydration with ADK 2.0"
+                        }
+                      }
+                    },
+                    {
+                      "function_response": {
+                        "id": "call_1127462",
+                        "name": "post_google_chat_card",
+                        "response": {
+                          "status": "posted",
+                          "delivery_mode": "dry_run_card_v2",
+                          "card_id": "ai-in-5-days-day2-engineer",
+                          "user_name": "Sam Chen",
+                          "day": "day2",
+                          "track": "Engineer",
+                          "title": "Day 2: Mastering Agent Context & State Hydration with ADK 2.0",
+                          "card_v2": {
+                            "cardsV2": [
+                              {
+                                "cardId": "ai-in-5-days-day2-engineer",
+                                "card": {
+                                  "header": {
+                                    "title": "Day 2: Mastering Agent Context & State Hydration with ADK 2.0",
+                                    "subtitle": "AI in 5 Days (DAY2) • Engineer Track • For Sam Chen"
+                                  },
+                                  "sections": [
+                                    {
+                                      "header": "Executive Summary",
+                                      "widgets": [
+                                        {
+                                          "textParagraph": {
+                                            "text": "Today shifts focus to engineering durable agent continuity using ADK 2.0 primitives. You will explore separating short-term session state from long-term memory banks, utilizing strictly typed Pydantic state_schema definitions, and emitting Event(state=...) deltas to maintain lightweight, replayable execution histories without overflowing LLM context limits."
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "header": "Curiosity Hook & Micro-Challenge",
+                                      "widgets": [
+                                        {
+                                          "decoratedText": {
+                                            "topLabel": "Curiosity Hook",
+                                            "text": "What happens when two concurrent tool executions emit conflicting Event(state=...) deltas to the same session store?",
+                                            "wrapText": true
+                                          }
+                                        },
+                                        {
+                                          "decoratedText": {
+                                            "topLabel": "Engineer Micro-Challenge",
+                                            "text": "Define an ADK 2.0 state_schema using Pydantic for a user preferences object, then write a simple PreloadMemoryTool callback signature that fetches and updates state via Event(state=...).",
+                                            "wrapText": true
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                },
+                "event_time": "2026-10-11T03:50:28.184422Z"
+              },
+              {
+                "author": "dispatch_brief",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "### Dispatch Confirmation\n\nYour daily brief has been successfully dispatched across both channels!\n\n- **Recipient:** Sam Chen\n- **Email Address:** `sam@company.com`\n- **Technical Track:** Engineer\n- **Day:** Day 2 (`day2`)\n- **Title:** *Day 2: Mastering Agent Context & State Hydration with ADK 2.0*\n\n---\n\n#### Delivery Summary:\n1. **Email Brief:** Sent to `sam@company.com` with the full markdown curriculum, key takeaways, and micro-challenge.\n2. **Google Chat Card:** Interactive Card v2 posted featuring the executive summary, primary curiosity hook, and hands-on micro-challenge."
+                    }
+                  ],
+                  "role": "model"
+                },
+                "event_time": "2026-10-11T03:50:28.189835Z"
+              },
+              {
+                "author": "dispatch_brief",
+                "event_time": "2026-10-11T03:50:30.517682Z",
+                "state_delta": {
+                  "dispatch_receipt": {
+                    "status": "dispatched",
+                    "user_name": "Sam Chen",
+                    "user_email": "sam@company.com",
+                    "technical_track": "Engineer",
+                    "day": "day2",
+                    "email_status": "dry_run_logged",
+                    "chat_webhook_status": "dry_run_card_v2",
+                    "summary_title": "Day 2: Mastering Agent Context & State Hydration with ADK 2.0",
+                    "message": "Dispatched 'Day 2: Mastering Agent Context & State Hydration with ADK 2.0' (DAY2, Engineer track) to sam@company.com and posted interactive card to Google Chat Space."
+                  },
+                  "completed_days": [
+                    "day2"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

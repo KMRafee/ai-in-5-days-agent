@@ -1,0 +1,44 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "ai-in-5-days-day4-architect",
+      "card": {
+        "header": {
+          "title": "Architectural Foundations of Interoperability: MCP, A2A, A2UI, and Governed Commerce",
+          "subtitle": "AI in 5 Days (DAY4) \u2022 Architect Track \u2022 For Rafee Mohamed"
+        },
+        "sections": [
+          {
+            "header": "Executive Summary",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Day 4 explores the critical paradigm shift from fragile, monolithic 'Swiss Army knife' prompts to distributed, decoupled multi-agent architectures governed by standardized protocols. Just as traditional IT evolved from monolithic codebases to microservices, enterprise agentic systems require rigorous separation of concerns to avoid contextual overload, search space explosion, and cascading points of failure. We analyze how Model Context Protocol (MCP) reduces integration complexity from O(N\u00d7M) to O(N+M) across stdio and SSE transport layers, and why Agent-to-Agent (A2A) protocol solves the architectural 'GOTO problem' by providing multi-turn state isolation between collaborative participants. Furthermore, we examine declarative presentation via A2UI to deliver zero-trust generative interfaces without arbitrary code execution, alongside AP2 and UCP frameworks for cryptographically verifiable, mandate-driven autonomous commerce."
+                }
+              }
+            ]
+          },
+          {
+            "header": "Curiosity Hook & Micro-Challenge",
+            "widgets": [
+              {
+                "decoratedText": {
+                  "topLabel": "Curiosity Hook",
+                  "text": "Why does treating a multi-turn collaborative specialist as a standard function/tool introduce the architectural equivalent of an uncontrolled GOTO statement into your central orchestrator?",
+                  "wrapText": true
+                }
+              },
+              {
+                "decoratedText": {
+                  "topLabel": "Architect Micro-Challenge",
+                  "text": "Architectural Boundary Review: Draft a 1-page decision matrix contrasting an MCP tool integration against an A2A service delegation for an enterprise customer-support domain. Define: (1) The explicit boundary criteria determining when an action requires A2A negotiation versus a stateless MCP call, (2) The Agent Card specification (capabilities, auth scopes, compliance policies), and (3) The AP2 financial mandate boundary for processing automated refunds.",
+                  "wrapText": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

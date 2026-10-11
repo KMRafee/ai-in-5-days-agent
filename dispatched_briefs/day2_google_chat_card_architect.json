@@ -1,0 +1,44 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "ai-in-5-days-day2-architect",
+      "card": {
+        "header": {
+          "title": "Architecting the AI-Driven SDLC: Harness Engineering, the Factory Model, and Multi-Agent Governance",
+          "subtitle": "AI in 5 Days (DAY2) \u2022 Architect Track \u2022 For Rafee Mohamed"
+        },
+        "sections": [
+          {
+            "header": "Executive Summary",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "As software engineering transitions from syntax-level implementation to intent-driven delegation, enterprise software architecture must evolve from managing manual code pipelines to building the systems that build software\u2014the Factory Model. Modern high-reliability systems require shifting away from ad-hoc vibe coding (characterized by low CapEx upfront but catastrophic OpEx maintenance and token burn) toward disciplined agentic engineering. At the core of this transition is Harness Engineering: recognizing that an agent's enterprise reliability is dictated not merely by the underlying LLM, but by the surrounding scaffolding of sandboxed execution environments, deterministic lifecycle hooks, context management policies, and observability layers. As an architect, your primary deliverable is no longer application boilerplate, but the architectural boundaries, dynamic context protocols (MCP/A2A), intelligent multi-model routing topologies, and dual-layer verification pipelines (evaluating both final output and tool-calling trajectories) that ensure safe, scalable, and cost-effective autonomous generation."
+                }
+              }
+            ]
+          },
+          {
+            "header": "Curiosity Hook & Micro-Challenge",
+            "widgets": [
+              {
+                "decoratedText": {
+                  "topLabel": "Curiosity Hook",
+                  "text": "Why do production architectures that maintain 95% automated test coverage still experience silent failures and security regressions when implemented by autonomous coding agents?",
+                  "wrapText": true
+                }
+              },
+              {
+                "decoratedText": {
+                  "topLabel": "Architect Micro-Challenge",
+                  "text": "Draft a one-page Architectural Harness Blueprint for a mission-critical backend service. Define: (1) your static system boundaries and non-negotiable security guardrails in an AGENTS.md specification; (2) two deterministic pre-commit lifecycle hooks (e.g., blocking hardcoded credentials and hallucinated package imports); and (3) a tiered model-routing policy assigning architectural spec generation, implementation, and test synthesis to appropriate model tiers.",
+                  "wrapText": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

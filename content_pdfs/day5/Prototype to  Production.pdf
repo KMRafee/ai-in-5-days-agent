@@ -1,0 +1,1523 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R 39 0 R 41 0 R 43 0 R 45 0 R 47 0 R 49 0 R 51 0 R 53 0 R 55 0 R 57 0 R 59 0 R 61 0 R 63 0 R 65 0 R 67 0 R 69 0 R 71 0 R 73 0 R 75 0 R 77 0 R 79 0 R 81 0 R 83 0 R 85 0 R] /Count 41 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Title (Prototype to  Production) /Author (AI in 5 Days Training Material) /Subject (ADK 2.0 Multi-Page Courseware) >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 269 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 1 of 41 - Prototype to  Production) Tj T*
+(Prototype to) Tj T*
+(Production) Tj T*
+(Authors:  Sokratis Kartakis, Gabriela Hernandez Larios,) Tj T*
+(Ran Li, Elia Secchi, Huang Xia, and Anant Nawalgaria) Tj T*
+(Updated May 2026) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 427 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 2 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(2) Tj T*
+(Acknowledgements) Tj T*
+(Content contributors) Tj T*
+(Derek Egan) Tj T*
+(Chase Lyall) Tj T*
+(Lavi Nigam) Tj T*
+(Kanchana Patlolla) Tj T*
+(Michael Vakoc) Tj T*
+(Curators and editors) Tj T*
+(Anant Nawalgaria) Tj T*
+(Kanchana Patlolla) Tj T*
+(Designer) Tj T*
+(Michael Lanning) Tj T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 10 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 769 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 3 of 41 - Prototype to  Production) Tj T*
+(Abstract 5) Tj T*
+(Introduction: From Prototype to Production 6) Tj T*
+(People and Process 8) Tj T*
+(The Journey to Production 11) Tj T*
+(Evaluation as a Quality Gate 12) Tj T*
+(The Automated CI/CD Pipeline 13) Tj T*
+(Safe Rollout Strategies 15) Tj T*
+(Building Security from the Start 17) Tj T*
+(Operations in-Production 19) Tj T*
+(Observe: Your Agent's Sensory System 19) Tj T*
+(Act: The Levers of Operational Control 20) Tj T*
+(Managing System Health: Performance, Cost, and Scale 20) Tj T*
+(Managing Risk: The Security Response Playbook 22) Tj T*
+(Evolve: Learning from Production 22) Tj T*
+(The Engine of Evolution: An Automated Path to Production 23) Tj T*
+(Table of contents) Tj T*
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 12 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 625 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 4 of 41 - Prototype to  Production) Tj T*
+(The Evolution Workflow: From Insight to Deployed Improvement 24) Tj T*
+(Evolving Security: The Production Feedback Loop 25) Tj T*
+(Beyond Single-Agent Operations 26) Tj T*
+(A2A - Reusability and Standardization 27) Tj T*
+(A2A Protocol: From Concept to Implementation 28) Tj T*
+(How A2A and MCP Work Together 33) Tj T*
+(Registry Architectures: When and How to Build Them 35) Tj T*
+(Putting It All Together: The AgentOps Lifecycle 36) Tj T*
+(Conclusion: Bridging the Last Mile with AgentOps 38) Tj T*
+(Endnotes 40) Tj T*
+(Table of contents) Tj T*
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 14 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 925 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 5 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(5) Tj T*
+(Abstract) Tj T*
+(This whitepaper provides a comprehensive technical guide to the operational life cycle of AI) Tj T*
+(agents, focusing on deployment, scaling, and productionizing. Building on Day 4's coverage) Tj T*
+(of evaluation and observability, this guide emphasizes how to build the necessary trust to) Tj T*
+(move agents into production through robust CI/CD pipelines and scalable infrastructure. It) Tj T*
+(explores the challenges of transitioning agent-based systems from prototypes to enterprise-) Tj T*
+(grade solutions, with special attention to Agent2Agent \(A2A\) interoperability. This guide) Tj T*
+(offers practical insights for AI/ML engineers, DevOps professionals, and system architects.) Tj T*
+(Building an agent is easy. Trusting) Tj T*
+(it is hard.) Tj T*
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 16 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 1858 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 6 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(6) Tj T*
+(Introduction: From Prototype) Tj T*
+(to Production) Tj T*
+(You can spin up an AI agent prototype in minutes, maybe even seconds. But turning that) Tj T*
+(clever demo into a trusted, production-grade system that your business can depend on?) Tj T*
+(That's where the real work begins. Welcome to the "last mile" production gap, where we) Tj T*
+(consistently observe in practice with customers that roughly 80% of the effort is spent not) Tj T*
+(on the agent's core intelligence, but on the infrastructure, security, and validation needed to) Tj T*
+(make it reliable and safe.) Tj T*
+(Skipping these final steps could cause several problems. For example:) Tj T*
+(* A customer service agent is tricked into giving products away for free because you) Tj T*
+(forgot to set up the right guardrails.) Tj T*
+(* A user discovers they can access a confidential internal database through your agent) Tj T*
+(because authentication was improperly configured.) Tj T*
+(* An agent generates a large consumption bill over the weekend, but no one knows why) Tj T*
+(because you didn't set up any monitoring.) Tj T*
+(* A critical agent that worked perfectly yesterday suddenly stops, but your team is) Tj T*
+(scrambling because there was no continuous evaluation in place.) Tj T*
+(These aren't just technical problems; they are major business failures. And while principles) Tj T*
+(from DevOps and MLOps provide a critical foundation, they aren't enough on their own.) Tj T*
+(Deploying agentic systems introduces a new class of challenges that require an evolution) Tj T*
+(in our operational discipline. Unlike traditional ML models, agents are autonomously) Tj T*
+(interactive, stateful, and follow dynamic execution paths.) Tj T*
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 18 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+18 0 obj
+<< /Length 1771 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 7 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(7) Tj T*
+(This creates unique operational headaches that demand specialized strategies:) Tj T*
+(* Dynamic Tool Orchestration: An agent's "trajectory" is assembled on the fly as it picks) Tj T*
+(and chooses tools. This requires robust versioning, access control, and observability for a) Tj T*
+(system that behaves differently every time.) Tj T*
+(* Scalable State Management: Agents can remember things across interactions.) Tj T*
+(Managing session and memory securely and consistently at scale is a complex systems) Tj T*
+(design problem.) Tj T*
+(* Unpredictable Cost & Latency: An agent can take many different paths to find an) Tj T*
+(answer, making its cost and response time incredibly hard to predict and control without) Tj T*
+(smart budgeting and caching.) Tj T*
+(To navigate these challenges successfully, you need a foundation built on three) Tj T*
+(key pillars: Automated Evaluation, Automated Deployment \(CI/CD\), and) Tj T*
+(Comprehensive Observability.) Tj T*
+(This whitepaper is your step-by-step playbook for building that foundation and navigating) Tj T*
+(the path to production! We'll start with the pre-production essentials, showing you how to) Tj T*
+(set up automated CI/CD pipelines and use rigorous evaluation as a critical quality check.) Tj T*
+(From there, we'll dive into the challenges of running agents in the wild, covering strategies for) Tj T*
+(scaling, performance tuning, and real-time monitoring. Finally, we'll look ahead to the exciting) Tj T*
+(world of multi-agent systems with the Agent-to-Agent protocol and explore what it takes to) Tj T*
+(get them communicating safely and effectively.) Tj T*
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 20 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+20 0 obj
+<< /Length 1424 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 8 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(8) Tj T*
+(People and Process) Tj T*
+(After all that talk of CI/CD, observability, and dynamic pipelines, why the focus on people and) Tj T*
+(process? Because the best technology in the world is ineffective without the right team to) Tj T*
+(build, manage, and govern it.) Tj T*
+(That customer service agent isn't magically prevented from giving away free products; an) Tj T*
+(AI Engineer and a Prompt Engineer design and implement the guardrails. The confidential) Tj T*
+(database isn't secured by an abstract concept; a Cloud Platform team configures the) Tj T*
+(authentication. Behind every successful, production-grade agent there is a well-orchestrated) Tj T*
+(team of specialists, and in this section, we'll introduce the key players.) Tj T*
+(Practical Implementation Guide) Tj T*
+(Throughout this whitepaper, practical examples reference the Google Cloud Platform) Tj T*
+(Agent Starter Pack1--1a Python package providing production-ready Generative AI) Tj T*
+(agent templates for Google Cloud. It includes pre-built agents, automated CI/CD) Tj T*
+(setup, Terraform deployment, Agent platform evaluation integration and built-in) Tj T*
+(Google Cloud observability. The starter pack demonstrates the concepts discussed) Tj T*
+(here with working code you can deploy in minutes.) Tj T*
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 22 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+22 0 obj
+<< /Length 1180 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 9 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(9) Tj T*
+(Figure 1: A diagram showing that "Ops" is the intersection of people, processes, and technology) Tj T*
+(In a traditional MLOps landscape, this involves several key teams:) Tj T*
+(* Cloud Platform Team: Comprising cloud architects, administrators, and security) Tj T*
+(specialists, this team manages the foundational cloud infrastructure, security, and access) Tj T*
+(control. The team grants engineers and service accounts least-privilege roles, ensuring) Tj T*
+(access only to necessary resources.) Tj T*
+(* Data Engineering Team: Data engineers and data owners build and maintain the data) Tj T*
+(pipelines, handling ingestion, preparation, and quality standards.) Tj T*
+(* Data Science and MLOps Team: This includes data scientists who experiment with) Tj T*
+(and train models, and ML engineers who automate the end-to-end ML pipeline \(e.g.,) Tj T*
+(preprocessing, training, post-processing\) at scale using CI/CD. MLOps Engineers support) Tj T*
+(this by building and maintaining the standardized pipeline infrastructure.) Tj T*
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 24 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+24 0 obj
+<< /Length 1711 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 10 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(10) Tj T*
+(* Machine Learning Governance: This centralized function, including product owners) Tj T*
+(and auditors, oversees the ML lifecycle, acting as a repository for artifacts and metrics to) Tj T*
+(ensure compliance, transparency, and accountability .) Tj T*
+(Generative AI introduces a new layer of complexity and specialized roles to this landscape:) Tj T*
+(* Prompt Engineers: While this role title is still evolving in the industry, these individuals) Tj T*
+(blend technical skill in crafting prompts with deep domain expertise. They define the) Tj T*
+(right questions and expected answers from a model, though in practice this work may) Tj T*
+(be done by AI Engineers, domain experts, or dedicated specialists depending on the) Tj T*
+(organization's maturity.) Tj T*
+(* AI Engineers: They are responsible for scaling GenAI solutions to production, building) Tj T*
+(robust backend systems that incorporate evaluation at scale, guardrails, and RAG/tool) Tj T*
+(integration .) Tj T*
+(* DevOps/App Developers: These developers build the front-end components and user-) Tj T*
+(friendly interfaces that integrate with the GenAI backend.) Tj T*
+(The scale and structure of an organization will influence these roles; in smaller companies,) Tj T*
+(individuals may wear multiple hats, while mature organizations will have more specialized) Tj T*
+(teams. Effectively coordinating all these diverse roles is essential for establishing a robust) Tj T*
+(operational foundation and successfully productionizing both traditional ML and generative) Tj T*
+(AI initiatives.) Tj T*
+ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 26 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+26 0 obj
+<< /Length 1109 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 11 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(11) Tj T*
+(Figure 2: How multiple teams collaborate to operationalize both models and GenAI applications) Tj T*
+(The Journey to Production) Tj T*
+(Now that we've established the team, we turn to the process. How do we translate the work) Tj T*
+(of all these specialists into a system that is trustworthy, reliable, and ready for users?) Tj T*
+(The answer lies in a disciplined pre-production process built on a single core principle:) Tj T*
+(Evaluation-Gated Deployment. The idea is simple but powerful: no agent version should) Tj T*
+(reach users without first passing a comprehensive evaluation that proves its quality and) Tj T*
+(safety. This pre-production phase is where we trade manual uncertainty for automated) Tj T*
+(confidence, and it consists of three pillars: a rigorous evaluation process that acts as a) Tj T*
+(quality gate, an automated CI/CD pipeline that enforces it, and safe rollout strategies to) Tj T*
+(de-risk the final step into production.) Tj T*
+ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 28 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+28 0 obj
+<< /Length 2493 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 12 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(12) Tj T*
+(Evaluation as a Quality Gate) Tj T*
+(Why do we need a special quality gate for agents? Traditional software tests are insufficient) Tj T*
+(for systems that reason and adapt. Furthermore, evaluating an agent is distinct from) Tj T*
+(evaluating an LLM; it requires assessing not just the final answer, but the entire trajectory) Tj T*
+(of reasoning and actions taken to complete a task. An agent can pass 100 unit tests for its) Tj T*
+(tools but still fail spectacularly by choosing the wrong tool or hallucinating a response. We) Tj T*
+(need to evaluate its behavioral quality, not just its functional correctness. This gate can be) Tj T*
+(implemented in two primary ways:) Tj T*
+(1. The Manual "Pre-PR" Evaluation: For teams seeking flexibility or just beginning their) Tj T*
+(evaluation journey, the quality gate is enforced through a team process. Before submitting) Tj T*
+(a pull request \(PR\), the AI Engineer or Prompt Engineer \(or whoever is responsible) Tj T*
+(for agent behavior in your organization\) runs the evaluation suite locally. The resulting) Tj T*
+(performance report--comparing the new agent against the production baseline--is then) Tj T*
+(linked in the PR description. This makes the evaluation results a mandatory artifact for) Tj T*
+(human review. The reviewer--typically another AI Engineer or the Machine Learning) Tj T*
+(Governor--is now responsible for assessing not just the code, but also the agent's) Tj T*
+(behavioral changes against guardrail violations and prompt injection vulnerabilities.) Tj T*
+(2. The Automated In-Pipeline Gate: For mature teams, the evaluation harness--built and) Tj T*
+(maintained by the Data Science and MLOps Team--is integrated directly into the CI/) Tj T*
+(CD pipeline. A failing evaluation automatically blocks the deployment, providing rigid,) Tj T*
+(programmatic enforcement of quality standards that the Machine Learning Governance) Tj T*
+(team has defined. This approach trades the flexibility of manual review for the consistency) Tj T*
+(of automation. The CI/CD pipeline can be configured to automatically trigger an evaluation) Tj T*
+(job that compares the new agent's responses against a golden dataset. The deployment is) Tj T*
+(programmatically blocked if key metrics, such as "tool call success rate" or "helpfulness,") Tj T*
+(fall below a predefined threshold.) Tj T*
+ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 30 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+30 0 obj
+<< /Length 2345 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 13 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(13) Tj T*
+(Regardless of the method, the principle is the same: no agent proceeds to production) Tj T*
+(without a quality check. We covered the specifics of what to measure and how to build this) Tj T*
+(evaluation harness in our deep dive on Day 4: Agent Quality: Observability, Logging,) Tj T*
+(Tracing, Evaluation, Metrics, which explored everything from crafting a 'golden dataset' \(a) Tj T*
+(curated, representative set of test cases designed to assess an agent's intended behavior) Tj T*
+(and guardrail compliance\) to implementing LLM-as-a-judge techniques, to finally using a) Tj T*
+(service like Agent Platform's Agent Evaluation2 to power evaluation.) Tj T*
+(The Automated CI/CD Pipeline) Tj T*
+(An AI agent is a composite system, comprising not just source code but also prompts, tool) Tj T*
+(definitions, and configuration files. This complexity introduces significant challenges: how do) Tj T*
+(we ensure a change to a prompt doesn't degrade the performance of a tool? How do we test) Tj T*
+(the interplay between all these artifacts before they reach users?) Tj T*
+(The solution is a CI/CD \(Continuous Integration/Continuous Deployment\) pipeline. It is more) Tj T*
+(than just an automation script; it's a structured process that helps different people in a team) Tj T*
+(collaborate to manage complexity and ensure quality. It works by testing changes in stages,) Tj T*
+(incrementally building confidence before the agent is released to users.) Tj T*
+(A robust pipeline is designed as a funnel. It catches errors as early and as cheaply as) Tj T*
+(possible, a practice often called "shifting left." It separates fast, pre-merge checks from more) Tj T*
+(comprehensive, resource-intensive post-merge deployments. This progressive workflow is) Tj T*
+(typically structured into three distinct phases:) Tj T*
+(1. Phase 1: Pre-Merge Integration \(CI\). The pipeline's first responsibility is to provide) Tj T*
+(rapid feedback to the AI Engineer or Prompt Engineer who has opened a pull request.) Tj T*
+(Triggered automatically, this CI phase acts as a gatekeeper for the main branch. It runs) Tj T*
+(fast checks like unit tests, code linting, and dependency scanning. Crucially, this is the) Tj T*
+ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 32 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+32 0 obj
+<< /Length 2394 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 14 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(14) Tj T*
+(ideal stage to run the agent quality evaluation suite designed by Prompt Engineers.) Tj T*
+(This provides immediate feedback on whether a change improves or degrades the agent's) Tj T*
+(performance against key scenarios before it is ever merged. By catching issues here, we) Tj T*
+(prevent polluting the main branch. The PR checks configuration template3 generated) Tj T*
+(with the Agent Starter Pack1 \(ASP\) is a practical example of implementing this phase with) Tj T*
+(Cloud Build.4) Tj T*
+(2. Phase 2: Post-Merge Validation in Staging \(CD\). Once a change passes all CI checks--) Tj T*
+(including the performance evaluation--and is merged, the focus shifts from code and) Tj T*
+(performance correctness to the operational readiness of the integrated system. The) Tj T*
+(Continuous Deployment \(CD\) process, often managed by the MLOps Team, packages) Tj T*
+(the agent and deploys it to a staging environment--a high-fidelity replica of production.) Tj T*
+(Here, more comprehensive, resource-intensive tests are run, such as load testing and) Tj T*
+(integration tests against remote services. This is also the critical phase for internal user) Tj T*
+(testing \(often called "dogfooding"\), where humans within the company can interact with) Tj T*
+(the agent and provide qualitative feedback before it reaches the end user. This ensures) Tj T*
+(that the agent as an integrated system performs reliably and efficiently under production-) Tj T*
+(like conditions before it is considered for release. The staging deployment template5 from) Tj T*
+(ASP shows an example of this deployment.) Tj T*
+(3. Phase 3: Gated Deployment to Production. After the agent has been thoroughly) Tj T*
+(validated in the staging environment, the final step is deploying to production. This) Tj T*
+(is almost never fully automatic, typically requiring a Product Owner to give the final) Tj T*
+(sign-off, ensuring human-in-the-loop. Upon approval, the exact deployment artifact) Tj T*
+(that was tested and validated in staging is promoted to the production environment.) Tj T*
+(This production deployment template6 generated with ASP shows how this final phase) Tj T*
+(retrieves the validated artifact and deploys it to production with appropriate safeguards.) Tj T*
+ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 34 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+34 0 obj
+<< /Length 1555 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 15 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(15) Tj T*
+(Figure 3: Different stages of the CI/CD process) Tj T*
+(Making this three-phase CI/CD workflow possible requires robust automation infrastructure) Tj T*
+(and proper secrets management. This automation is powered by two key technologies:) Tj T*
+(* Infrastructure as Code \(IaC\): Tools like Terraform define environments programmatically,) Tj T*
+(ensuring they are identical, repeatable, and version-controlled. For example, this template) Tj T*
+(generated with Agent Starter Pack7 provides Terraform configurations for complete) Tj T*
+(agent infrastructure including Agent Platform, Cloud Run, and BigQuery resources.) Tj T*
+(* Automated Testing Frameworks: Frameworks like Pytest execute tests and evaluations) Tj T*
+(at each stage, handling agent-specific artifacts like conversation histories, tool invocation) Tj T*
+(logs, and dynamic reasoning traces.) Tj T*
+(Furthermore, sensitive information like API keys for tools should be managed securely using) Tj T*
+(a service like Secret Manager8 and injected into the agent's environment at runtime, rather) Tj T*
+(than being hardcoded in the repository.) Tj T*
+(Safe Rollout Strategies) Tj T*
+(While comprehensive pre-production checks are essential, real-world application inevitably) Tj T*
+(reveals unforeseen issues. Rather than switching 100% of users at once, consider minimizing) Tj T*
+(risk through gradual rollouts with careful monitoring.) Tj T*
+ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 36 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+36 0 obj
+<< /Length 1732 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 16 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(16) Tj T*
+(Here are four proven patterns that help teams build confidence in their deployments:) Tj T*
+(* Canary: Start with 1% of users, monitoring for prompt injections and unexpected tool) Tj T*
+(usage. Scale up gradually or roll back instantly.) Tj T*
+(* Blue-Green: Run two identical production environments. Route traffic to "blue" while) Tj T*
+(deploying to "green," then switch instantly. If issues emerge, switch back--zero downtime,) Tj T*
+(instant recovery.) Tj T*
+(* A/B Testing: Compare agent versions on real business metrics for data-driven decisions.) Tj T*
+(This can happen either with internal or external users.) Tj T*
+(* Feature Flags: Deploy code but control release dynamically, testing new capabilities with) Tj T*
+(select users first.) Tj T*
+(All these strategies share a foundation: rigorous versioning. Every component--code,) Tj T*
+(prompts, model endpoints, tool schemas, memory structures, even evaluation datasets--) Tj T*
+(must be versioned. When issues arise despite safeguards, this enables instant rollback to a) Tj T*
+(known-good state. See this as your production "undo" button!) Tj T*
+(You can deploy agents using Agent Runtime9 or Cloud Run10, then leverage Cloud Load) Tj T*
+(Balancing11 for traffic management across versions or connect to other microservices. The) Tj T*
+(Agent Starter Pack1 provides ready-to-use templates with GitOps workflows--where every) Tj T*
+(deployment is a git commit, every rollback is a git revert, and your repository becomes the) Tj T*
+(single source of truth for both current state and complete deployment history.) Tj T*
+ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 38 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+38 0 obj
+<< /Length 1985 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 17 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(17) Tj T*
+(Building Security from the Start) Tj T*
+(Safe deployment strategies protect you from bugs and outages, but agents face a unique) Tj T*
+(challenge: they can reason and act autonomously. A perfectly deployed agent can still cause) Tj T*
+(harm if it hasn't been built with proper security and responsibility measures. This requires a) Tj T*
+(comprehensive governance strategy embedded from day one, not added as an afterthought.) Tj T*
+(Unlike traditional software that follows predetermined paths, agents make decisions. They) Tj T*
+(interpret ambiguous requests, access multiple tools, and maintain memory across sessions.) Tj T*
+(This autonomy creates distinct risks:) Tj T*
+(* Prompt Injection & Rogue Actions: Malicious users can trick agents into performing) Tj T*
+(unintended actions or bypassing restrictions.) Tj T*
+(* Data Leakage: Agents might inadvertently expose sensitive information through their) Tj T*
+(responses or tool usage.) Tj T*
+(* Memory Poisoning: False information stored in an agent's memory can corrupt all) Tj T*
+(future interactions.) Tj T*
+(Fortunately, frameworks like Google's Secure AI Agents approach12 and the Google Secure) Tj T*
+(AI Framework \(SAIF\)13 address these challenges through three layers of defense:) Tj T*
+(1. Policy Definition and System Instructions \(The Agent's Constitution\): The process) Tj T*
+(begins by defining policies for desired and undesired agent behavior. These are) Tj T*
+(engineered into System Instructions \(SIs\) that act as the agent's core constitution.) Tj T*
+(2. Guardrails, Safeguards, and Filtering \(The Enforcement Layer\): This layer acts as the) Tj T*
+(hard-stop enforcement mechanism.) Tj T*
+(* Input Filtering: Use classifiers and services like the Perspective API to analyze prompts) Tj T*
+(and block malicious inputs before they reach the agent.) Tj T*
+ET
+endstream
+endobj
+39 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 40 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+40 0 obj
+<< /Length 1814 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 18 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(18) Tj T*
+(* Agent Gateway & Output Filtering: After the agent generates a response, Agent) Tj T*
+(Platform's built-in safety filters provide a final check for harmful content, PII, or) Tj T*
+(policy violations. For example, before a response is sent to the user, it is passed) Tj T*
+(through Agent Platform's built-in safety filters14, which can be configured to block) Tj T*
+(outputs containing specific PII, toxic language, or other harmful content. Furthermore) Tj T*
+(centralized controls are also needed to ensure safety. For example, before a response) Tj T*
+(is sent to the user, it is passed through the Agent Gateway and Model Armor14,) Tj T*
+(providing a final check against harmful content, prompt injection, tool poisoning, and) Tj T*
+(sensitive data leakage.) Tj T*
+(* Human-in-the-Loop \(HITL\) Escalation: For high-risk or ambiguous actions, the) Tj T*
+(system must pause and escalate to a human for review and approval.) Tj T*
+(3. Continuous Assurance and Testing: Safety is not a one-time setup. It requires constant) Tj T*
+(evaluation and adaptation.) Tj T*
+(* Rigorous Evaluation: Any change to the model or its safety systems) Tj T*
+(must trigger a full re-run of a comprehensive evaluation pipeline using) Tj T*
+(Agent Platform's evaluation and observability suite.) Tj T*
+(* Dedicated RAI Testing: Rigorously test for specific risks either by creating dedicated) Tj T*
+(datasets or using simulation agents, including Neutral Point of View \(NPOV\)) Tj T*
+(evaluations and Parity evaluations.) Tj T*
+(* Proactive Red Teaming: Actively try to break the safety systems through creative) Tj T*
+(manual testing and AI-driven persona-based simulation.) Tj T*
+ET
+endstream
+endobj
+41 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 42 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+42 0 obj
+<< /Length 1870 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 19 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(19) Tj T*
+(Operations in-Production) Tj T*
+(Your agent is live. Now the focus shifts from development to a fundamentally different) Tj T*
+(challenge: keeping the system reliable, cost-effective, and safe as it interacts with) Tj T*
+(thousands of users. A traditional service operates on predictable logic. An agent, in) Tj T*
+(contrast, is an autonomous actor. Its ability to follow unexpected reasoning paths means it) Tj T*
+(can exhibit emergent behaviors and accumulate costs without direct oversight.) Tj T*
+(Managing this autonomy requires a different operational model. Instead of static monitoring,) Tj T*
+(effective teams adopt a continuous loop: Observe the system's behavior in real-time, Act to) Tj T*
+(maintain performance and safety, and Evolve the agent based on production learnings. This) Tj T*
+(integrated cycle is the core discipline for operating agents successfully in production.) Tj T*
+(Observe: Your Agent's Sensory System) Tj T*
+(To trust and manage an autonomous agent, you must first understand its process.) Tj T*
+(Observability provides this crucial insight, acting as the sensory system for the subsequent) Tj T*
+("Act" and "Evolve" phases. A robust observability practice is built on three pillars that work) Tj T*
+(together to provide a complete picture of the agent's behavior:) Tj T*
+(* Logs: The granular, factual diary of what happened, recording every tool call, error,) Tj T*
+(and decision.) Tj T*
+(* Traces: The narrative that connects individual logs, revealing the causal path of why an) Tj T*
+(agent took a certain action.) Tj T*
+(* Metrics: The aggregated report card, summarizing performance, cost, and operational) Tj T*
+(health at scale to show how well the system is performing.) Tj T*
+ET
+endstream
+endobj
+43 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 44 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+44 0 obj
+<< /Length 2097 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 20 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(20) Tj T*
+(For example, in Google Cloud, this is achieved through the operations suite: a user's request) Tj T*
+(generates a unique ID in Cloud Trace15 that links the Agent Runtime9 invocation, model) Tj T*
+(calls, and tool executions with visible durations. Detailed logs flow to Cloud Logging16,) Tj T*
+(while Cloud Monitoring17 dashboards alert when latency thresholds are exceeded. The) Tj T*
+(Agent Development Kit \(ADK\)18 provides built-in Cloud Trace integration for automatic) Tj T*
+(instrumentation of agent operations.) Tj T*
+(By implementing these pillars, we move from operating in the dark to having a clear, data-) Tj T*
+(driven view of our agent's behavior, providing the foundation needed to manage it effectively) Tj T*
+(in production. \(For a full discussion of these concepts, see Agent Quality: Observability,) Tj T*
+(Logging, Tracing, Evaluation, Metrics\).) Tj T*
+(Act: The Levers of Operational Control) Tj T*
+(Observations without action are just expensive dashboards. The "Act" phase is about real-) Tj T*
+(time intervention--the levers you pull to manage the agent's performance, cost, and safety) Tj T*
+(based on what you observe.) Tj T*
+(Think of "Act" as the system's automated reflexes designed to maintain stability in real-time.) Tj T*
+(In contrast, "Evolve", which will be covered later, is the strategic process of learning from) Tj T*
+(behavior to create a fundamentally better system.) Tj T*
+(Because an agent is autonomous, you cannot pre-program every possible outcome. Instead,) Tj T*
+(you must build robust mechanisms to influence its behavior in production. These operational) Tj T*
+(levers fall into two primary categories: managing the system's health and managing its risk.) Tj T*
+(Managing System Health: Performance, Cost, and Scale) Tj T*
+(Unlike traditional microservices, an agent's workload is dynamic and stateful. Managing its) Tj T*
+(health requires a strategy for handling this unpredictability.) Tj T*
+ET
+endstream
+endobj
+45 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 46 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+46 0 obj
+<< /Length 2075 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 21 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(21) Tj T*
+(* Designing for Scale: The foundation is decoupling the agent's logic from its state.) Tj T*
+(* Horizontal Scaling: Design the agent as a stateless, containerized service. With) Tj T*
+(external state, any instance can handle any request, enabling serverless platforms like) Tj T*
+(Cloud Run10 or the managed Vertex AI Agent Engine Runtime9 to scale automatically.) Tj T*
+(* Asynchronous Processing: For long-running tasks, offload work using event-) Tj T*
+(driven patterns. This keeps the agent responsive while complex jobs process in the) Tj T*
+(background. On Google Cloud, for example, a service can publish tasks to Pub/Sub19,) Tj T*
+(which can then trigger a Cloud Run service for asynchronous processing.) Tj T*
+(* Externalized State Management: Since LLMs are stateless, persisting memory) Tj T*
+(externally is non-negotiable. This highlights a key architectural choice: Agent Runtime) Tj T*
+(provides built-in Sessions and a Memory Bank for persistent, long-term context across) Tj T*
+(multi-day workflows, while Cloud Run offers the flexibility to integrate directly with) Tj T*
+(databases like AlloyDB20 or Cloud SQL21.) Tj T*
+(* Balancing Competing Goals: Scaling always involves balancing three competing goals:) Tj T*
+(speed, reliability, and cost.) Tj T*
+(* Speed \(Latency\): Keep your agent fast by designing it to work in parallel, aggressively) Tj T*
+(caching results, and using smaller, efficient models for routine tasks.) Tj T*
+(* Reliability \(Handling Glitches\): Agents must handle temporary failures. When a call) Tj T*
+(fails, automatically retry, ideally with exponential backoff to give the service time to) Tj T*
+(recover. This requires designing "safe-to-retry" \(idempotent\) tools to prevent bugs like) Tj T*
+(duplicate charges.) Tj T*
+(* Cost: Keep the agent affordable by shortening prompts, using cheaper models for) Tj T*
+(easier tasks, and sending requests in groups \(batching\).) Tj T*
+ET
+endstream
+endobj
+47 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 48 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+48 0 obj
+<< /Length 1719 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 22 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(22) Tj T*
+(Managing Risk: The Security Response Playbook) Tj T*
+(Because an agent can act on its own, you need a playbook for rapid containment. When) Tj T*
+(a threat is detected, the response should follow a clear sequence: contain, triage,) Tj T*
+(and resolve.) Tj T*
+(The first step is immediate containment. The priority is to stop the harm, typically with a) Tj T*
+("circuit breaker"--a feature flag to instantly disable the affected tool.) Tj T*
+(Next is triage. With the threat contained, suspicious requests are routed to a human-in-the-) Tj T*
+(loop \(HITL\) review queue to investigate the exploit's scope and impact.) Tj T*
+(Finally, the focus shifts to a permanent resolution. The team develops a patch--like an) Tj T*
+(updated input filter or system prompt--and deploys it through the automated CI/CD pipeline,) Tj T*
+(ensuring the fix is fully tested before blocking the exploit for good.) Tj T*
+(Evolve: Learning from Production) Tj T*
+(While the "Act" phase provides the system's immediate, tactical reflexes, the "Evolve" phase) Tj T*
+(is about long-term, strategic improvement. It begins by looking at the patterns and trends) Tj T*
+(collected in your observability data and asking a crucial question: "How do we fix the root) Tj T*
+(cause so this problem never happens again?") Tj T*
+(This is where you move from reacting to production incidents to proactively making your) Tj T*
+(agent smarter, more efficient, and safer. You turn the raw data from the "Observe" phase into) Tj T*
+(durable improvements in your agent's architecture, logic, and behavior.) Tj T*
+ET
+endstream
+endobj
+49 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 50 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+50 0 obj
+<< /Length 1585 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 23 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(23) Tj T*
+(The Engine of Evolution: An Automated Path to Production) Tj T*
+(An insight from production is only valuable if you can act on it quickly. Observing that 30% of) Tj T*
+(your users fail at a specific task is useless if it takes your team six months to deploy a fix.) Tj T*
+(This is where the automated CI/CD pipeline you built in pre-production \(Section 3\)) Tj T*
+(becomes the most critical component of your operational loop. It is the engine that powers) Tj T*
+(rapid evolution. A fast, reliable path to production allows you to close the loop between) Tj T*
+(observation and improvement in hours or days, not weeks or months.) Tj T*
+(When you identify a potential improvement--whether it's a refined prompt, a new tool, or an) Tj T*
+(updated safety guardrail--the process should be:) Tj T*
+(1. Commit the Change: The proposed improvement is committed to your) Tj T*
+(version-controlled repository.) Tj T*
+(2. Trigger Automation: The commit automatically triggers your CI/CD pipeline.) Tj T*
+(3. Validate Rigorously: The pipeline runs the full suite of unit tests, security scans, and the) Tj T*
+(agent quality evaluation suite against your updated datasets.) Tj T*
+(4. Deploy Safely: Once validated, the change is deployed to production using a safe) Tj T*
+(rollout strategy.) Tj T*
+(This automated workflow transforms evolution from a slow, high-risk manual project into a) Tj T*
+(fast, repeatable, and data-driven process.) Tj T*
+ET
+endstream
+endobj
+51 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 52 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+52 0 obj
+<< /Length 1419 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 24 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(24) Tj T*
+(The Evolution Workflow: From Insight to Deployed Improvement) Tj T*
+(1. Analyze Production Data: Identify trends in user behavior, task success rates, and) Tj T*
+(security incidents from production logs.) Tj T*
+(2. Update Evaluation Datasets: Transform production failures into tomorrow's test cases,) Tj T*
+(augmenting your golden dataset.) Tj T*
+(3. Refine and Deploy: Commit improvements to trigger the automated pipeline--whether) Tj T*
+(refining prompts, adding tools, or updating guardrails.) Tj T*
+(This creates a virtuous cycle where your agent continuously improves with every) Tj T*
+(user interaction.) Tj T*
+(An Evolve Loop in Action) Tj T*
+(A retail agent's logs \(Observe\) show that 15% of users receive an error when asking) Tj T*
+(for 'similar products.' The product team Acts by creating a high-priority ticket. The) Tj T*
+(Evolve phase begins: production logs are used to create a new, failing test case for) Tj T*
+(the evaluation dataset. An AI Engineer refines the agent's prompt and adds a new,) Tj T*
+(more robust tool for similarity search. The change is committed, passes the now-) Tj T*
+(updated evaluation suite in the CI/CD pipeline, and is safely rolled out via a canary) Tj T*
+(deployment, resolving the user issue in under 48 hours.) Tj T*
+ET
+endstream
+endobj
+53 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 54 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+54 0 obj
+<< /Length 1866 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 25 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(25) Tj T*
+(Evolving Security: The Production Feedback Loop) Tj T*
+(While the foundational security and responsibility framework is established in pre-production) Tj T*
+(\(Section 3.4\), the work is never truly finished. Security is not a static checklist; it is a dynamic,) Tj T*
+(continuous process of adaptation. The production environment is the ultimate testing) Tj T*
+(ground, and the insights gathered there are essential for hardening your agent against) Tj T*
+(real-world threats.) Tj T*
+(This is where the Observe -> Act -> Evolve loop becomes critical for security. The process) Tj T*
+(is a direct extension of the evolution workflow:) Tj T*
+(1. Observe: Your monitoring and logging systems detect a new threat vector. This could be) Tj T*
+(a novel prompt injection technique that bypasses your current filters, or an unexpected) Tj T*
+(interaction that leads to a minor data leak.) Tj T*
+(2. Act: The immediate security response team contains the threat \(as discussed in) Tj T*
+(Section 4.2\).) Tj T*
+(3. Evolve: This is the crucial step for long-term resilience. The security insight is fed back) Tj T*
+(into your development lifecycle:) Tj T*
+(* Update Evaluation Datasets: The new prompt injection attack is added as a) Tj T*
+(permanent test case to your evaluation suite.) Tj T*
+(* Refine Guardrails: A Prompt Engineer or AI Engineer refines the agent's system) Tj T*
+(prompt, input filters, or tool-use policies to block the new attack vector.) Tj T*
+(* Automate and Deploy: The engineer commits the change, which triggers the full CI/) Tj T*
+(CD pipeline. The updated agent is rigorously validated against the newly expanded) Tj T*
+(evaluation set and deployed to production, closing the vulnerability.) Tj T*
+ET
+endstream
+endobj
+55 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 56 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+56 0 obj
+<< /Length 1128 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 26 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(26) Tj T*
+(This creates a powerful feedback loop where every production incident makes your agent) Tj T*
+(stronger and more resilient, transforming your security posture from a defensive stance to) Tj T*
+(one of continuous, proactive improvement.) Tj T*
+(To learn more about Responsible AI and securing AI Agentic Systems, please consult) Tj T*
+(the whitepaper Google's Approach for Secure AI Agents12 and the Google Secure AI) Tj T*
+(Framework \(SAIF\)13.) Tj T*
+(Beyond Single-Agent Operations) Tj T*
+(You've mastered operating individual agents in production and can ship them at high velocity.) Tj T*
+(But as organizations scale to dozens of specialized agents--each built by different teams) Tj T*
+(with different frameworks--a new challenge emerges: these agents can't collaborate. The) Tj T*
+(next section explores how standardized protocols can transform these isolated agents into) Tj T*
+(an interoperable ecosystem, unlocking exponential value through agent collaboration.) Tj T*
+ET
+endstream
+endobj
+57 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 58 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+58 0 obj
+<< /Length 2013 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 27 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(27) Tj T*
+(A2A - Reusability and Standardization) Tj T*
+(You've built dozens of specialized agents across your organization. The customer service) Tj T*
+(team has their support agent. Analytics built a forecasting system. Risk management) Tj T*
+(created fraud detection. But here's the problem: these agents can't talk to each other -) Tj T*
+(whether that be because they were created in different frameworks, projects or different) Tj T*
+(clouds altogether.) Tj T*
+(This isolation creates massive inefficiency. Every team rebuilds the same capabilities. Critical) Tj T*
+(insights stay trapped in silos. What you need is interoperability--the ability for any agent) Tj T*
+(to leverage any other agent's capabilities, regardless of who built it or what framework) Tj T*
+(they used.) Tj T*
+(To solve this, a principled approach to standardization is required, built on two distinct but) Tj T*
+(complementary protocols. While the Model Context Protocol \(MCP22\), which we covered) Tj T*
+(in detail on Agent Tools and Interoperability with MCP, provides a universal standard for) Tj T*
+(tool integration, it is not sufficient for the complex, stateful collaboration required between) Tj T*
+(intelligent agents. This is the problem the Agent2Agent \(A2A23\) protocol, now governed by) Tj T*
+(the Linux Foundation, was designed to solve.) Tj T*
+(The distinction is critical. When you need a simple, stateless function like fetching weather) Tj T*
+(data or querying a database, you need a tool that speaks MCP. But when you need to) Tj T*
+(delegate a complex goal, such as "analyze last quarter's customer churn and recommend) Tj T*
+(three intervention strategies," you need an intelligent partner that can reason, plan, and act) Tj T*
+(autonomously via A2A. In short, MCP lets you say, "Do this specific thing," while A2A lets you) Tj T*
+(say, "Achieve this complex goal.") Tj T*
+ET
+endstream
+endobj
+59 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 60 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+60 0 obj
+<< /Length 1187 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 28 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(28) Tj T*
+(A2A Protocol: From Concept to Implementation) Tj T*
+(The A2A protocol is designed to break down organizational silos and enable seamless) Tj T*
+(collaboration between agents. Consider a scenario where a fraud detection agent spots) Tj T*
+(suspicious activity. To understand the full context, it needs data from a separate transaction) Tj T*
+(analysis agent. Without A2A, a human analyst must manually bridge this gap--a process) Tj T*
+(that could take hours. With A2A, the agents collaborate automatically, resolving the issue) Tj T*
+(in minutes.) Tj T*
+(The first step of the collaboration is discovering the right agent to delegate to - this is made) Tj T*
+(possible through Agent Cards,24 which are standardized JSON specifications that act as a) Tj T*
+(business card for each agent. An Agent Card describes what an agent can do, its security) Tj T*
+(requirements, its skills, and how to reach out to it \(url\), allowing any other agent in the) Tj T*
+(ecosystem to dynamically discover its peers. See example Agent Card below:) Tj T*
+ET
+endstream
+endobj
+61 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 62 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+62 0 obj
+<< /Length 1267 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 29 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(29) Tj T*
+(Snippet 1: A sample agent card for the check_prime_agent) Tj T*
+(Adopting this protocol doesn't require an architectural overhaul. Frameworks like the ADK) Tj T*
+(simplify this process significantly \(docs25\). You can make an existing agent A2A-compatible) Tj T*
+(with a single function call, which automatically generates its AgentCard and makes it) Tj T*
+(available on the network.) Tj T*
+(Python) Tj T*
+({) Tj T*
+("name": "check_prime_agent",) Tj T*
+("version": "1.0.0",) Tj T*
+("description": "An agent specialized in checking whether numbers are prime",) Tj T*
+("capabilities": {},) Tj T*
+("securitySchemes": {) Tj T*
+("agent_oauth_2_0": {) Tj T*
+("type": "oauth2",) Tj T*
+(}) Tj T*
+("defaultInputModes": ["text/plain"],) Tj T*
+("defaultOutputModes": ["application/json"],) Tj T*
+("skills": [) Tj T*
+({) Tj T*
+("id": "prime_checking",) Tj T*
+("name": "Prime Number Checking",) Tj T*
+("description": "Check if numbers are prime using efficient algorithms",) Tj T*
+("tags": ["mathematical", "computation", "prime"]) Tj T*
+(}) Tj T*
+(],) Tj T*
+("url": "http://localhost:8001/a2a/check_prime_agent") Tj T*
+(}) Tj T*
+ET
+endstream
+endobj
+63 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 64 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+64 0 obj
+<< /Length 1255 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 30 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(30) Tj T*
+(Snippet 2: Using the ADK's to_a2a utility to wrap an existing agent and expose it for A2A communication) Tj T*
+(Once an agent is exposed, any other agent can consume it by referencing its AgentCard. For) Tj T*
+(example, a customer service agent can now query a remote product catalog agent without) Tj T*
+(needing to know its internal workings.) Tj T*
+(Python) Tj T*
+(# Example using ADK: Exposing an agent via A2A) Tj T*
+(from google.adk.a2a.utils.agent_to_a2a import to_a2a) Tj T*
+(# Your existing agent) Tj T*
+(root_agent = Agent\() Tj T*
+(name='hello_world_agent',) Tj T*
+(# ... your agent code ...) Tj T*
+(\)) Tj T*
+(# Make it A2A-compatible) Tj T*
+(a2a_app = to_a2a\(root_agent, port=8001\)) Tj T*
+(# Serve with uvicorn) Tj T*
+(# uvicorn agent:a2a_app --host localhost --port 8001) Tj T*
+(# Or serve with Agent Engine) Tj T*
+(# from vertexai.preview.reasoning_engines import A2aAgent) Tj T*
+(# from google.adk.a2a.executor.a2a_agent_executor import A2aAgentExecutor) Tj T*
+(# a2a_agent = A2aAgent\() Tj T*
+(#    agent_executor_builder=lambda: A2aAgentExecutor\(agent=root_agent\)) Tj T*
+(# \)) Tj T*
+ET
+endstream
+endobj
+65 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 66 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+66 0 obj
+<< /Length 879 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 31 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(31) Tj T*
+(Snippet 3: Using the ADK's RemoteA2aAgent class to connect to and consume a remote agent) Tj T*
+(This unlocks powerful, hierarchical compositions. A root agent can be configured to) Tj T*
+(orchestrate both a local sub-agent for a simple task and a remote, specialized agent via A2A,) Tj T*
+(creating a more capable system.) Tj T*
+(Python) Tj T*
+(# Example using ADK: Consuming a remote agent via A2A) Tj T*
+(from google.adk.agents.remote_a2a_agent import RemoteA2aAgent) Tj T*
+(prime_agent = RemoteA2aAgent\() Tj T*
+(name="prime_agent",) Tj T*
+(description="Agent that handles checking if numbers are prime.",) Tj T*
+(agent_card="http://localhost:8001/a2a/check_prime_agent/) Tj T*
+(.well-known/agent-card.json") Tj T*
+(\)) Tj T*
+ET
+endstream
+endobj
+67 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 68 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+68 0 obj
+<< /Length 1500 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 32 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(32) Tj T*
+(Snippet 4: Using a remote A2A agent \(prime_agent\) as a sub-agent within a hierarchical agent structure in) Tj T*
+(the ADK) Tj T*
+(However, enabling this level of autonomous collaboration introduces two non-negotiable) Tj T*
+(technical requirements. First is distributed tracing, where every request carries a unique) Tj T*
+(trace ID, which is essential for debugging and maintaining a coherent audit trail across) Tj T*
+(multiple agents. Second is robust state management. A2A interactions are inherently) Tj T*
+(stateful, requiring a sophisticated persistence layer for tracking progress and ensuring) Tj T*
+(transactional integrity.) Tj T*
+(Python) Tj T*
+(# Example using ADK: Hierarchical agent composition) Tj T*
+(# ADK Local sub-agent for dice rolling) Tj T*
+(roll_agent = Agent\() Tj T*
+(name="roll_agent",) Tj T*
+(instruction="You are an expert at rolling dice.") Tj T*
+(\)) Tj T*
+(# ADK Remote A2A agent for prime checking) Tj T*
+(prime_agent = RemoteA2aAgent\() Tj T*
+(name="prime_agent",) Tj T*
+(agent_card="http://localhost:8001/.well-known/agent-card.json") Tj T*
+(\)) Tj T*
+(# ADK Root orchestrator combining both) Tj T*
+(root_agent = Agent\() Tj T*
+(name="root_agent",) Tj T*
+(instruction="""Delegate rolling dice to roll_agent, prime checking) Tj T*
+(to prime_agent.""",) Tj T*
+(sub_agents=[roll_agent, prime_agent]) Tj T*
+(\)) Tj T*
+ET
+endstream
+endobj
+69 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 70 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+70 0 obj
+<< /Length 732 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 33 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(33) Tj T*
+(A2A is best suited for formal, cross-team integrations that require a durable service) Tj T*
+(contract. For tightly coupled tasks within a single application, lightweight local sub-agents) Tj T*
+(often remain a more efficient choice. As the ecosystem matures, new agents should be) Tj T*
+(built with native support for both protocols, ensuring every new component is immediately) Tj T*
+(discoverable, interoperable, and reusable, compounding the value of the whole system.) Tj T*
+(How A2A and MCP Work Together) Tj T*
+(Figure 4: A2A and MCP collaboration with a single glance) Tj T*
+ET
+endstream
+endobj
+71 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 72 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+72 0 obj
+<< /Length 2052 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 34 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(34) Tj T*
+(A2A and MCP are not competing standards; they are complementary protocols designed) Tj T*
+(to operate at different levels of abstraction. The distinction depends on what an agent is) Tj T*
+(interacting with. MCP is the domain of tools and resources--primitives with well-defined,) Tj T*
+(structured inputs and outputs, like a calculator or a database API. A2A is the domain of other) Tj T*
+(agents--autonomous systems that can reason, plan, use multiple tools, and maintain state to) Tj T*
+(achieve complex goals.) Tj T*
+(The most powerful agentic systems use both protocols in a layered architecture. An) Tj T*
+(application might primarily use A2A to orchestrate high-level collaboration between multiple) Tj T*
+(intelligent agents, while each of those agents internally uses MCP to interact with its own) Tj T*
+(specific set of tools and resources.) Tj T*
+(A practical analogy is an auto repair shop staffed by autonomous AI agents.) Tj T*
+(1. User-to-Agent \(A2A\): A customer uses A2A to communicate with the "Shop Manager") Tj T*
+(agent to describe a high-level problem: "My car is making a rattling noise.") Tj T*
+(2. Agent-to-Agent \(A2A\): The Shop Manager engages in a multi-turn diagnostic) Tj T*
+(conversation and then delegates the task to a specialized "Mechanic" agent, again) Tj T*
+(using A2A.) Tj T*
+(3. Agent-to-Tool \(MCP\): The Mechanic agent now needs to perform specific actions. It) Tj T*
+(uses MCP to call its specialized tools: it runs scan_vehicle_for_error_codes\(\) on a) Tj T*
+(diagnostic scanner, queries a repair manual database with get_repair_procedure\(\),) Tj T*
+(and operates a platform lift with raise_platform\(\).) Tj T*
+(4. Agent-to-Agent \(A2A\): After diagnosing the issue, the Mechanic agent determines a part) Tj T*
+(is needed. It uses A2A to communicate with an external "Parts Supplier" agent to inquire) Tj T*
+(about availability and place an order.) Tj T*
+ET
+endstream
+endobj
+73 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 74 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+74 0 obj
+<< /Length 1992 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 35 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(35) Tj T*
+(In this workflow, A2A facilitates the higher-level, conversational, and task-oriented) Tj T*
+(interactions between the customer, the shop's agents, and external suppliers. Meanwhile,) Tj T*
+(MCP provides the standardized plumbing that enables the mechanic agent to reliably use its) Tj T*
+(specific, structured tools to do its job.) Tj T*
+(Registry Architectures: When and How to Build Them) Tj T*
+(Why do some organizations build registries while others don't need them? The answer lies in) Tj T*
+(scale and complexity. When you have fifty tools, manual configuration works fine. But when) Tj T*
+(you reach five thousand tools distributed across different teams and environments, you face) Tj T*
+(a discovery problem that demands a systematic solution.) Tj T*
+(To solve these discovery and governance challenges at scale, the Gemini Enterprise Agent) Tj T*
+(Platform provides a native Agent Registry. This centralized catalog allows teams to discover,) Tj T*
+(track, and manage all agents, tools, and MCP servers across the organization. Paired) Tj T*
+(with Agent Identity--which assigns a unique cryptographic ID to every agent--it enables) Tj T*
+(robust governance and secure access control out of the box. However, if you are building) Tj T*
+(outside of this integrated ecosystem, understanding the underlying registry architecture) Tj T*
+(remains critical.) Tj T*
+(A Tool Registry uses a protocol like MCP to catalog all assets, from functions to APIs.) Tj T*
+(Instead of giving agents access to thousands of tools, you create curated lists, leading to) Tj T*
+(three common patterns:) Tj T*
+(* Generalist agents: Access the full catalog, trading speed and accuracy for scope.) Tj T*
+(* Specialist agents: Use predefined subsets for higher performance.) Tj T*
+(* Dynamic agents: Query the registry at runtime to adapt to new tools.) Tj T*
+ET
+endstream
+endobj
+75 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 76 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+76 0 obj
+<< /Length 1647 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 36 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(36) Tj T*
+(The primary benefit is human discovery--developers can search for existing tools before) Tj T*
+(building duplicates, security teams can audit tool access, and product owners can) Tj T*
+(understand their agents' capabilities.) Tj T*
+(An Agent Registry applies the same concept to agents, using formats like A2A's) Tj T*
+(AgentCards. It helps teams discover and reuse existing agents, reducing redundant work.) Tj T*
+(This also lays the groundwork for automated agent-to-agent delegation, though this remains) Tj T*
+(an emerging pattern.) Tj T*
+(Registries offer discovery and governance at the cost of maintenance. You can) Tj T*
+(consider starting without one and only build it when your ecosystem's scale demands) Tj T*
+(centralized management!) Tj T*
+(Putting It All Together: The) Tj T*
+(AgentOps Lifecycle) Tj T*
+(We can now assemble these pillars into a single, cohesive reference architecture! The life) Tj T*
+(cycle begins in the developer's inner loop--a phase of rapid local testing and prototyping) Tj T*
+(to shape the agent's core logic. Once a change is ready, it enters the formal pre-production) Tj T*
+(engine, where automated evaluation gates validate its quality and safety against a) Tj T*
+(Decision Framework for Registries) Tj T*
+(Tool Registry: Build when tool discovery becomes a bottleneck or security requires) Tj T*
+(centralized auditing.) Tj T*
+(Agent Registry: Build when multiple teams need to discover and reuse specialized) Tj T*
+(agents without tight coupling.) Tj T*
+ET
+endstream
+endobj
+77 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 78 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+78 0 obj
+<< /Length 756 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 37 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(37) Tj T*
+(golden dataset. From there, safe rollouts release it to production, where comprehensive) Tj T*
+(observability captures the real-world data needed to fuel the continuous evolution loop,) Tj T*
+(turning every insight into the next improvement.) Tj T*
+(For a comprehensive walkthrough of operationalizing AI agents, including evaluation,) Tj T*
+(tool management, CI/CD standardization, and effective architecture designs, watch the) Tj T*
+(AgentOps: Operationalize AI Agents video26 on the official Google Cloud YouTube channel.) Tj T*
+(Figure 5: AgentOps core capabilities, environments, and processes) Tj T*
+ET
+endstream
+endobj
+79 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 80 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+80 0 obj
+<< /Length 1963 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 38 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(38) Tj T*
+(Conclusion: Bridging the Last Mile) Tj T*
+(with AgentOps) Tj T*
+(Moving an AI prototype to a production system is an organizational transformation that) Tj T*
+(requires a new operational discipline: AgentOps.) Tj T*
+(Most agent projects fail in the "last mile" not due to technology, but because the operational) Tj T*
+(complexity of autonomous systems is underestimated. This guide maps the path to bridge) Tj T*
+(that gap. It begins with establishing People and Process as the foundation for governance.) Tj T*
+(Next, a Pre-Production strategy built on evaluation-gated deployment automates high-) Tj T*
+(stakes releases. Once live, a continuous Observe -> Act -> Evolve loop turns every user) Tj T*
+(interaction into a potential insight. Finally, Interoperability protocols scale the system by) Tj T*
+(transforming isolated agents into a collaborative, intelligent ecosystem.) Tj T*
+(The immediate benefits--like preventing a security breach or enabling a rapid rollback--) Tj T*
+(justify the investment. But the real value is velocity. Mature AgentOps practices allow teams) Tj T*
+(to deploy improvements in hours, not weeks, turning static deployments into continuously) Tj T*
+(evolving products.) Tj T*
+(Your Path Forward) Tj T*
+(* If you're starting out, focus on the fundamentals: build your first evaluation dataset,) Tj T*
+(implement a CI/CD pipeline, and establish comprehensive monitoring. The Agent Starter) Tj T*
+(Pack is a great place to start--it creates a production-ready agent project in minutes with) Tj T*
+(these foundations already built-in.) Tj T*
+(* If you're scaling, elevate your practice: automate the feedback loop from production) Tj T*
+(insight to deployed improvement and standardize on interoperable protocols to build a) Tj T*
+(cohesive ecosystem, not just point solutions.) Tj T*
+ET
+endstream
+endobj
+81 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 82 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+82 0 obj
+<< /Length 641 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 39 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(39) Tj T*
+(The next frontier is not just building better individual agents, but orchestrating sophisticated) Tj T*
+(multi-agent systems that learn and collaborate. The operational discipline of AgentOps is the) Tj T*
+(foundation that makes this possible.) Tj T*
+(We hope this playbook empowers you to build the next generation of intelligent, reliable, and) Tj T*
+(trustworthy AI. Bridging the last mile is therefore not the final step in a project, but the first) Tj T*
+(step in creating value!) Tj T*
+ET
+endstream
+endobj
+83 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 84 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+84 0 obj
+<< /Length 1676 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 40 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(40) Tj T*
+(Endnotes) Tj T*
+(1. https://github.com/GoogleCloudPlatform/agent-starter-pack) Tj T*
+(2. https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/) Tj T*
+(evaluation/agent-evaluation) Tj T*
+(3. https://github.com/GoogleCloudPlatform/agent-starter-pack/blob/example-agent/example-agent) Tj T*
+(/.cloudbuild/pr_checks.yaml) Tj T*
+(4. https://cloud.google.com/build) Tj T*
+(5. https://github.com/GoogleCloudPlatform/agent-starter-pack/blob/example-agent/example-agent) Tj T*
+(/.cloudbuild/staging.yaml) Tj T*
+(6. https://github.com/GoogleCloudPlatform/agent-starter-pack/blob/example-agent/example-agent) Tj T*
+(/.cloudbuild/deploy-to-prod.yaml) Tj T*
+(7. https://github.com/GoogleCloudPlatform/agent-starter-pack/blob/example-agent/example-agent) Tj T*
+(/terraform) Tj T*
+(8. https://cloud.google.com/secret-manager) Tj T*
+(9. https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime) Tj T*
+(10. https://cloud.google.com/run) Tj T*
+(11. https://cloud.google.com/load-balancing/docs/https/traffic-management) Tj T*
+(12. https://research.google/pubs/an-introduction-to-googles-approach-for-secure-ai-agents/) Tj T*
+(13. https://safety.google/cybersecurity-advancements/saif/) Tj T*
+(14. https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/configure-safety-attributes) Tj T*
+(15. https://cloud.google.com/trace) Tj T*
+(16. https://cloud.google.com/logging) Tj T*
+(17. https://cloud.google.com/monitoring) Tj T*
+(18. https://google.github.io/adk-docs/observability/cloud-trace/) Tj T*
+ET
+endstream
+endobj
+85 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 86 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+86 0 obj
+<< /Length 581 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 41 of 41 - Prototype to  Production) Tj T*
+(Prototype to Production) Tj T*
+(Updated May 2026) Tj T*
+(41) Tj T*
+(19. https://cloud.google.com/pubsub) Tj T*
+(20. https://cloud.google.com/alloydb) Tj T*
+(21. https://cloud.google.com/sql) Tj T*
+(22. https://modelcontextprotocol.io/) Tj T*
+(23. https://a2a-protocol.org/latest/specification/) Tj T*
+(24. https://a2a-protocol.org/latest/specification/#5-agent-discovery-the-agent-card) Tj T*
+(25. https://google.github.io/adk-docs/a2a/) Tj T*
+(26. https://www.youtube.com/watch?v=kJRgj58ujEk) Tj T*
+ET
+endstream
+endobj
+xref
+0 87
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000394 00000 n 
+0000000464 00000 n 
+0000000601 00000 n 
+0000000727 00000 n 
+0000001047 00000 n 
+0000001173 00000 n 
+0000001651 00000 n 
+0000001778 00000 n 
+0000002599 00000 n 
+0000002727 00000 n 
+0000003404 00000 n 
+0000003532 00000 n 
+0000004509 00000 n 
+0000004637 00000 n 
+0000006548 00000 n 
+0000006676 00000 n 
+0000008500 00000 n 
+0000008628 00000 n 
+0000010105 00000 n 
+0000010233 00000 n 
+0000011466 00000 n 
+0000011594 00000 n 
+0000013358 00000 n 
+0000013486 00000 n 
+0000014648 00000 n 
+0000014776 00000 n 
+0000017322 00000 n 
+0000017450 00000 n 
+0000019848 00000 n 
+0000019976 00000 n 
+0000022423 00000 n 
+0000022551 00000 n 
+0000024159 00000 n 
+0000024287 00000 n 
+0000026072 00000 n 
+0000026200 00000 n 
+0000028238 00000 n 
+0000028366 00000 n 
+0000030233 00000 n 
+0000030361 00000 n 
+0000032284 00000 n 
+0000032412 00000 n 
+0000034562 00000 n 
+0000034690 00000 n 
+0000036818 00000 n 
+0000036946 00000 n 
+0000038718 00000 n 
+0000038846 00000 n 
+0000040484 00000 n 
+0000040612 00000 n 
+0000042084 00000 n 
+0000042212 00000 n 
+0000044131 00000 n 
+0000044259 00000 n 
+0000045440 00000 n 
+0000045568 00000 n 
+0000047634 00000 n 
+0000047762 00000 n 
+0000049002 00000 n 
+0000049130 00000 n 
+0000050450 00000 n 
+0000050578 00000 n 
+0000051886 00000 n 
+0000052014 00000 n 
+0000052945 00000 n 
+0000053073 00000 n 
+0000054626 00000 n 
+0000054754 00000 n 
+0000055538 00000 n 
+0000055666 00000 n 
+0000057771 00000 n 
+0000057899 00000 n 
+0000059944 00000 n 
+0000060072 00000 n 
+0000061772 00000 n 
+0000061900 00000 n 
+0000062708 00000 n 
+0000062836 00000 n 
+0000064852 00000 n 
+0000064980 00000 n 
+0000065673 00000 n 
+0000065801 00000 n 
+0000067530 00000 n 
+0000067658 00000 n 
+trailer
+<< /Size 87 /Root 1 0 R /Info 4 0 R >>
+startxref
+68291
+%%EOF

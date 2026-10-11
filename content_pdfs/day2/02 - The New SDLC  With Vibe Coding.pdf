@@ -1,0 +1,1892 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R 39 0 R 41 0 R 43 0 R 45 0 R 47 0 R 49 0 R 51 0 R 53 0 R 55 0 R 57 0 R 59 0 R 61 0 R 63 0 R 65 0 R 67 0 R 69 0 R 71 0 R 73 0 R 75 0 R 77 0 R 79 0 R 81 0 R 83 0 R 85 0 R 87 0 R 89 0 R 91 0 R 93 0 R 95 0 R 97 0 R 99 0 R 101 0 R 103 0 R 105 0 R] /Count 51 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Title (02 - The New SDLC  With Vibe Coding) /Author (AI in 5 Days Training Material) /Subject (ADK 2.0 Multi-Page Courseware) >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 272 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 1 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The New SDLC) Tj T*
+(With Vibe Coding) Tj T*
+(Authors: Addy Osmani, Shubham Saboo,) Tj T*
+(and Sokratis Kartakis) Tj T*
+(From ad-hoc prompting to) Tj T*
+(Agentic Engineering) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 373 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 2 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(2) Tj T*
+(Acknowledgements) Tj T*
+(Content contributors) Tj T*
+(Elia Secchi) Tj T*
+(Julia Wiesinger) Tj T*
+(Anant Nawalgaria) Tj T*
+(Curators and editors) Tj T*
+(Anant Nawalgaria) Tj T*
+(Designer) Tj T*
+(Michael Lanning) Tj T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 10 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 704 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 3 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(Introduction 6) Tj T*
+(Why this paper, why now 9) Tj T*
+(Who this paper is for 9) Tj T*
+(The shift from syntax to intent 10) Tj T*
+(AI Agents: A Quick Refresher 10) Tj T*
+(What is vibe coding? 11) Tj T*
+(The spectrum: vibe coding to agentic engineering 12) Tj T*
+(Context engineering: the real skill 15) Tj T*
+(The new software development life cycle 19) Tj T*
+(The traditional SDLC under pressure 19) Tj T*
+(How AI transforms each phase 21) Tj T*
+(Requirements and planning 21) Tj T*
+(Design and architecture 21) Tj T*
+(Implementation 22) Tj T*
+(Testing and quality assurance 22) Tj T*
+(Table of contents) Tj T*
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 12 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 892 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 4 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(Code review and deployment 23) Tj T*
+(Maintenance and evolution 24) Tj T*
+(The factory model: building the system that builds software 24) Tj T*
+(Harness Engineering: What surrounds the model  26) Tj T*
+(What's in the harness 28) Tj T*
+(Harness in SDLC 29) Tj T*
+(1. Requirements, Planning, & Architecture \(Configuring the Harness\) 29) Tj T*
+(2. Implementation \(Running the Harness\) 29) Tj T*
+(3. Testing & QA \(The Feedback Loop\) 30) Tj T*
+(4. Code Review, Deployment, & Maintenance \(Observing the Harness\) 30) Tj T*
+(The developer's evolving role: conductors and orchestrators 31) Tj T*
+(The conductor: hands-on, real-time direction 32) Tj T*
+(The orchestrator: async, multi-agent delegation 33) Tj T*
+(The 80% problem 34) Tj T*
+(Coding agents in practice 35) Tj T*
+(Table of contents) Tj T*
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 14 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 755 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 5 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(Table of contents) Tj T*
+(Where coding agents fit in the developer's day 35) Tj T*
+(Vibe Coding Production-ready Agents 36) Tj T*
+(The Economics of AI Development 39) Tj T*
+(The Hidden Debt of Vibe Coding \(Low CapEx, High OpEx\) 40) Tj T*
+(The Investment of Agentic Engineering \(High CapEx, Low OpEx\) 41) Tj T*
+(Context Engineering as a Financial Lever 41) Tj T*
+(Scaling Efficiency via Dynamic Context and Skills 42) Tj T*
+(Intelligent Model Routing  42) Tj T*
+(Where to start  43) Tj T*
+(For individual developers 43) Tj T*
+(For engineering leaders 44) Tj T*
+(For organizations 45) Tj T*
+(Conclusion: Intent as the new Interface 47) Tj T*
+(Endnotes 49) Tj T*
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 16 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 872 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 6 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(6) Tj T*
+(Introduction) Tj T*
+(For most of computing history, programming has been an act of translation: understand) Tj T*
+(the problem in human terms, design a solution in abstract terms, then render it in syntax a) Tj T*
+(machine can execute. Each step introduces friction. That friction is now collapsing. Software) Tj T*
+(engineering is undergoing its most significant transformation since the introduction of) Tj T*
+(The most profound shift in) Tj T*
+(software engineering isn't a new) Tj T*
+(language, framework, or cloud) Tj T*
+(service. It's the transition from) Tj T*
+(writing code to expressing intent,) Tj T*
+(and trusting intelligent systems to) Tj T*
+(translate that intent into working) Tj T*
+(software.) Tj T*
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 18 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+18 0 obj
+<< /Length 1476 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 7 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(7) Tj T*
+(high-level programming languages. For decades, the developer's primary interface with) Tj T*
+(the machine has been syntax: curly braces, semicolons, type annotations, and the precise) Tj T*
+(grammar of programming languages. That era is ending.) Tj T*
+(A new paradigm has arrived in which developers express what they want to build rather) Tj T*
+(than how to build it. The machine handles implementation. The human provides intent,) Tj T*
+(architecture, and judgment. This isn't a distant future - it's the daily reality for a rapidly) Tj T*
+(growing number of professional developers. As of early 2026, 85% of professional developers) Tj T*
+(regularly use AI Coding Agents, 51% use them daily, and an estimated 41% of all new code) Tj T*
+(is AI-generated.1) Tj T*
+(This shift didn't happen overnight. It began with autocomplete - simple token prediction in) Tj T*
+(the editor. Then came inline code suggestions that could complete entire functions. Next,) Tj T*
+(chat-based interfaces allowed developers to describe features in natural language and) Tj T*
+(receive working implementations. Now, fully autonomous agents can clone repositories,) Tj T*
+(plan multi-file changes, execute them in sandboxed environments, run tests, and submit pull) Tj T*
+(requests - all without a human typing a single line of code.) Tj T*
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 20 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+20 0 obj
+<< /Length 1240 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 8 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(8) Tj T*
+(Figure 1: From Autocomplete to Autonomy) Tj T*
+(The implications for the software development life cycle \(SDLC\) are profound. Every phase) Tj T*
+(- from requirements gathering to deployment to maintenance - is being reshaped by AI) Tj T*
+(capabilities. But this transformation isn't uniform or simple. The spectrum ranges from casual) Tj T*
+("vibe coding," where a developer prompts an AI and accepts whatever comes back, to) Tj T*
+(disciplined "agentic engineering," where AI acts as a powerful implementation engine within) Tj T*
+(carefully designed systems of constraints, tests, and feedback loops, with humans retaining) Tj T*
+(oversight over architecture, correctness, and quality.) Tj T*
+(The distinction matters. Telling a CTO that your team is vibe coding their payment processing) Tj T*
+(system will, and should, raise alarm bells. Telling that same CTO that your team practices) Tj T*
+(agentic engineering, with AI handling implementation under human-designed constraints) Tj T*
+(while test coverage ensures correctness, is a fundamentally different conversation.) Tj T*
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 22 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+22 0 obj
+<< /Length 1318 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 9 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(9) Tj T*
+(This paper provides the foundation for that conversation. We trace the spectrum from casual) Tj T*
+(vibe coding to disciplined agentic engineering, examine how the developer's role is shifting) Tj T*
+(from writing code to exercising judgment -- from conductor to orchestrator -- and lay out) Tj T*
+(what it takes to adopt these tools in ways that produce software you can actually depend on.) Tj T*
+(Why this paper, why now) Tj T*
+(New tools, capabilities, and paradigms emerge weekly. Engineering teams need a framework) Tj T*
+(for making sense of this landscape - not a snapshot that will be outdated in months, but a set) Tj T*
+(of principles and mental models that will remain useful as the specific tools evolve.) Tj T*
+(Who this paper is for) Tj T*
+(This paper is for software engineers, engineering managers, architects, and technical) Tj T*
+(leaders who want to understand how AI is reshaping the SDLC and adopt these new) Tj T*
+(capabilities without sacrificing the discipline that production software demands. We assume) Tj T*
+(familiarity with modern software development practices but not with the specifics of AI or) Tj T*
+(machine learning.) Tj T*
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 24 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+24 0 obj
+<< /Length 925 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 10 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(10) Tj T*
+(The shift from syntax to intent) Tj T*
+(Before we go further, we need a shared picture of what an agent is and what vibe coding) Tj T*
+(actually means. Both terms have accumulated enough meanings that they need to be) Tj T*
+(unpacked carefully.) Tj T*
+(AI Agents: A Quick Refresher) Tj T*
+(An AI agent is a software system that perceives a goal, plans steps to reach it, takes actions) Tj T*
+(through tools, observes the results, and iterates until the goal is met or it hits a stopping) Tj T*
+(condition. Where a chatbot produces a response and waits for the next prompt, an agent) Tj T*
+(runs its own loop. You give it a goal at the top, then it decides what to do next at each step.) Tj T*
+(Figure 2: The Agent Loop - Perceive, plan, act, observe, iterate.) Tj T*
+ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 26 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+26 0 obj
+<< /Length 1915 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 11 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(11) Tj T*
+(Every agent, however simple or sophisticated, is built from five parts. The November 2025) Tj T*
+(Introduction to Agents whitepaper covers each in depth.² For our purposes here, the) Tj T*
+(short version:) Tj T*
+(* The model is the reasoning engine. It reads the current context, decides what should) Tj T*
+(happen next, and produces the next thought, the next tool call, or the next message.) Tj T*
+(* Tools connect the model to the world. They include APIs the agent can call, code it can) Tj T*
+(execute, databases it can query, and other agents it can delegate to.) Tj T*
+(* Memory is the state. It allows the agent to recall past interactions, retrieve project-) Tj T*
+(specific rules, and retain context across sessions so it never starts from a blank slate.) Tj T*
+(* Orchestration is the code that runs the loop. It assembles the context for each model) Tj T*
+(call, dispatches tool calls, captures their results, and decides whether to continue.) Tj T*
+(* Deployment is what turns the prototype into a service: hosting, identity, observability, and) Tj T*
+(the production infrastructure the agent runs on.) Tj T*
+(These four parts work together in a continuous loop: get the mission, scan the scene, think) Tj T*
+(it through, take action, observe and iterate. The loop is the beating heart of every agent.) Tj T*
+(Everything else in this paper, and everything in the rest of the course, is a variation on) Tj T*
+(this loop.) Tj T*
+(What is vibe coding?) Tj T*
+(In February 2025, Andrej Karpathy posted a description of a new way of programming that) Tj T*
+(resonated widely across the software engineering community. He described an approach) Tj T*
+(where you "fully give in to the vibes, embrace exponentials, and forget that the code even) Tj T*
+ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 28 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+28 0 obj
+<< /Length 1481 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 12 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(12) Tj T*
+(exists." In this mode, a developer describes what they want in natural language, accepts the) Tj T*
+(AI's output, and when something breaks, copies the error message back into the prompt and) Tj T*
+(asks the AI to fix it.2) Tj T*
+(The term went viral because it captured something real: many developers were already) Tj T*
+(working this way but hadn't had language for it. Within months, "vibe coding" became a) Tj T*
+(common descriptor for any AI-assisted development workflow, which created confusion. Is a) Tj T*
+(senior engineer using an AI assistant to implement a well-specified feature "vibe coding"? Is) Tj T*
+(a team using AI agents to execute a carefully planned architecture? The term was applied so) Tj T*
+(broadly it began to lose meaning.) Tj T*
+(By early 2026, Karpathy himself acknowledged that the original framing was too narrow,) Tj T*
+(introducing the term "agentic engineering" to describe the more disciplined end of) Tj T*
+(the spectrum.4) Tj T*
+(The spectrum: vibe coding to agentic engineering) Tj T*
+(Rather than treating vibe coding and agentic engineering as a binary, we find it more useful) Tj T*
+(to think of them as endpoints on a spectrum. The key differentiator is not whether you use) Tj T*
+(AI. It's how much structure, verification, and human judgment surrounds the AI's output.) Tj T*
+ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 30 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+30 0 obj
+<< /Length 1659 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 13 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(13) Tj T*
+(Table 1: The Spectrum from Vibe Coding to Agentic Engineering) Tj T*
+(Dimension Vibe Coding Structured AI-Assisted) Tj T*
+(Coding) Tj T*
+(Agentic) Tj T*
+(Engineering) Tj T*
+(Intent specification Casual natural) Tj T*
+(language prompts) Tj T*
+(Detailed prompts) Tj T*
+(with examples) Tj T*
+(and constraints) Tj T*
+(Formal specs,) Tj T*
+(architecture docs,) Tj T*
+(memory files) Tj T*
+(Verification "Does it seem) Tj T*
+(to work?") Tj T*
+(Manual) Tj T*
+(testing, spot-checking) Tj T*
+(Automated test) Tj T*
+(suites, CI/CD gates,) Tj T*
+(LM judges) Tj T*
+(Codebase) Tj T*
+(understanding) Tj T*
+(Minimal; developer) Tj T*
+(may not read the) Tj T*
+(generated code) Tj T*
+(Selective review of) Tj T*
+(critical paths) Tj T*
+(Comprehensive) Tj T*
+(review of architecture;) Tj T*
+(AI handles) Tj T*
+(implementation details) Tj T*
+(Error handling Copy-paste error) Tj T*
+(messages back to) Tj T*
+(the AI) Tj T*
+(Developer diagnoses) Tj T*
+(root cause, AI) Tj T*
+(implements fix) Tj T*
+(Agents self-diagnose) Tj T*
+(within defined bounds;) Tj T*
+(humans handle) Tj T*
+(architectural issues) Tj T*
+(Appropriate scope Prototypes,) Tj T*
+(scripts, personal) Tj T*
+(projects, hackathons) Tj T*
+(Features within) Tj T*
+(established codebases) Tj T*
+(Production systems,) Tj T*
+(team-scale) Tj T*
+(evelopment) Tj T*
+(Risk profile High; acceptable for) Tj T*
+(disposable code) Tj T*
+(Moderate; human) Tj T*
+(judgment at) Tj T*
+(key checkpoints) Tj T*
+(Low; systematic) Tj T*
+(verification at) Tj T*
+(every stage) Tj T*
+ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 32 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+32 0 obj
+<< /Length 970 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 14 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(14) Tj T*
+(Figure 3: The Vibe Coding to Agentic Engineering Spectrum) Tj T*
+(The single biggest differentiator between the two ends is how outputs get verified. In vibe) Tj T*
+(coding, verification is optional; the developer runs the code and checks if it seems right. In) Tj T*
+(agentic engineering, two mechanisms work together. Tests verify the deterministic parts of) Tj T*
+(the system: a function given this input produces that output. Evaluations, or evals, verify the) Tj T*
+(Applied Tip:) Tj T*
+(The right position on this spectrum depends on the stakes. A weekend prototype) Tj T*
+(can be pure vibe coding. A production API handling financial transactions demands) Tj T*
+(agentic engineering. Most real work falls somewhere in between, and the skill is) Tj T*
+(knowing where to draw the line for each task.) Tj T*
+ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 34 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+34 0 obj
+<< /Length 1671 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 15 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(15) Tj T*
+(parts that are not deterministic: did the agent take the right trajectory of steps, choose the) Tj T*
+(right tools, and produce a final response that meets the quality bar. Tests are checked by) Tj T*
+(code; evals are checked by labelled datasets, scoring rubrics, and LM judges. Without both,) Tj T*
+(the practice is always vibe coding, regardless of how sophisticated the prompts are.) Tj T*
+(Context engineering: the real skill) Tj T*
+(As the field has matured, a key insight has emerged: the quality of AI-generated code) Tj T*
+(depends less on the cleverness of your prompts and more on the quality of the context) Tj T*
+(provided. This realization has given rise to the concept of context engineering, the practice) Tj T*
+(of providing AI agents with rich, structured information about your codebase, architecture,) Tj T*
+(conventions, and intent.5) Tj T*
+(Developers must consider six primary types of context:) Tj T*
+(* Instructions: The agent's core role, goals, and operational boundaries.) Tj T*
+(* Knowledge: Retrieved documents, architectural diagrams, and domain-specific data.) Tj T*
+(* Memory: Short-term session logs \(what just happened\) and long-term persistent state) Tj T*
+(\(what the project is\).) Tj T*
+(* Examples: Few-shot behavioral demonstrations and codebase reference patterns.) Tj T*
+(* Tools: The precise definitions of the APIs, scripts, and external services the agent) Tj T*
+(can invoke.) Tj T*
+(* Guardrails: Hard constraints, formatting rules, and safety validations.) Tj T*
+ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 36 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+36 0 obj
+<< /Length 1462 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 16 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(16) Tj T*
+(In AI code generation, context engineering involves carefully balancing which of these six) Tj T*
+(elements the agent possesses upfront versus what it can retrieve on demand. This creates a) Tj T*
+(critical separation between static and dynamic context.) Tj T*
+(Static context is always loaded: system instructions, rule files \(AGENTS.md, CLAUDE.md,) Tj T*
+(GEMINI.md\), global memory, and persona definitions. It defines who the agent is and how) Tj T*
+(it behaves. Static context is expensive because every token is present in every interaction,) Tj T*
+(regardless of relevance.) Tj T*
+(Dynamic context is loaded on demand: skill instructions triggered by task matching, tool) Tj T*
+(results retrieved during execution, documents fetched from RAG pipelines, and windowed) Tj T*
+(session history. Dynamic context is efficient because the agent pays the token cost only) Tj T*
+(when the information is needed.) Tj T*
+(The design decision of what belongs in static context versus dynamic context is a genuine) Tj T*
+(engineering trade-off. Too much static context wastes tokens and dilutes signals. Too little) Tj T*
+(means the agent forgets critical rules. The best systems treat this boundary as a first-class) Tj T*
+(architectural decision, reviewed and versioned like any other configuration.) Tj T*
+ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 38 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+38 0 obj
+<< /Length 995 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 17 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(17) Tj T*
+(Figure 4: Context Engineering -- Static vs. Dynamic) Tj T*
+(The most powerful pattern for managing dynamic context is Agent Skills: structured,) Tj T*
+(portable packages of procedural knowledge that the agent loads only when the task calls for) Tj T*
+(it.) Tj T*
+(Rather than embedding every piece of specialized knowledge into the agent's system) Tj T*
+(prompt, skills allow the agent to remain a lightweight generalist that flexes into specialist) Tj T*
+(roles on demand through progressive disclosure. The agent sees only lightweight metadata) Tj T*
+(at startup, loads full instructions when a task matches, and pulls deep reference material) Tj T*
+(only when explicitly needed. The result is that an agent can carry dozens of specialized) Tj T*
+(capabilities while paying the token cost for only the one it is actively using.) Tj T*
+ET
+endstream
+endobj
+39 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 40 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+40 0 obj
+<< /Length 1880 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 18 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(18) Tj T*
+(Agent Skills have seen rapid adoption across major coding agents and enterprise platforms) Tj T*
+(because they solve four problems that have plagued AI agent development:) Tj T*
+(* Context rot from overloaded prompts) Tj T*
+(* Absence of procedural memory for LLMs) Tj T*
+(* Operational overhead of multi-agent architectures) Tj T*
+(* Need for portability across tools and vendors) Tj T*
+(This section introduced the core principles of context engineering: the six types of context) Tj T*
+(every agent needs, the trade-off between static and dynamic context, and Agent Skills as the) Tj T*
+(key pattern for managing that trade-off at scale.) Tj T*
+(The companion Day-3 paper in this series on Context Engineering: Sessions, Skills & Memory) Tj T*
+(takes each of these ideas further, covering how to design and manage sessions, write and) Tj T*
+(evaluate skills, build persistent memory across interactions, and optimize token economics) Tj T*
+(for production systems.) Tj T*
+(The shift from "prompt engineering" to "context engineering" reflects a deeper truth about) Tj T*
+(working with AI. Models don't need cleverly worded instructions as much as they need the) Tj T*
+(same context that a skilled human developer would need to do good work. The question) Tj T*
+(isn't "how do I trick the AI into writing good code?" It's "what would a new team member) Tj T*
+(need to know to contribute effectively, and how do I encode that knowledge in a form the AI) Tj T*
+(can use?") Tj T*
+(Context engineering is the bridge between vibe coding and agentic engineering. It is also the) Tj T*
+(bridge between this section and the next one, where we look at the structure that surrounds) Tj T*
+(every model and makes it useful.) Tj T*
+ET
+endstream
+endobj
+41 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 42 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+42 0 obj
+<< /Length 1704 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 19 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(19) Tj T*
+(By shifting our focus from writing syntax to engineering this context, the bottlenecks in) Tj T*
+(software creation fundamentally change. We are no longer waiting on human hands to type) Tj T*
+(boilerplate; we are waiting on human minds to define the boundaries. This necessitates a) Tj T*
+(complete reimagining of the traditional Software Development Life Cycle \(SDLC\), as the) Tj T*
+(systems we use to build software now dictate the speed at which it is delivered.") Tj T*
+(The new software development life cycle) Tj T*
+(The traditional SDLC under pressure) Tj T*
+(The software development life cycle has already been through one major transformation.) Tj T*
+(Over the past two decades, most enterprises moved from sequential waterfall processes to) Tj T*
+(iterative models: Agile sprints, continuous integration, DevOps pipelines, and rapid release) Tj T*
+(cycles. That shift shortened feedback loops, brought testing closer to development, and) Tj T*
+(made deployment a continuous process rather than a quarterly event.) Tj T*
+(AI compresses this cycle dramatically, but unevenly: implementation that once took weeks) Tj T*
+(can now be done in hours, while requirements, architecture, and verification remain) Tj T*
+(stubbornly human-paced. The result is not a faster version of the old SDLC. It is a different) Tj T*
+(workflow, where the boundaries between phases blur, iteration cycles shorten from weeks) Tj T*
+(to minutes, and the developer's role shifts from primary implementor to system designer and) Tj T*
+(quality arbiter.) Tj T*
+ET
+endstream
+endobj
+43 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 44 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+44 0 obj
+<< /Length 876 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 20 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(20) Tj T*
+(Figure 5: Traditional SDLC vs. AI-Driven SDLC) Tj T*
+(A note on pace of change: The phase-by-phase picture described above reflects the state) Tj T*
+(of AI-driven SDLC  as of mid-2026. It is shifting fast. Early signs suggest that the compression) Tj T*
+(will spread beyond implementation: teams are already experimenting with workflows where) Tj T*
+(developers go directly from specs to review, with AI agents handling implementation, testing,) Tj T*
+(and deployment in the background. The boundaries drawn in this section may look different) Tj T*
+(in 12 months. What will remain constant is human judgment, taste, and the skill to verify AI) Tj T*
+(output as the machines take on more of the implementation.) Tj T*
+ET
+endstream
+endobj
+45 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 46 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+46 0 obj
+<< /Length 1700 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 21 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(21) Tj T*
+(How AI transforms each phase) Tj T*
+(Requirements and planning) Tj T*
+(Requirements is the phase where the gap between intent and implementation has historically) Tj T*
+(been widest. Translating business needs into technical specifications has been a manual,) Tj T*
+(error-prone process that creates a persistent gap between what stakeholders want and what) Tj T*
+(engineers build.) Tj T*
+(Modern AI tools can participate directly in requirements refinement: generating user stories) Tj T*
+(from product briefs, identifying edge cases that humans miss, producing API schemas from) Tj T*
+(natural-language descriptions, and generating interactive prototypes from specification) Tj T*
+(documents. Agentic development environments allow developers to go from a description to) Tj T*
+(a working prototype in minutes, collapsing the requirements-to-prototype feedback loop to) Tj T*
+(near zero.) Tj T*
+(Requirements stop being a document handed off between teams. They become) Tj T*
+(a conversation between humans and AI that produces specification and initial) Tj T*
+(implementation simultaneously.) Tj T*
+(Design and architecture) Tj T*
+(Architecture remains the most stubbornly human-centric phase of the SDLC, and for) Tj T*
+(good reason. Architectural decisions are fundamentally about trade-offs: consistency vs.) Tj T*
+(availability, complexity vs. flexibility, build vs. buy. These trade-offs depend on business) Tj T*
+(context, organisational constraints, and long-term strategic considerations that AI cannot) Tj T*
+(fully grasp.) Tj T*
+ET
+endstream
+endobj
+47 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 48 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+48 0 obj
+<< /Length 1858 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 22 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(22) Tj T*
+(AI excels at implementing architectural decisions once they are made. Given a clear) Tj T*
+(architecture document, AI agents can scaffold entire applications, generate consistent) Tj T*
+(patterns across modules, and ensure that new code conforms to established conventions.) Tj T*
+(The developer's role shifts from writing boilerplate to making and documenting the structural) Tj T*
+(decisions that boilerplate implements.) Tj T*
+(Implementation) Tj T*
+(Modern coding agents can generate entire features from natural-language descriptions,) Tj T*
+(implement complex algorithms, and produce multi-file changes that work together correctly.) Tj T*
+(The productivity gains are real: industry surveys report 25 to 39% productivity improvements,) Tj T*
+(with some tasks seeing larger gains.?) Tj T*
+(The picture is more nuanced than headline numbers suggest. A study by METR found that) Tj T*
+(experienced developers using AI assistants actually took 19% longer on certain tasks, largely) Tj T*
+(because of the time spent verifying, debugging, and correcting AI output.? AI does not) Tj T*
+(eliminate implementation work so much as transform it from writing to reviewing, guiding,) Tj T*
+(and verifying.) Tj T*
+(Testing and quality assurance) Tj T*
+(Testing AI-generated code requires evaluating not just what the agent produced, but how) Tj T*
+(it got there. Output evaluation checks the final artifact: does the code compile, do the tests) Tj T*
+(pass? Trajectory evaluation checks the full sequence of tool calls and intermediate reasoning.) Tj T*
+(Both are necessary because a fluent output that skipped its verification steps is a more) Tj T*
+(dangerous failure than one with a visible error.) Tj T*
+ET
+endstream
+endobj
+49 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 50 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+50 0 obj
+<< /Length 2032 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 23 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(23) Tj T*
+(AI also transforms test generation itself. Agents can produce test cases, including edge) Tj T*
+(cases and property-based tests, that humans might not think of. More importantly, tests and) Tj T*
+(evals become the primary mechanism for communicating intent to AI agents: a well-written) Tj T*
+(eval suite tells the AI what "correct" means and provides an automated way to verify it.) Tj T*
+(These practices are most effective when wired into a continuous quality flywheel: evaluate) Tj T*
+(against a benchmark suite, diagnose failures by clustering root causes, optimize the prompts) Tj T*
+(or tools that caused them, verify fixes against a regression suite, and monitor production) Tj T*
+(traffic for new failure modes. Each cycle compounds.) Tj T*
+(Code review and deployment) Tj T*
+(The review process itself is being augmented, with AI serving as a first-pass reviewer that) Tj T*
+(can identify potential bugs, style violations, security vulnerabilities, and performance issues) Tj T*
+(before a human reviewer sees the code. This does not replace human review, since context-) Tj T*
+(dependent decisions about design, maintainability, and strategic alignment still require) Tj T*
+(human judgment, but it significantly reduces the cognitive burden on reviewers.) Tj T*
+(Deployment pipelines are becoming AI-aware as well. AI agents can monitor deployment) Tj T*
+(health, automatically roll back problematic releases, and predict deployment risks based) Tj T*
+(on the nature and scope of changes. Modern deployment platforms increasingly integrate) Tj T*
+(with AI-powered observability to create feedback loops between production behaviour and) Tj T*
+(development decisions.) Tj T*
+(Day 5 in this series covers what changes for human reviewers when PR volume scales with) Tj T*
+(agent output -- bundled summaries, conditional LGTM, agent-driven code-review skills.) Tj T*
+ET
+endstream
+endobj
+51 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 52 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+52 0 obj
+<< /Length 1694 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 24 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(24) Tj T*
+(Maintenance and evolution) Tj T*
+(Perhaps the most underestimated transformation is in maintenance. Legacy codebases) Tj T*
+(that were once impenetrable to new team members can now be navigated, understood,) Tj T*
+(and modified with AI assistance. An AI agent can read a codebase, understand its patterns,) Tj T*
+(identify the relevant files for a change, and implement modifications while respecting the) Tj T*
+(existing architecture.) Tj T*
+(This has significant implications for technical debt. Code that was considered "too risky) Tj T*
+(to touch" because only its original authors understood it can now be safely refactored,) Tj T*
+(modernized, and extended. AI agents can systematically migrate codebases between) Tj T*
+(frameworks, update deprecated APIs, and modernize test suites - tasks that were previously) Tj T*
+(so tedious and risky that they simply never happened.) Tj T*
+(The factory model: building the system that builds software) Tj T*
+(The mental model that ties these transformations together is what we call the factory model.) Tj T*
+(In this model, the developer's primary output is not code - it's the system that produces) Tj T*
+(code. This system includes:8) Tj T*
+(* Specifications and context that define what needs to be built) Tj T*
+(* Agents that translate specifications into implementation) Tj T*
+(* Tests and quality gates that verify correctness) Tj T*
+(* Feedback loops that route failures back to agents for correction) Tj T*
+(* Guardrails that constrain agents to safe, predictable behavior) Tj T*
+ET
+endstream
+endobj
+53 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 54 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+54 0 obj
+<< /Length 886 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 25 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(25) Tj T*
+(A factory manager does not assemble every widget by hand. They design the assembly line) Tj T*
+(and ensure quality control. The modern developer designs the development system and) Tj T*
+(ensures that its output meets the required standard. Success comes from giving agents) Tj T*
+(success criteria rather than step-by-step instructions, then letting them iterate.) Tj T*
+(Figure 6: The Factory Model Developer designs the system -> agents produce the code -> tests verify) Tj T*
+(the output.) Tj T*
+(This raises the question that drives the rest of this paper: what is the central machine in) Tj T*
+(the factory? What does the agent itself, the thing doing the work inside the assembly line,) Tj T*
+(actually look like?) Tj T*
+ET
+endstream
+endobj
+55 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 56 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+56 0 obj
+<< /Length 1222 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 26 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(26) Tj T*
+(If the developer is the factory manager, the AI model is merely the raw engine on the factory) Tj T*
+(floor. An engine on its own cannot manufacture a car; it needs belts, gears, safety sensors,) Tj T*
+(and an assembly line. In the context of AI-assisted development, this surrounding machinery) Tj T*
+(is known as the Harness.) Tj T*
+(Harness Engineering: What surrounds) Tj T*
+(the model) Tj T*
+(There is a temptation, when builders start working with AI agents, to treat the model as the) Tj T*
+(system. A new model comes out, the agent gets smarter. An older model and the agent gets) Tj T*
+(worse. The model becomes the explanation for everything good and bad.) Tj T*
+(That intuition is wrong, and it leads to the wrong investments. The model is one input into a) Tj T*
+(running agent. Everything else, the prompts, the tools, the context policies, the hooks, the) Tj T*
+(sandboxes, the sub-agents, the observability, is the harness: the scaffolding wrapped around) Tj T*
+(the model that lets it actually finish something.¹¹) Tj T*
+(A useful equation:) Tj T*
+ET
+endstream
+endobj
+57 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 58 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+58 0 obj
+<< /Length 574 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 27 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(27) Tj T*
+(A raw model is not an agent. It becomes one once a harness gives it state, tool execution,) Tj T*
+(feedback loops, and enforceable constraints. The behaviour developers experience when) Tj T*
+(working with Claude Code, Cursor, Codex, Antigravity, Aider, or Cline is dominated by what) Tj T*
+(the harness does, not just by which model is underneath.) Tj T*
+(Figure 7: Harness Anatomy | Agent = Model + Harness) Tj T*
+ET
+endstream
+endobj
+59 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 60 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+60 0 obj
+<< /Length 1464 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 28 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(28) Tj T*
+(What's in the harness) Tj T*
+(Concretely, a harness includes:) Tj T*
+(* Instructions and Rule Files: The text that defines who the agent is, what it cares about,) Tj T*
+(and what it is forbidden from doing. This includes AGENTS.md, CLAUDE.md, GEMINI.md,) Tj T*
+(skill files, and sub-agent prompts.) Tj T*
+(* Tools: The functions, MCP servers, and APIs the agent can call, plus the prose around) Tj T*
+(them that tells the model when and how to call them.) Tj T*
+(* Sandboxes and execution environments: Where the agent's code actually runs, what it) Tj T*
+(has access to, what it cannot reach.) Tj T*
+(* Orchestration logic: Sub-agent spawning, model routing, hand-offs between specialists,) Tj T*
+(and the rules that govern when each one fires.) Tj T*
+(* Guardrails or Hooks: Deterministic code that runs at specific lifecycle points: before a) Tj T*
+(tool call, after a file edit, before a commit. Hooks are the place for things the agent should) Tj T*
+(never forget but often does.) Tj T*
+(* Observability: Logs, traces, evaluations, cost and latency metering. Without) Tj T*
+(observability, there is no way to tell whether the agent is doing well or quietly drifting.) Tj T*
+(If that sounds like a lot of surface area, it is. And it is the team's surface area, not the) Tj T*
+(model provider's.) Tj T*
+ET
+endstream
+endobj
+61 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 62 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+62 0 obj
+<< /Length 1483 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 29 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(29) Tj T*
+(Harness in SDLC) Tj T*
+(While the model itself determines how to accomplish a task, the harness is the scaffolding) Tj T*
+(that provides access to the tools, sandboxes, and orchestration needed to execute it.) Tj T*
+(Therefore, this harness must be present in every phase where an AI agent operates.) Tj T*
+(Here is how the harness actively operates across the different phases of the new SDLC:) Tj T*
+(1. Requirements, Planning, & Architecture \(Configuring) Tj T*
+(the Harness\)) Tj T*
+(This is where the harness is configured and calibrated. Before the AI writes any production) Tj T*
+(code, the developer must set up the agent's environment.) Tj T*
+(* Harness Configuration: Providing the Instructions and Rule Files \(e.g., creating the) Tj T*
+(AGENTS.md and defining architectural constraints\) that the harness will load and make) Tj T*
+(available to the model.) Tj T*
+(* The Action: The developer defines the tools the agent will have access to \(like specific) Tj T*
+(APIs or database schemas\) and sets the fundamental rules the agent cannot break.) Tj T*
+(2. Implementation \(Running the Harness\)) Tj T*
+(During active coding, the harness acts as the boundary that keeps the AI model focused,) Tj T*
+(secure, and productive.) Tj T*
+(* Harness Components Used: Sandboxes, Execution Environments, and Tools.) Tj T*
+ET
+endstream
+endobj
+63 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 64 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+64 0 obj
+<< /Length 1656 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 30 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(30) Tj T*
+(* The Action: As the model generates code, it executes it within the harness's isolated) Tj T*
+(sandbox. If the model needs to read a file or search the web, it uses the tools provided) Tj T*
+(by the harness.) Tj T*
+(3. Testing & QA \(The Feedback Loop\)) Tj T*
+(Testing in an agentic workflow relies heavily on the harness to facilitate) Tj T*
+(autonomous self-correction.) Tj T*
+(* Harness Components Used: Orchestration Logic and Guardrails.) Tj T*
+(* The Action: When the agent writes a function, the harness provides the execution) Tj T*
+(environment \(such as a sandboxed terminal\) that allows the automated tests to be) Tj T*
+(executed. If a test fails, the orchestration logic captures the error output from that) Tj T*
+(environment and routes it back to the model, asking it to try again. The harness is what) Tj T*
+(creates this automated 'think -> act -> observe' loop.") Tj T*
+(4. Code Review, Deployment, & Maintenance \(Observing) Tj T*
+(the Harness\)) Tj T*
+(Even after the code is written, the harness ensures the agent behaves safely in live or) Tj T*
+(near-live environments.) Tj T*
+(* Harness Components Used: Hooks and Observability.) Tj T*
+(* The Action: The harness runs deterministic hooks \(e.g., blocking a commit if the agent) Tj T*
+(tries to push a hard-coded password\). Furthermore, the observability layer tracks token) Tj T*
+(costs, latency, and agent drift, allowing human engineers to audit exactly why an agent) Tj T*
+(made a specific deployment decision.) Tj T*
+ET
+endstream
+endobj
+65 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 66 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+66 0 obj
+<< /Length 1967 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 31 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(31) Tj T*
+(The transition from 'vibe coding' to 'agentic engineering' is not simply about the tools you) Tj T*
+(use--a developer can vibe code or apply agentic engineering using the exact same agent.) Tj T*
+(Instead, it is defined by how deliberately you configure and apply the harness. Vibe coding) Tj T*
+(relies on minimal or implicit scaffolding aimed purely at rapid implementation. Agentic) Tj T*
+(engineering relies on clear, extensive harness abstractions that guide the AI from the very) Tj T*
+(first planning document all the way through to production monitoring.) Tj T*
+(The impact of this deliberate configuration is highly measurable. Public benchmarks make the) Tj T*
+(size of the harness effect concrete. On Terminal Bench 2.0, one team moved a coding agent) Tj T*
+(from outside the Top 30 to the Top 5 by changing only the harness, with no model change at) Tj T*
+(all. A separate study at LangChain raised a coding agent's score on the same benchmark by) Tj T*
+(13.7 points by tweaking only the system prompt, tools, and middleware around a fixed model.) Tj T*
+(The everyday version of this observation is crucial for teams adopting AI across the SDLC:) Tj T*
+(when an agent does something wrong, the first instinct is to blame the model. More often,) Tj T*
+(the failure traces back to a missing tool, a vague rule, an absent guardrail, or a context) Tj T*
+(window stuffed with noise. Most agent failures, examined honestly, are configuration failures.) Tj T*
+(The developer's evolving role:) Tj T*
+(conductors and orchestrators) Tj T*
+(As AI takes over more of the implementation work, the developer's role is transforming in) Tj T*
+(ways that are both exciting and disorienting. We find it useful to think of two modes that) Tj T*
+(developers move between fluidly: conductor and orchestrator.12) Tj T*
+ET
+endstream
+endobj
+67 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 68 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+68 0 obj
+<< /Length 642 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 32 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(32) Tj T*
+(Figure 8: Conductor vs. Orchestrator \(Two modes of working with AI Agents\)) Tj T*
+(The conductor: hands-on, real-time direction) Tj T*
+(In conductor mode, a developer works in real-time with an AI pair-programmer. They're in) Tj T*
+(the IDE, watching code appear, guiding the AI with prompts and corrections, and maintaining) Tj T*
+(fine-grained control over what gets written. The AI is a powerful instrument, but the) Tj T*
+(developer is actively directing every movement.) Tj T*
+ET
+endstream
+endobj
+69 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 70 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+70 0 obj
+<< /Length 2098 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 33 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(33) Tj T*
+(This mode is typical when working on complex logic, debugging tricky issues, or working in) Tj T*
+(unfamiliar codebases where the developer needs to understand each change as it's made.) Tj T*
+(Tools like GitHub Copilot, Google's Gemini Code Assist, Cursor, and Windsurf primarily) Tj T*
+(support this mode through inline completions, chat interfaces, and edit-in-place capabilities.) Tj T*
+(The conductor mode is natural for developers who come from traditional engineering) Tj T*
+(backgrounds. It preserves the sense of understanding and control that many engineers value.) Tj T*
+(The risk is that it can also become a bottleneck - if the developer is personally directing every) Tj T*
+(keystroke, the throughput improvement from AI is limited.) Tj T*
+(The orchestrator: async, multi-agent delegation) Tj T*
+(In orchestrator mode, the developer operates at a higher level of abstraction. They) Tj T*
+(define goals, assign them to agents, and review results - but they're not watching code) Tj T*
+(appear line by line. Agents may be working in the background, in parallel, on different) Tj T*
+(parts of a codebase. The developer checks in periodically, reviews output, and provides) Tj T*
+(course corrections.) Tj T*
+(This mode is typical for well-defined tasks like bug fixes, feature implementations against) Tj T*
+(established patterns, codebase migrations, and test generation. Tools like Google's Jules,) Tj T*
+(GitHub Copilot's agent mode, Cursor's background agents, and Claude Code support this) Tj T*
+(mode through async task execution, often working in sandboxed environments with full) Tj T*
+(access to the repository, build tools, and test suites.13) Tj T*
+(The orchestrator mode requires a different skill set. Instead of deep expertise in syntax and) Tj T*
+(language idioms, it demands strong skills in:) Tj T*
+(* Specification: Defining tasks precisely enough that an agent can execute them) Tj T*
+(without ambiguity) Tj T*
+ET
+endstream
+endobj
+71 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 72 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+72 0 obj
+<< /Length 1793 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 34 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(34) Tj T*
+(* Decomposition: Breaking large tasks into appropriately sized units for agent execution) Tj T*
+(* Evaluation: Quickly assessing whether agent output meets quality standards) Tj T*
+(* System design: Designing the constraints, tests, and feedback loops that keep) Tj T*
+(agents productive) Tj T*
+(The 80% problem) Tj T*
+(A persistent challenge in AI-assisted development is what we call the 80% problem: AI agents) Tj T*
+(can rapidly generate approximately 80% of the code for a feature, but the remaining 20%) Tj T*
+(- the edge cases, error handling, integration points, and subtle correctness requirements -) Tj T*
+(demands deep contextual knowledge that current models often lack.14) Tj T*
+(The nature of AI errors has evolved from simple syntax mistakes to more insidious conceptual) Tj T*
+(failures: wrong assumptions about business logic, failure to seek clarification on ambiguous) Tj T*
+(requirements, missing edge cases, and architectural decisions that create subtle long-term) Tj T*
+(maintenance burdens. These errors are harder to detect precisely because the code "looks) Tj T*
+(right" and may even pass basic tests.) Tj T*
+(The developers who navigate this challenge most effectively adopt a specific posture: they) Tj T*
+(use AI for what it's good at \(rapid implementation of well-specified tasks\) while reserving) Tj T*
+(their own attention for what AI struggles with \(ambiguous requirements, architectural trade-) Tj T*
+(offs, and correctness verification\). They don't try to be faster by accepting everything the AI) Tj T*
+(produces. They try to be faster by focusing their expertise where it matters most.) Tj T*
+ET
+endstream
+endobj
+73 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 74 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+74 0 obj
+<< /Length 1620 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 35 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(35) Tj T*
+(Navigating this 80% problem effectively requires applying the right tool to the right phase) Tj T*
+(of work. A developer operating as a 'Conductor' needs a different set of tools than one) Tj T*
+(operating as an 'Orchestrator'. To understand how to map these operational modes to) Tj T*
+(your daily workflow, we must categorise the current landscape of AI agents based on their) Tj T*
+(autonomy and integration.) Tj T*
+(Coding agents in practice) Tj T*
+(A developer building an agent today does most of the work from a terminal, often in natural) Tj T*
+(language, often with another coding agent doing the typing. This is new. A year ago the same) Tj T*
+(task meant frameworks, SDKs, and cloud consoles. The patterns that have replaced them are) Tj T*
+(worth naming clearly, both for the developer who wants to use coding agents in their day,) Tj T*
+(and for the developer who wants to build agents of their own.) Tj T*
+(Where coding agents fit in the) Tj T*
+(developer's day) Tj T*
+(Coding agents show up in three places in everyday work. Most developers use all three) Tj T*
+(at once.) Tj T*
+(In the editor: Inline completion that suggests the next line as the developer types. Chat) Tj T*
+(panels that explain or modify code in place. Whole-codebase awareness inside the IDE. This) Tj T*
+(is where most people first meet AI in coding, and where the work stays in flow. Examples) Tj T*
+(include GitHub Copilot, Cursor, Windsurf, JetBrains AI Assistant.) Tj T*
+ET
+endstream
+endobj
+75 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 76 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+76 0 obj
+<< /Length 2024 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 36 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(36) Tj T*
+(In the terminal: Coding agents that the developer launches from the command line, hand) Tj T*
+(a goal to in plain language, and let work across the codebase. Full file system access, multi-) Tj T*
+(file edits, the ability to run tools and tests and iterate based on results. This is where serious) Tj T*
+(vibe coding happens today. Examples include Antigravity CLI, Claude Code, Codex CLI, Open) Tj T*
+(Code, and Cline.) Tj T*
+(In the background: Agents that take a task and run autonomously in cloud-hosted) Tj T*
+(sandboxes, often for hours, often producing a pull request as output. The developer) Tj T*
+(hands off and reviews it later. Examples include Google Jules, GitHub Copilot agent mode,) Tj T*
+(Cursor's background agents and Google's specialized AlphaEvolve agent for designing) Tj T*
+(advanced algorithms.) Tj T*
+(In practice, an editor agent helps when the developer is in the middle of writing code and) Tj T*
+(wants suggestions, quick edits, or explanations without leaving flow. A terminal agent fits) Tj T*
+(multi-file work, exploration of unfamiliar codebases, and tasks where the agent needs) Tj T*
+(to run code and react to what it observes. A background agent fits well-specified tasks) Tj T*
+(the developer can describe in a paragraph and walk away from, like fixing a known bug,) Tj T*
+(generating a test suite, or migrating code from one framework to another. The same) Tj T*
+(developer often uses all three in a single day.) Tj T*
+(The right starting point depends on the task, not on which category sits highest on some) Tj T*
+(autonomy ladder.) Tj T*
+(Vibe Coding Production-ready Agents) Tj T*
+(Everything discussed so far has been about using coding agents to build software: writing) Tj T*
+(features, fixing bugs, generating tests, refactoring code. But what happens when the thing) Tj T*
+(you need to build is itself an agent?) Tj T*
+ET
+endstream
+endobj
+77 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 78 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+78 0 obj
+<< /Length 2243 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 37 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(37) Tj T*
+(A customer support bot that handles refund requests. A research assistant that cross-) Tj T*
+(references sources and produces grounded reports. An internal tool that monitors) Tj T*
+(compliance and flags anomalies. These are not tasks you solve with a coding agent in) Tj T*
+(your terminal. They are products that need their own tools, their own memory, their own) Tj T*
+(evaluation, and their own deployment infrastructure.) Tj T*
+(The same terminal-based workflow that produces prototype scripts now reaches these) Tj T*
+(production agents. Building, evaluating, and deploying a real agent that runs at scale, with) Tj T*
+(persistent memory, governance, and observability, has moved from a framework and cloud) Tj T*
+(console task into something that happens in the same terminal, often by talking to the same) Tj T*
+(coding agent the developer was already using.) Tj T*
+(This workflow matters when the builder needs an agent that runs reliably for real users:) Tj T*
+(persistent memory across sessions, scoped permissions on tools and data, eval coverage) Tj T*
+(that catches regressions before they ship, observability that traces what the agent actually) Tj T*
+(did. For one-off scripts or personal automation, a regular coding agent is enough; the agent) Tj T*
+(is the destination. For agents that serve real users at scale, the agent is the product, and it) Tj T*
+(needs the substrate underneath.) Tj T*
+(Google's Agents CLI is built around this idea.¹? It is a small command-line tool that bundles) Tj T*
+(a set of skills for building agents on Google Cloud, and crucially, it works with whichever) Tj T*
+(coding agent the developer prefers, Claude Code, Codex, or another. After a one-time) Tj T*
+(install, the coding agent gains seven new skills covering the full ADK lifecycle: scaffolding a) Tj T*
+(project, writing the agent code, evaluating it, deploying it to Agent Runtime, and wiring up) Tj T*
+(observability. The developer does not learn a new SDK. They describe what they want, and) Tj T*
+(the coding agent uses the skills to do the right thing at each step.) Tj T*
+ET
+endstream
+endobj
+79 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 80 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+80 0 obj
+<< /Length 1944 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 38 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(38) Tj T*
+(Concretely, the entire build-evaluate-deploy loop looks like this:) Tj T*
+(Snippet 1: Agents CLI Setup and Build.) Tj T*
+(Behind that single instruction, the coding agent scaffolds a project from a template, writes) Tj T*
+(the ADK code, generates an evalset, runs it against the agent, deploys to Agent Runtime, and) Tj T*
+(reports back. For developers who prefer to drive directly, the same operations are available) Tj T*
+(as plain CLI commands \(agents-cli create, agents-cli playground, agents-cli) Tj T*
+(eval, agents-cli deploy\).) Tj T*
+(Production agents used to require a separate stack and a separate workflow from) Tj T*
+(prototypes. Now the prototype that ran on the developer's laptop yesterday can become the) Tj T*
+(production agent serving real users today, without a rewrite.) Tj T*
+(The same workflow scales from one agent to many. ADK provides graph-based workflows,) Tj T*
+(multi-agent workflows for building collaborative agents  and interaction mechanisms like) Tj T*
+(shared session state, LLM-driven delegation, and explicit invocation, that combine into) Tj T*
+(whatever multi-agent pattern fits the problem.) Tj T*
+(Coordination across agents happens through shared session state for simple cases, through) Tj T*
+(Model Context Protocol \(MCP\) for tool access, and through the Agent2Agent \(A2A\) protocol) Tj T*
+(for cross-agent delegation.¹? Anthropic's engineering team published an experiment in early) Tj T*
+(2026 in which agent teams running on this kind of architecture built a working C compiler in) Tj T*
+(# One-time setup) Tj T*
+(uvx google-agents-cli setup) Tj T*
+(# Then in your coding agent:) Tj T*
+(> Build a support agent that answers questions from our docs.) Tj T*
+(> evaluate it on the FAQ dataset) Tj T*
+(> Deploy it to Agent Engine) Tj T*
+ET
+endstream
+endobj
+81 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 82 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+82 0 obj
+<< /Length 1859 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 39 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(39) Tj T*
+(Rust over two weeks, with humans setting direction and reviewing output but not writing the) Tj T*
+(implementation.¹? The bottleneck moved from writing the code to specifying what it should do) Tj T*
+(and verifying that the agents did it.) Tj T*
+(For builders, the practical implication is simple. The same vibe coding workflow that produces) Tj T*
+(a script today produces a production agent tomorrow. The lifecycle, build, evaluate, deploy,) Tj T*
+(observe, refine, lives in one place. The path from idea to running agent has collapsed from) Tj T*
+(weeks to hours, and most of the work now happens in natural language.) Tj T*
+(The practices that make this workflow production-grade at team scale, from spec-) Tj T*
+(driven development and structured code review to guardrails, sandboxing, and zero-trust) Tj T*
+(development, are covered in the Day 5 companion paper: Spec-Driven Production Grade) Tj T*
+(Development in the Age of Vibe Coding.) Tj T*
+(The Economics of AI Development) Tj T*
+(When evaluating the impact of AI on the software development life cycle, the conversation) Tj T*
+(often begins and ends with developer velocity: how fast can we write code? However, for) Tj T*
+(engineering leaders, the more critical metric is the Total Cost of Ownership \(TCO\).) Tj T*
+(To understand the true cost of AI-assisted development, we must look at how different) Tj T*
+(workflows shift the financial and operational burdens between Capital Expenditure \(CapEx\)--) Tj T*
+(the upfront investment to build something--and Operational Expenditure \(OpEx\)--the) Tj T*
+(ongoing cost to run, fix, and maintain it. Crucially, in the AI era, OpEx is heavily dictated by) Tj T*
+(the token economy.) Tj T*
+ET
+endstream
+endobj
+83 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 84 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+84 0 obj
+<< /Length 1145 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 40 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(40) Tj T*
+(Figure 9: The Economics of AI Development) Tj T*
+(The Hidden Debt of Vibe Coding \(Low CapEx, High OpEx\)) Tj T*
+(At first glance, vibe coding appears incredibly cost-effective. The barrier to entry is) Tj T*
+(essentially zero: a standard monthly subscription to an AI assistant and a few casual prompts.) Tj T*
+(The CapEx is negligible because the developer relies entirely on the model's baseline) Tj T*
+(capabilities rather than investing time in system design.) Tj T*
+(However, the economics of vibe coding hide a massive, compounding OpEx burden:) Tj T*
+(* The Token Burn Rate: Every interaction with a Large Language Model \(LLM\) incurs a) Tj T*
+(cost based on input and output tokens. In vibe coding, developers often dump massive,) Tj T*
+(unstructured files into the context window and repeatedly ask the model to fix its own) Tj T*
+(unverified mistakes. This creates an expensive "prompting loop" that burns through API) Tj T*
+(tokens with low first-pass success rates.) Tj T*
+ET
+endstream
+endobj
+85 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 86 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+86 0 obj
+<< /Length 1745 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 41 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(41) Tj T*
+(* Maintenance Tax: Code written through ad-hoc prompting often lacks structural) Tj T*
+(consistency. When a bug arises six months later, human engineers must spend days) Tj T*
+(reverse-engineering unstructured, AI-generated "spaghetti" code.) Tj T*
+(* Security Remediation: Without an automated evaluation harness, the rapid generation) Tj T*
+(of code leads to the rapid generation of vulnerabilities. The cost of fixing a security flaw in) Tj T*
+(production is exponentially higher than catching it during the design phase.) Tj T*
+(The Investment of Agentic Engineering \(High CapEx,) Tj T*
+(Low OpEx\)) Tj T*
+(Agentic engineering flips this economic model. It requires a deliberate, upfront investment of) Tj T*
+(engineering time and resources before a single line of production code is generated.) Tj T*
+(The CapEx in agentic engineering includes designing API schemas, building deterministic) Tj T*
+(test suites, and, most importantly, structuring the agent's context. While this upfront cost) Tj T*
+(is higher, the marginal cost of shipping and maintaining a feature drops dramatically. The AI) Tj T*
+(operates within a strictly governed "factory," meaning its output is structurally sound, pre-) Tj T*
+(tested, and aligned with company standards.) Tj T*
+(Context Engineering as a Financial Lever) Tj T*
+(In the token economy, context engineering is not just a technical skill--it is a financial) Tj T*
+(strategy. LLMs charge for every piece of information you send them. Passing an entire) Tj T*
+(100,000-token repository into every prompt is financially unviable at scale.) Tj T*
+ET
+endstream
+endobj
+87 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 88 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+88 0 obj
+<< /Length 1728 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 42 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(42) Tj T*
+(Effective context engineering ensures the model receives a dense, high-signal payload \(such) Tj T*
+(as a precise AGENTS.md file and architectural guardrails\) rather than a sprawling, noisy one.) Tj T*
+(By providing the right context upfront, developers dramatically increase the agent's first-) Tj T*
+(pass success rate, avoiding the costly trial-and-error loops that plague vibe coding.) Tj T*
+(Scaling Efficiency via Dynamic Context and Skills) Tj T*
+(To truly optimize OpEx, advanced agentic engineering relies on dynamic context through) Tj T*
+(the use of "skills" or tool calling \(such as Model Context Protocol servers\) which we cover in) Tj T*
+(detail in day-3 paper.) Tj T*
+(Intelligent Model Routing) Tj T*
+(Furthermore, agentic engineering allows for intelligent model routing. In a vibe coding) Tj T*
+(workflow, a developer typically relies on a single, massive frontier model for every) Tj T*
+(interaction--paying premium token prices just to ask the AI to fix a typo or generate a basic) Tj T*
+(unit test.) Tj T*
+(A well-designed factory model avoids this waste. It uses large, advanced models for highly) Tj T*
+(complex tasks \(Requirements, Architecture, and initial Implementation\) but automatically) Tj T*
+(routes deterministic, lower-complexity tasks \(Test Generation, Code Review, and CI/CD) Tj T*
+(monitoring\) to smaller, faster, and significantly cheaper models. By orchestrating a multi-) Tj T*
+(model ecosystem, engineering teams can maintain peak output quality while systematically) Tj T*
+(driving down the operational token cost.) Tj T*
+ET
+endstream
+endobj
+89 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 90 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+90 0 obj
+<< /Length 2037 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 43 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(43) Tj T*
+(Where to start) Tj T*
+(The shift from syntax to intent is not a future state. It is the work in front of us today. Whether) Tj T*
+(reading this as an individual builder or as a leader thinking about how a team or organisation) Tj T*
+(adopts these tools, the same underlying principle holds: AI amplifies the engineering culture) Tj T*
+(it lands in. The practices below translate that principle into action.) Tj T*
+(For individual developers) Tj T*
+(1. Set up an AGENTS.md \(or equivalent\) for the project. Pick the convention that matches) Tj T*
+(the coding agent of choice. Start with ten lines: stack, conventions, hard rules, workflow.) Tj T*
+(Add a rule every time the agent does something it should not do again.) Tj T*
+(2. Install a set of skills for your coding agents \(like Agents CLI\) to build, evaluate, deploy) Tj T*
+(and optimize agents.) Tj T*
+(3. Pick one repetitive workflow and make it the first agent. A research workflow, a code) Tj T*
+(review process, a recurring report, a piece of content produced regularly. Use a coding) Tj T*
+(agent for the prototype, and graduate it to a production agent through Agents CLI when it) Tj T*
+(earns its keep. Building one agent end to end teaches more than reading about a hundred.) Tj T*
+(4. Write the tests and evals before generating the code. Together they are the contract) Tj T*
+(with the AI. A well-written test and eval suite communicates intent more precisely than) Tj T*
+(any natural-language prompt, and turns AI-assisted development from vibe coding into) Tj T*
+(agentic engineering.) Tj T*
+(5. Review every line the agent produces that is going to ship. Be skeptical of anything) Tj T*
+(that looks clever. Check imports for real packages. Verify that error handling covers) Tj T*
+(realistic failure modes. Code that the team does not understand becomes debugging cost) Tj T*
+(the team cannot afford.) Tj T*
+ET
+endstream
+endobj
+91 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 92 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+92 0 obj
+<< /Length 1996 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 44 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(44) Tj T*
+(6. Maintain your developer skills. AI handles the routine so the developer can focus on) Tj T*
+(the challenging. That arrangement only works if the foundational skills, debugging, system) Tj T*
+(design, intuition for performance and correctness, stay sharp. Treat AI as a way to apply) Tj T*
+(expertise at a greater scale, not as a substitute for it. Regular practice with complex) Tj T*
+(debugging, code review of AI output, and architecture discussions stay essential to) Tj T*
+(growing as an engineer.) Tj T*
+(For engineering leaders) Tj T*
+(1. Make context engineering a first-class engineering practice on the team. Treat) Tj T*
+(AGENTS.md, system prompts, eval suites, and skill libraries as code: reviewed in pull) Tj T*
+(requests, versioned with the project, owned by named engineers. Without this discipline,) Tj T*
+(the harness drifts and agent behaviour becomes irreproducible across the team.) Tj T*
+(2. Set the bar at the eval, not the demo. A working demo proves an agent can succeed) Tj T*
+(once. A passing eval suite proves it succeeds reliably. But an eval without a clear rubric) Tj T*
+(measures nothing. Define what you are scoring: task success, tool use quality, trajectory) Tj T*
+(compliance, hallucination, and response quality. Require eval coverage with explicit) Tj T*
+(rubrics as a precondition for any agent shipping into a shared workflow, the same way test) Tj T*
+(coverage gates a service deployment.) Tj T*
+(3. Re-shape code review for AI-generated code. AI-generated code requires the) Tj T*
+(same or greater scrutiny than human-written code, with extra attention to hallucinated) Tj T*
+(dependencies, inadequate error handling, and subtle correctness gaps that look right) Tj T*
+(at a glance. Train reviewers on the failure modes of generated code, and tune review) Tj T*
+(checklists accordingly.) Tj T*
+ET
+endstream
+endobj
+93 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 94 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+94 0 obj
+<< /Length 2271 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 45 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(45) Tj T*
+(4. Distinguish prototyping work from production work in team norms. Vibe coding is the) Tj T*
+(right speed for exploration. Agentic engineering is the right discipline for production. Make) Tj T*
+(the boundary explicit: which projects, which branches, which environments warrant which) Tj T*
+(mode of working. Teams that keep this distinction blurry produce prototypes that ship) Tj T*
+(by accident.) Tj T*
+(5. Invest in the harness components as a shared team asset. Reusable system) Tj T*
+(prompts, skill libraries, MCP server connections, and evaluation harnesses compound) Tj T*
+(across projects. Treat them as infrastructure: documented, maintained, and improved) Tj T*
+(deliberately. The teams that compound the most value from AI-assisted development are) Tj T*
+(the ones that build their harness once and refine it many times.) Tj T*
+(For organizations) Tj T*
+(1. Treat AI-assisted development as an engineering investment, not a productivity) Tj T*
+(feature. The teams seeing the largest gains pair AI tooling with eval coverage,) Tj T*
+(observability, and clear architectural standards. Rolling out a coding agent without that) Tj T*
+(scaffolding produces speed without quality, which compounds into technical debt faster) Tj T*
+(than any team can pay it down.) Tj T*
+(2. Invest in the production substrate before scale. A vibe-coded prototype on a laptop) Tj T*
+(is not a production system. What graduates one to the other is the operations discipline) Tj T*
+(around it: trajectory and final-response evals run in CI, traces of every agent run, scoped) Tj T*
+(permissions per agent, and security review tuned to the failure modes of generated code.) Tj T*
+(Build this substrate before the first production agent ships, not after.) Tj T*
+(3. Adopt open standards for tools and inter-agent communication. Model Context) Tj T*
+(Protocol \(MCP\) for tool access and Agent2Agent \(A2A\) for cross-agent delegation are) Tj T*
+(converging into the connective tissue of multi-agent systems. Choosing them now keeps) Tj T*
+(the option to mix vendors and frameworks open, and avoids re-platforming later.) Tj T*
+ET
+endstream
+endobj
+95 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 96 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+96 0 obj
+<< /Length 1059 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 46 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(46) Tj T*
+(4. Plan for hybrid teams of humans and agents, not human-only or agent-only) Tj T*
+(workflows. The strongest production results in the past year come from architectures) Tj T*
+(where humans set direction, agents do the implementation, and clear handoff protocols) Tj T*
+(govern the boundary. Code review processes, on-call rotations, and team structures all) Tj T*
+(need to evolve to reflect that agents are now participants, not just tools.) Tj T*
+(5. Reframe hiring and skill development around judgment, not just implementation.) Tj T*
+(As implementation becomes faster and more automated, the bottleneck shifts to) Tj T*
+(specification, evaluation, architectural judgment, and review. Hire and develop for those) Tj T*
+(skills deliberately. The most valuable engineers in the next several years will be the ones) Tj T*
+(who can direct agents well, not the ones who can write the most code.) Tj T*
+ET
+endstream
+endobj
+97 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 98 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+98 0 obj
+<< /Length 2048 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 47 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(47) Tj T*
+(Conclusion: Intent as the new Interface) Tj T*
+(The transition from syntax to intent is not a future prediction - it's a present reality.) Tj T*
+(Developers are already spending more time describing what they want than specifying how) Tj T*
+(to build it. The SDLC is already being compressed, restructured, and reimagined around AI) Tj T*
+(capabilities. The question is not whether this transformation will happen, but how effectively) Tj T*
+(individual developers, teams, and organizations will navigate it.) Tj T*
+(The framework we've presented in this paper - the spectrum from vibe coding to agentic) Tj T*
+(engineering, the conductor-to-orchestrator model of developer roles, the taxonomy of) Tj T*
+(ambient, workflow, and autonomous agents, and the factory model of software production) Tj T*
+(- provides a set of mental models for making sense of a rapidly evolving landscape. These) Tj T*
+(models will remain useful even as the specific tools and capabilities evolve.) Tj T*
+(Three principles stand out as durable:) Tj T*
+(1. Structure scales, vibes don't. Vibe coding is a valid approach for exploration,) Tj T*
+(prototyping, and personal projects. But for software that organizations depend on, the) Tj T*
+(discipline of agentic engineering - specifications, tests, guardrails, and human oversight) Tj T*
+(of architecture - is not optional. The gap between "it seems to work" and "it works) Tj T*
+(correctly under all conditions" is where production outages, security vulnerabilities, and) Tj T*
+(maintenance nightmares live.) Tj T*
+(2. AI amplifies your engineering culture. Organizations with strong testing practices, clear) Tj T*
+(architectural standards, and healthy code review processes get dramatically more value) Tj T*
+(from AI-assisted development than those without. AI is a force multiplier - and it multiplies) Tj T*
+(both your strengths and your weaknesses.) Tj T*
+ET
+endstream
+endobj
+99 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 100 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+100 0 obj
+<< /Length 1560 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 48 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(48) Tj T*
+(3. The human role is evolving, not diminishing. The builders who understand architecture,) Tj T*
+(can define precise specifications, evaluate output critically, and design effective systems) Tj T*
+(of constraints and feedback loops are more valuable than ever. The skills that matter are) Tj T*
+(shifting from implementation to judgment, from writing code to designing the systems that) Tj T*
+(produce code.) Tj T*
+(We're at the beginning of a transformation that will reshape not just how software is built,) Tj T*
+(but what kind of software is possible to build. Smaller teams will be able to tackle larger) Tj T*
+(problems. Individual developers will be able to build and maintain systems that previously) Tj T*
+(required entire departments. The barrier to creating software will continue to fall, opening the) Tj T*
+(practice of software development to a broader population.) Tj T*
+(The teams that thrive will be those that embrace AI as a powerful tool while maintaining the) Tj T*
+(engineering discipline that has always been the foundation of reliable software. They'll be the) Tj T*
+(ones who understand that the future of software engineering isn't about choosing between) Tj T*
+(human expertise and AI capability - it's about designing systems where both contribute their) Tj T*
+(unique strengths.) Tj T*
+(Generation is solved. Verification, judgment, and direction are the new craft.) Tj T*
+ET
+endstream
+endobj
+101 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 102 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+102 0 obj
+<< /Length 2229 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 49 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(49) Tj T*
+(Endnotes) Tj T*
+(1. GetPanto, "AI Coding Assistant Statistics 2025-2026," https://www.getpanto.ai/blog/ai-coding-assistant-) Tj T*
+(statistics; Index.dev, "Developer Productivity Statistics with AI Tools," https://www.index.dev/blog/) Tj T*
+(developer-productivity-statistics-with-ai-tools) Tj T*
+(2. Karpathy, A., "Vibe Coding," X/Twitter post, February 2025. https://x.com/karpathy/) Tj T*
+(status/1886192184808149383 ; Wikipedia, "Vibe coding," https://en.wikipedia.org/wiki/Vibe_coding) Tj T*
+(3. Osmani, A., "Agentic Engineering,") Tj T*
+(https://addyosmani.com/blog/agentic-engineering/) Tj T*
+(4. Karpathy, A., "From Vibe Coding to Agentic Engineering," 2026; The New Stack, "Vibe Coding is Passe,") Tj T*
+(https://thenewstack.io/vibe-coding-is-passe/) Tj T*
+(5. Glide Blog, "What is Agentic Engineering?" https://www.glideapps.com/) Tj T*
+(blog/what-is-agentic-engineering ; The New Stack, "Vibe Coding, Agentic) Tj T*
+(Engineering," https://thenewstack.io/vibe-coding-agentic-engineering/) Tj T*
+(6. CircleCI, "AI-Native SDLC,") Tj T*
+(https://circleci.com/blog/ai-sdlc/) Tj T*
+(7. GroovyWeb, "SDLC in the AI Era: Software Development 2026," https://www.groovyweb.co/blog/sdlc-ai-) Tj T*
+(era-software-development-2026; EPAM, "From Traditional Software to a Native AI SDLC,") Tj T*
+(https://www.epam.com/about/newsroom/in-the-news/2026/from-traditional-software-) Tj T*
+(to-a-native-ai-sdlc-how-genai-is-redefining-engineering) Tj T*
+(8. Osmani, A., "The Factory Model,") Tj T*
+(https://addyosmani.com/blog/factory-model/) Tj T*
+(9. Deloitte, "AI in Software Engineering: Productivity Gains 2025-2026," projecting 30-35% gains across the full) Tj T*
+(development process.) Tj T*
+(10. METR, "Uplift Update: Measuring the Impact of AI Coding Tools," February 2026,) Tj T*
+(https://metr.org/blog/2026-02-24-uplift-update/) Tj T*
+(11. Google, "Introduction to Agents," Agents Whitepaper Series, November 2025.) Tj T*
+(12. Osmani, A., "From Conductors to Orchestrators: The Future of Agentic Coding,") Tj T*
+(https://addyosmani.com/blog/future-agentic-coding/) Tj T*
+ET
+endstream
+endobj
+103 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 104 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+104 0 obj
+<< /Length 2501 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 50 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(50) Tj T*
+(13. Google, " Jules: AI-Powered Coding Agent,") Tj T*
+(https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/) Tj T*
+(14. Osmani, A., "The 80% Problem in Agentic Coding,") Tj T*
+(https://addyo.substack.com/p/the-80-problem-in-agentic-coding) Tj T*
+(15. Medium, Dave Patten, "The State of AI Coding Agents 2026: From Pair Programming to Autonomous AI) Tj T*
+(Teams, https://medium.com/@dave-patten/the-state-of-ai-coding-agents-2026-from-pair-) Tj T*
+(programming-to-autonomous-ai-teams-b11f2b39232a) Tj T*
+(16. Lawfare, "When the Vibes Are Off: The Security Risks of AI-Generated Code,") Tj T*
+(https://www.lawfaremedia.org/article/when-the-vibe-are-off--the-security-risks-of) Tj T*
+(-ai-generated-code) Tj T*
+(17. Google, "Introduction to Agents," Multi-Agent Systems and Design Patterns section, November 2025.) Tj T*
+(18. Google, "Agent Development Kit \(ADK\)," https://google.github.io/adk-docs/ ; Kartakis, S., "From Zero to) Tj T*
+(Multi-Agents: A Beginner's Guide to Google Agent Development Kit \(ADK\),") Tj T*
+(https://medium.com/@sokratis.kartakis/from-zero-to-multi-agents-a-beginners-guide) Tj T*
+(-to-google-agent-development-kit-adk-b56e9b5f7861) Tj T*
+(19. Google, "Agent-to-Agent \(A2A\) Protocol," https://google.github.io/a2a-protocol/ ; Kartakis, S. and Hotz, H.,) Tj T*
+("Generative AI in the Real World: Understanding A2A," O'Reilly Podcast,) Tj T*
+(https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-understanding-) Tj T*
+(a2a-with-heiko-hotz-and-sokratis-kartakis/) Tj T*
+(20. TLDL, "AI Coding Tools 2026," https://www.tldl.io/resources/ai-coding-tools-2026 ; Kanerika, "GitHub) Tj T*
+(Copilot vs Claude Code vs Cursor vs Windsurf,") Tj T*
+(https://kanerika.com/blogs/github-copilot-vs-claude-code-vs-cursor-vs-windsurf/) Tj T*
+(21. Google, "Gemini Code Assist,") Tj T*
+(https://cloud.google.com/gemini/docs/codeassist/overview) Tj T*
+(22. Dark Reading, "Coders Adopt AI Agents, but Security Pitfalls Lurk in 2026,") Tj T*
+(https://www.darkreading.com/application-security/coders-adopt-ai-agents-security-) Tj T*
+(pitfalls-lurk-2026) Tj T*
+(23. Google, "Gemini CLI,") Tj T*
+(https://github.com/google-gemini/gemini-cli .) Tj T*
+(24. Google, "Agent Tools: Interoperability with Model Context Protocol \(MCP\)," Agents Whitepaper Series,) Tj T*
+(November 2025) Tj T*
+ET
+endstream
+endobj
+105 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 106 0 R /Resources << /Font << /F1 3 0 R >> >> >>
+endobj
+106 0 obj
+<< /Length 1312 >>
+stream
+BT
+/F1 10 Tf
+36 756 Td
+13 TL
+(Page 51 of 51 - 02 - The New SDLC  With Vibe Coding) Tj T*
+(The new SDLC with vibe coding) Tj T*
+(May 2026) Tj T*
+(51) Tj T*
+(25. Google, "Agent Quality" and "Prototype to Production," Agents Whitepaper Series, November 2025) Tj T*
+(26. Lawfare, "When the Vibes Are Off: The Security Risks of AI-Generated Code,") Tj T*
+(https://www.lawfaremedia.org/article/when-the-vibe-are-off--the-security-risks-of-ai-) Tj T*
+(generated-code) Tj T*
+(27. DevOps.com, "AI-Generated Code Packages Can Lead to Slopsquatting Threat,") Tj T*
+(https://devops.com/ai-generated-code-packages-can-lead-to-slopsquatting-threat/) Tj T*
+(28. Osmani, A., "Beyond Vibe Coding," O'Reilly Media, 2025-2026,) Tj T*
+(https://www.oreilly.com/library/view/beyond-vibe-coding/9798341634749/) Tj T*
+(29. "Awesome LLM Apps,") Tj T*
+(https://github.com/Shubhamsaboo/awesome-llm-apps) Tj T*
+(30. Osmani, A., "My LLM Coding Workflow Going Into 2026,") Tj T*
+(https://addyosmani.com/blog/ai-coding-workflow/) Tj T*
+(31. Questera, "7 AI Coding Trends to Watch in 2026,") Tj T*
+(https://www.questera.ai/blogs/7-ai-coding-trends-to-watch-in-2026) Tj T*
+(32. DEV Community, "Programming in the Age of AI: From Code to Intent,") Tj T*
+(https://dev.to/robertobutti/programming-in-the-age-of-ai-from-code-to-intent-46eo) Tj T*
+ET
+endstream
+endobj
+xref
+0 107
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000467 00000 n 
+0000000537 00000 n 
+0000000685 00000 n 
+0000000811 00000 n 
+0000001134 00000 n 
+0000001260 00000 n 
+0000001684 00000 n 
+0000001811 00000 n 
+0000002567 00000 n 
+0000002695 00000 n 
+0000003639 00000 n 
+0000003767 00000 n 
+0000004574 00000 n 
+0000004702 00000 n 
+0000005626 00000 n 
+0000005754 00000 n 
+0000007283 00000 n 
+0000007411 00000 n 
+0000008704 00000 n 
+0000008832 00000 n 
+0000010203 00000 n 
+0000010331 00000 n 
+0000011308 00000 n 
+0000011436 00000 n 
+0000013404 00000 n 
+0000013532 00000 n 
+0000015066 00000 n 
+0000015194 00000 n 
+0000016906 00000 n 
+0000017034 00000 n 
+0000018056 00000 n 
+0000018184 00000 n 
+0000019908 00000 n 
+0000020036 00000 n 
+0000021551 00000 n 
+0000021679 00000 n 
+0000022726 00000 n 
+0000022854 00000 n 
+0000024787 00000 n 
+0000024915 00000 n 
+0000026672 00000 n 
+0000026800 00000 n 
+0000027728 00000 n 
+0000027856 00000 n 
+0000029609 00000 n 
+0000029737 00000 n 
+0000031648 00000 n 
+0000031776 00000 n 
+0000033861 00000 n 
+0000033989 00000 n 
+0000035736 00000 n 
+0000035864 00000 n 
+0000036802 00000 n 
+0000036930 00000 n 
+0000038205 00000 n 
+0000038333 00000 n 
+0000038959 00000 n 
+0000039087 00000 n 
+0000040604 00000 n 
+0000040732 00000 n 
+0000042268 00000 n 
+0000042396 00000 n 
+0000044105 00000 n 
+0000044233 00000 n 
+0000046253 00000 n 
+0000046381 00000 n 
+0000047075 00000 n 
+0000047203 00000 n 
+0000049354 00000 n 
+0000049482 00000 n 
+0000051328 00000 n 
+0000051456 00000 n 
+0000053129 00000 n 
+0000053257 00000 n 
+0000055334 00000 n 
+0000055462 00000 n 
+0000057758 00000 n 
+0000057886 00000 n 
+0000059883 00000 n 
+0000060011 00000 n 
+0000061923 00000 n 
+0000062051 00000 n 
+0000063249 00000 n 
+0000063377 00000 n 
+0000065175 00000 n 
+0000065303 00000 n 
+0000067084 00000 n 
+0000067212 00000 n 
+0000069302 00000 n 
+0000069430 00000 n 
+0000071479 00000 n 
+0000071607 00000 n 
+0000073931 00000 n 
+0000074059 00000 n 
+0000075171 00000 n 
+0000075299 00000 n 
+0000077400 00000 n 
+0000077529 00000 n 
+0000079143 00000 n 
+0000079273 00000 n 
+0000081556 00000 n 
+0000081686 00000 n 
+0000084241 00000 n 
+0000084371 00000 n 
+trailer
+<< /Size 107 /Root 1 0 R /Info 4 0 R >>
+startxref
+85737
+%%EOF

@@ -1,0 +1,44 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "ai-in-5-days-day5-architect",
+      "card": {
+        "header": {
+          "title": "Architecting Enterprise AgentOps: Scalable Topologies, Governance Gates, and A2A Interoperability",
+          "subtitle": "AI in 5 Days (DAY5) \u2022 Architect Track \u2022 For Rafee Mohamed"
+        },
+        "sections": [
+          {
+            "header": "Executive Summary",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Transitioning autonomous agentic systems from prototype to production requires closing the 80% 'last mile' gap through an enterprise-grade operational discipline known as AgentOps. For systems architects, this shifts the paradigm from traditional MLOps to orchestrating stateful, non-deterministic execution paths, requiring strict evaluation-gated CI/CD pipelines, decoupled stateless runtimes on Cloud Run or Vertex AI Agent Engine, and externalized state persistence across AlloyDB and long-term memory stores. Production resilience hinges on a three-tier defense-in-depth framework\u2014anchoring System Instructions as a behavioral constitution, utilizing Agent Gateway and Model Armor for real-time policy and injection filtering, and deploying runtime circuit breakers. At organizational scale, system modularity is achieved through a dual-protocol topology: leveraging the Model Context Protocol (MCP) for structured, deterministic tool execution and the Agent2Agent (A2A) protocol with Agent Cards for distributed, cross-team autonomous goal delegation."
+                }
+              }
+            ]
+          },
+          {
+            "header": "Curiosity Hook & Micro-Challenge",
+            "widgets": [
+              {
+                "decoratedText": {
+                  "topLabel": "Curiosity Hook",
+                  "text": "Why do traditional microservice rate-limiters and autoscalers fail to prevent cost runaways and cascade failures when agents dynamically assemble their own runtime execution trajectories?",
+                  "wrapText": true
+                }
+              },
+              {
+                "decoratedText": {
+                  "topLabel": "Architect Micro-Challenge",
+                  "text": "Spend 15 minutes drafting an architecture boundary specification for a multi-agent workflow: define the exact interface boundary where A2A high-level task delegation hands off to MCP deterministic tool execution, and design an automated circuit-breaker pattern (using feature flags and Secret Manager) that can instantaneously quarantine a compromised external tool without taking down the root agent runtime.",
+                  "wrapText": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
